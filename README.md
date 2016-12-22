@@ -1,0 +1,3 @@
+## Python Solutions to Leetcode
+
+This project started off as a pure fun assignment to keep up with the latest trends in algorithmic and data structures questions as they make it to leetcode. The solutions are written in Python and the problems appear in no particular sequence. The problems though are hosted in individual python files by the problem number. The problem statement is quoted above each problem in docstrings. The problems are not updated in the repo in their natural sequence, I pick and choose the ones that I find interesting, although eventually I plan to solve all of them.
