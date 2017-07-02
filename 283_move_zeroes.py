@@ -6,31 +6,20 @@ For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums sh
 
 
 class Solution(object):
-
     def moveZeroes(self, nums):
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        non_zero_index = []
-
-        for i in range(len(nums)):
-            if nums[i] != 0:
-                non_zero_index.append(i)
-        z = 0
-        for i in range(len(nums)):
-            if z < len(non_zero_index):
-                nums[z] = nums[non_zero_index[i]]
-                z += 1
-            else:
-                nums[i] = 0
+        j = 0
+        for i, v in enumerate(nums):
+            if v != 0:
+                nums[j], nums[i] = nums[i], nums[j]
+                j += 1
+        return nums
 
 
 if __name__ == '__main__':
     solution = Solution()
-    nums = [0, 1, 0, 3, 12]
+    nums = [0, 0, 1]
     print(solution.moveZeroes(nums))
-
-
-
-
