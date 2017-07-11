@@ -11,7 +11,8 @@ find the first bad version. You should minimize the number of calls to the API."
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
-# def isBadVersion(version):
+def isBadVersion(version):
+    pass
 
 class Solution(object):
     def firstBadVersion(self, n):
@@ -19,4 +20,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        start, end = 1, n
+        while start < end:
+            mid = start + (end - start) // 2
+            if isBadVersion(mid):
+                end = mid
+            else:
+                start = mid + 1
+        return start
+
 
