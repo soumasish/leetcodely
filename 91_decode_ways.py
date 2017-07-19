@@ -11,38 +11,27 @@ The number of ways decoding "12" is 2."""
 
 
 class Solution(object):
-
     def numDecodings(self, s):
         """
         :type s: str
         :rtype: int
         """
-        if len(s) == 0 or s == '0':
+
+        if s == '' or s == '0':
             return 0
-
-        memo = [None for _ in range(len(s) + 1)]
-        memo[0] = 1
-        memo[1] = 1
-        for i, v in enumerate(s):
-            if i == 0:
-                continue
-            curr = int(s[i])
-            previous = int(s[i-1])
-
-            if curr == 0 and previous == 0:
-                return 0
-            elif curr == 0 and previous * 10 + curr > 26:
-                return 0
-            elif previous == 0 or previous * 10 + curr > 26:
-                memo[i+1] = memo[i]
-            elif curr == 0:
-                memo[i+1] = memo[i-1]
-            else:
-                memo[i+1] = memo[i] + memo[i-1]
-        print(memo)
-        return memo[-1]
-
+        elif len(s) == 1:
+            return 1
+        count, i = 0, 0
+        while i < len(s):
+            single = int(s[i:i+1])
+            double = int(s[i:i+2])
+            if single != 0 and 0 < double <= 26:
+                count += 2
+            if single != 0 or 0 < double <= 26:
+                count += 1
+            i += 1
+        return count
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.numDecodings('1224'))
+    print(solution.numDecodings('12'))

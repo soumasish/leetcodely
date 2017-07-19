@@ -15,8 +15,7 @@ class Solution(object):
                 return [[0, 0, 0]]
 
         sorted_nums = sorted(nums)
-        print(sorted_nums)
-        results = []
+        results = set([])
         for i, v in enumerate(sorted_nums):
             if i > len(sorted_nums) - 2:
                 break
@@ -24,16 +23,16 @@ class Solution(object):
             while j < k:
                 total = sorted_nums[i] + sorted_nums[j] + sorted_nums[k]
                 if total == 0:
-                    results.append([sorted_nums[i], sorted_nums[j], sorted_nums[k]])
+                    results.add((sorted_nums[i], sorted_nums[j], sorted_nums[k]))
                     j += 1
                     k -= 1
                 elif total > 0:
                     k -= 1
                 else:
                     j += 1
-        return set(results, key= lambda x, y: c)
+        return list(results)
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.threeSum([-2, 0, 1, 1, 2]))
+    print(solution.threeSum([-1, 0, 1, 2, -1, -4]))
 
