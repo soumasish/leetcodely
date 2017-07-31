@@ -36,3 +36,4 @@ class Solution(object):
         return self.findMediaHelper(nums1, nums2, start1, end1, start2, end2)
 
 if __name__ == '__main__':
+ solution = Solution()
