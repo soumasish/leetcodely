@@ -18,13 +18,24 @@ class Solution(object):
         :type p: TreeNode
         :rtype: TreeNode
         """
+        # if root is None:
+        #     return None
+        # if root.val <= p.val:
+        #     return self.inorderSuccessor(root.right, p)
+        # else:
+        #     left = self.inorderSuccessor(root.left, p)
+        #     if left is not None:
+        #         return left
+        #     else:
+        #         return root
+
         if root is None:
             return None
         if root.val <= p.val:
             return self.inorderSuccessor(root.right, p)
         else:
             left = self.inorderSuccessor(root.left, p)
-            if left is not None:
+            if left:
                 return left
             else:
                 return root

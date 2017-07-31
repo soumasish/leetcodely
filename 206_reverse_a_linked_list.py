@@ -20,3 +20,11 @@ class Solution(object):
         head.next = None
         return p
 
+    def reverseListInteratively(self, head):
+        previous, curr, nxt = None, None, head
+
+        while nxt:
+            curr = nxt
+            nxt = curr.next
+            curr.next = previous
+            previous = curr

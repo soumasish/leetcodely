@@ -17,7 +17,7 @@ class LRUCache:
         self.queue = deque([])
         self.store = {}
 
-    def __get__(self, key):
+    def get(self, key):
         if key in self.store:
             # The key got used, thus update chronology
             self.queue.remove(key)
