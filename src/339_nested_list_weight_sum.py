@@ -14,7 +14,6 @@ Given the list [1,[4,[6]]], return 27. (one 1 at depth 1, one 4 at depth 2, and 
 # You should not implement it, or speculate about its implementation
 # """
 class NestedInteger(object):
-
     def __init__(self, item=None):
         self.item = item
 
@@ -23,7 +22,9 @@ class NestedInteger(object):
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        return type(self.item) == int
+        if type(self.item) == int:
+            return True
+        return False
 
     def getInteger(self):
         """
@@ -31,9 +32,9 @@ class NestedInteger(object):
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
-        if type(self.item) != int:
-            return None
-        return self.item
+        if type(self.item) == int:
+            return self.item
+        return None
 
     def getList(self):
         """
@@ -41,20 +42,9 @@ class NestedInteger(object):
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        if type(self.item) != list:
-            return None
-        return self.item
-
-    def __repr__(self):
-        if type(self.item) == int:
-            return str(self.item)
-        else:
-            s = '['
-            for i in self.item:
-                s += str(i.item)
-                s += ','
-            s += ']'
-            return s
+        if type(self.item) == list:
+            return self.item
+        return None
 
 
 class Solution(object):
@@ -63,32 +53,26 @@ class Solution(object):
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-        level, total = 1, 0
 
-        for item in nestedList:
-            if item.isInteger():
-                total += item.getInteger()
-            else:
-                total += self.helper(item, level + 1)
-        return total
+        return self.helper(nestedList, 1)
 
     def helper(self, list_item, level):
         total = 0
         for item in list_item.getList():
-            if item.isInteger():
+            if item.isInteger:
                 total += item.getInteger() * level
             else:
-                return self.helper(item, level + 1)
+                return self.helper(item.getList(), level + 1)
         return total
 
 
 if __name__ == '__main__':
     nested_list = []
-    #nested_list.append(NestedInteger([NestedInteger(1), NestedInteger(1)]))
-    #nested_list.append(NestedInteger(2))
-    #nested_list.append(NestedInteger([NestedInteger(1), NestedInteger(1)]))
+    # nested_list.append(NestedInteger([NestedInteger(1), NestedInteger(1)]))
+    # nested_list.append(NestedInteger(2))
+    # nested_list.append(NestedInteger([NestedInteger(1), NestedInteger(1)]))
     nested_list.append(NestedInteger([NestedInteger(1), [NestedInteger(1), [NestedInteger(6)]]]))
 
-    #print(nested_list)
+    # print(nested_list)
     solution = Solution()
     print(solution.depthSum(nested_list))
