@@ -1,7 +1,7 @@
 """Created by sgoswami on 7/16/17."""
 """Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
 Note: If the given node has no in-order successor in the tree, return null."""
-
+import collections
 
 # Definition for a binary tree node.
 class TreeNode(object):
@@ -18,24 +18,22 @@ class Solution(object):
         :type p: TreeNode
         :rtype: TreeNode
         """
-        # if root is None:
-        #     return None
-        # if root.val <= p.val:
-        #     return self.inorderSuccessor(root.right, p)
-        # else:
-        #     left = self.inorderSuccessor(root.left, p)
-        #     if left is not None:
-        #         return left
-        #     else:
-        #         return root
 
-        if root is None:
-            return None
-        if root.val <= p.val:
-            return self.inorderSuccessor(root.right, p)
-        else:
-            left = self.inorderSuccessor(root.left, p)
-            if left:
-                return left
+        # if Node has a right child, go all the way down
+        if p.right:
+            curr = p
+            while curr.left:
+                curr = curr.left
+        return curr
+        # first ancestor whose left child the node is
+        ans = None
+        curr = root
+        while curr is not p:
+            if curr.val < p.val:
+                curr = curr.right
             else:
-                return root
+                ans = curr
+                curr = curr.left
+        return ans
+
+
