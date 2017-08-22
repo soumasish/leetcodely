@@ -11,37 +11,53 @@ class Solution(object):
         :type s: str
         :rtype: List[str]
         """
-        result = set([])
         queue = collections.deque()
         queue.appendleft(s)
+        results = set()
         while len(queue) > 0:
-            curr, modified = queue.pop(), ''
-            for i, v in enumerate(curr):
-                if v == '(' or v == ')':
-                    if i < len(curr) - 1:
-                        modified = curr[:i] + curr[i + 1:]
-                    else:
-                        modified = curr[:-1]
-                if self.check_valid(modified):
-                    result.add(modified)
-            if len(result) > 0:
-                break
-            else:
-                stripped = self.strip_first_paranthesis(curr)
-                queue.appendleft(stripped)
-        return list(result)
-
-    #TODO : Fix this one to cater to edge cases
-    def strip_first_paranthesis(self, s):
-        for i, v in enumerate(s):
-            if v == '(' or v == ')':
-                if i < len(s) - 1:
-                    s = s[:i] + s[i + 1:]
+            curr_str = queue.pop()
+            for i in range(len(curr_str)):
+                modified_str = curr_str[:i] + curr_str[i+1:]
+                if self.check_valid(modified_str):
+                    results.add(modified_str)
                 else:
-                    s = s[:-1]
+                    queue.appendleft(modified_str)
+            if len(results) > 0:
                 break
-        return s
+        return list(results)
 
+
+    #     result = set([])
+    #     queue = collections.deque()
+    #     queue.appendleft(s)
+    #     while len(queue) > 0:
+    #         curr, modified = queue.pop(), ''
+    #         for i, v in enumerate(curr):
+    #             if v == '(' or v == ')':
+    #                 if i < len(curr) - 1:
+    #                     modified = curr[:i] + curr[i + 1:]
+    #                 else:
+    #                     modified = curr[:-1]
+    #             if self.check_valid(modified):
+    #                 result.add(modified)
+    #         if len(result) > 0:
+    #             break
+    #         else:
+    #             stripped = self.strip_first_paranthesis(curr)
+    #             queue.appendleft(stripped)
+    #     return list(result)
+    #
+    # #TODO : Fix this one to cater to edge cases
+    # def strip_first_paranthesis(self, s):
+    #     for i, v in enumerate(s):
+    #         if v == '(' or v == ')':
+    #             if i < len(s) - 1:
+    #                 s = s[:i] + s[i + 1:]
+    #             else:
+    #                 s = s[:-1]
+    #             break
+    #     return s
+    #
     def check_valid(self, s):
         stack = []
         for i, v in enumerate(s):

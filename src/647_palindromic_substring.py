@@ -11,22 +11,16 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        ans, trigger = 0, False
+        ans = 0
         for i in range(2*len(s)):
-            center = i//2
-            if not trigger:
-                left = center
-                right = center + 1
-            else:
-                left = right = center
-            trigger = not trigger
-            while left >= 0 and right < len(s):
-                if s[left] == s[right]:
-                    ans += 1
+            left = i//2
+            right = i//2 + i % 2
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                ans += 1
                 left -= 1
                 right += 1
         return ans
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.countSubstrings('aaa'))
+    print(solution.countSubstrings('fdsklf'))

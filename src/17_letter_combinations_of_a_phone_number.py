@@ -10,3 +10,20 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
+        combinations = set()
+        return self.helper(digits, '', combinations)
+
+    def helper(self, rest_of_the_digits, path_so_far, combinations):
+        if not rest_of_the_digits:
+            combinations.add(path_so_far)
+            return
+        first, rest = rest_of_the_digits[0], rest_of_the_digits[1:]
+        letters = self.digit_map[first]
+        for letter in letters:
+            self.helper(rest, path_so_far+letter, combinations)
+
+        return combinations
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.letterCombinations('23'))

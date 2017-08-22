@@ -41,12 +41,13 @@ class WordDistance(object):
         return curr
 
     def shortest_distance_between_lists(self, lst1, lst2):
-        i, j, curr = 0, 0, sys.maxsize
+        i, j = 0, 0
+        curr = sys.maxsize
         while i < len(lst1) and j < len(lst2):
             curr = min(curr, abs(lst1[i] - lst2[j]))
             if lst1[i] < lst2[j] and i < len(lst1):
                 i += 1
-            elif lst1[i] > lst2[j] and j < len(lst1):
+            elif lst1[i] > lst2[j] and j < len(lst2):
                 j += 1
         return curr
 

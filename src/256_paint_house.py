@@ -17,15 +17,26 @@ class Solution(object):
         # Greedy approach will not yield an optimum solution here
         if not costs:
             return 0
-        f = costs[0]
+        F = costs[0]
         curr = [0] * 3
-
         for i in range(1, len(costs)):
-            curr[0] = min(f[1], f[2]) + costs[i][0]
-            curr[1] = min(f[0], f[2]) + costs[i][1]
-            curr[2] = min(f[0], f[1]) + costs[i][2]
-            f = curr[:]
-        return min(f)
+            curr[0] = min(F[1], F[2]) + costs[i][0]
+            curr[1] = min(F[0], F[2]) + costs[i][1]
+            curr[2] = min(F[0], F[1]) + costs[i][2]
+            F = curr[:]
+        return min(F)
+
+        # if not costs:
+        #     return 0
+        # f = costs[0]
+        # curr = [0] * 3
+        #
+        # for i in range(1, len(costs)):
+        #     curr[0] = min(f[1], f[2]) + costs[i][0]
+        #     curr[1] = min(f[0], f[2]) + costs[i][1]
+        #     curr[2] = min(f[0], f[1]) + costs[i][2]
+        #     f = curr[:]
+        # return min(f)
 
 if __name__ == '__main__':
     solution = Solution()

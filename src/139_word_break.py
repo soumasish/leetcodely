@@ -22,6 +22,8 @@ class Solution(object):
         memo[0] = True
         for i in range(len(s)):
             for j in range(i, len(s)):
+                print(memo[i])
+                print(s[i:j+1])
                 if memo[i] and s[i:j+1] in wordDict:
                     memo[j+1] = True
         return memo[-1]

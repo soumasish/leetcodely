@@ -53,25 +53,24 @@ class Solution(object):
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-
         return self.helper(nestedList, 1)
 
-    def helper(self, list_item, level):
+    def helper(self, nestedList, level):
         total = 0
-        for item in list_item.getList():
-            if item.isInteger:
+        for item in nestedList:
+            if item.isInteger():
                 total += item.getInteger() * level
             else:
-                return self.helper(item.getList(), level + 1)
+                total += self.helper(item.getList(), level + 1)
         return total
 
 
 if __name__ == '__main__':
     nested_list = []
-    # nested_list.append(NestedInteger([NestedInteger(1), NestedInteger(1)]))
-    # nested_list.append(NestedInteger(2))
-    # nested_list.append(NestedInteger([NestedInteger(1), NestedInteger(1)]))
-    nested_list.append(NestedInteger([NestedInteger(1), [NestedInteger(1), [NestedInteger(6)]]]))
+    nested_list.append(NestedInteger([1, 1]))
+    nested_list.append(NestedInteger(2))
+    nested_list.append(NestedInteger([1, 1]))
+
 
     # print(nested_list)
     solution = Solution()

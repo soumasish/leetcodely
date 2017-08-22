@@ -17,6 +17,8 @@ If there is no celebrity, return -1."""
 # @param a, person a
 # @param b, person b
 # @return a boolean, whether a knows b
+
+
 def knows(a, b):
     pass
 
@@ -27,6 +29,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+
         x = -1
         for i in range(n):
             if knows(x, i):

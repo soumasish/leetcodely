@@ -17,11 +17,19 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        d1, d2 = {},{}
-        for v, w in zip(s, t):
-            if v in d1 and d1[v] != w or w in d2 and d2[w] != v:
+        # every char should be mapped to another unique char
+        # the mapped char should map back to the original char
+        if len(s) != len(t):
+            return False
+        d1, d2 = {}, {}
+        for i in range(len(s)):
+            if s[i] in d1 and d1[s[i]] != t[i] or t[i] in d2 and d2[t[i]] != s[i]:
                 return False
-            d1[v] = w
-            d2[w] = v
+            d1[s[i]] = t[i]
+            d2[t[i]] = s[i]
         return True
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.isIsomorphic('egg', 'add'))
 

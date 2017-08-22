@@ -33,11 +33,6 @@ class Solution(object):
         else:
             return self.units[num // 100] + " Hundred " + self.helper(num % 100)
 
-
-
-
-
-
 if __name__ == '__main__':
     solution = Solution()
     print(solution.numberToWords(23999))

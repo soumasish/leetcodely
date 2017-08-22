@@ -21,7 +21,7 @@ class Solution(object):
 
         # if Node has a right child, go all the way down
         if p.right:
-            curr = p
+            curr = p.right
             while curr.left:
                 curr = curr.left
         return curr

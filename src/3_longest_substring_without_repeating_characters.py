@@ -13,20 +13,31 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        checklist = {}
-        starting_index_of_current_substring = 0
-        length_of_longest_substring = 0
+        index_map = {}
+        starting_index_of_the_curr_substring, len_of_the_curr_substring, len_of_the_longest_substring = 0, 0, 0
         for i, v in enumerate(s):
-            if v in checklist:
-                if checklist[v] >= starting_index_of_current_substring:
-                    starting_index_of_current_substring = checklist[v] + 1
+            if v in index_map:
+                starting_index_of_the_curr_substring = index_map[v] + 1
+            len_of_the_curr_substring = i - starting_index_of_the_curr_substring + 1
+            len_of_the_longest_substring = max(len_of_the_longest_substring, len_of_the_curr_substring)
+            index_map[v] = i
+        return len_of_the_longest_substring
 
-            length_of_current_substring = i - starting_index_of_current_substring + 1
-            length_of_longest_substring = max(length_of_current_substring, length_of_longest_substring)
-            checklist[v] = i
-        return length_of_longest_substring
+        # checklist = {}
+        # starting_index_of_current_substring = 0
+        # length_of_longest_substring = 0
+        # for i, v in enumerate(s):
+        #     if v in checklist:
+        #         if checklist[v] >= starting_index_of_current_substring:
+        #             starting_index_of_current_substring = checklist[v] + 1
+        #
+        #     length_of_current_substring = i - starting_index_of_current_substring + 1
+        #     length_of_longest_substring = max(length_of_current_substring, length_of_longest_substring)
+        #     checklist[v] = i
+        # return length_of_longest_substring
 
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.lengthOfLongestSubstring("abcabcbb"))
+    print(solution.lengthOfLongestSubstring("abba"))
+    print(solution.lengthOfLongestSubstring("bpfbhmipx"))

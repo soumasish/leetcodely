@@ -11,20 +11,32 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        # a, b, left, right, result = 1, 1, [], [], []
+        #
+        # for i, v in enumerate(nums):
+        #     left.append(a)
+        #     a *= nums[i]
+        #
+        # for i, v in reversed(list(enumerate(nums))):
+        #     right.append(b)
+        #     b *= nums[i]
+        # right = list(reversed(right))
+        #
+        # for i in range(len(left)):
+        #     result.append(left[i] * right[i])
+        # return result
         a, b, left, right, result = 1, 1, [], [], []
-
-        for i, v in enumerate(nums):
+        for i in range(len(nums)):
             left.append(a)
-            a *= nums[i]
-
-        for i, v in reversed(list(enumerate(nums))):
             right.append(b)
-            b *= nums[i]
+            a *= nums[i]
+            b *= nums[-i-1]
         right = list(reversed(right))
-
-        for i in range(len(left)):
+        for i in range(len(nums)):
             result.append(left[i] * right[i])
         return result
+
+
 
 solution = Solution()
 print(solution.productExceptSelf([1,2,3,4]))
