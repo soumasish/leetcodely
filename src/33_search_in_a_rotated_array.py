@@ -13,26 +13,26 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        #find the pivot
-        start, end = 0, len(nums) - 1
+        start, end = 0, len(nums)-1
         while start < end:
-            mid = (end + start) //2
+            mid = start + (end - start)//2
             if nums[mid] < nums[end]:
-                end = mid
+                end = mid - 1
             else:
                 start = mid + 1
-        #find the target accomodating for the pivot
         pivot = start
+
         while start <= end:
-            mid = (start + end)//2
-            real_mid = (mid + pivot)%len(nums)
-            if target == nums[real_mid]:
-                return real_mid
-            elif target < nums[real_mid]:
-                start = mid + 1
+            mid = start + (end - start)//2
+            real_mid = (mid + pivot) % len(nums)
+            if target < nums[real_mid]:
+                start = mid
+            elif target > nums[real_mid]:
+                end = mid - 1
             else:
-                end = mid
+                return real_mid
         return -1
+
 
 if __name__ == '__main__':
     solution = Solution()
