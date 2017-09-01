@@ -11,11 +11,19 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        min_buying, profit = sys.maxint, 0
+        # min_buying, profit = sys.maxint, 0
+        #
+        # for i, v in enumerate(prices):
+        #     if v < min_buying:
+        #         min_buying = v
+        #     profit = max(profit, v-min_buying)
+        # return profit
+        min_buying, profit = sys.maxsize, 0
 
         for i, v in enumerate(prices):
-            if v < min_buying:
-                min_buying = v
-            profit = max(profit, v-min_buying)
+             if v < min_buying:
+                 min_buying = v
+             profit = max(profit, v - min_buying)
         return profit
+
 

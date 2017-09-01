@@ -29,13 +29,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-
-        x = -1
+        x = 0
         for i in range(n):
             if knows(x, i):
                 x = i
-        if any(knows(x, i) for i in range(n) if i != x):
-            return -1
-        if any(not knows(i, x) for i in range(n) if i != x):
-            return -1
+        for i in range(n):
+            if i != x and (knows(x, i) or not knows(i, x)):
+                return -1
         return x
+
+

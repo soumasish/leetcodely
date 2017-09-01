@@ -12,36 +12,7 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        # return self.factors(n)
-        results = []
-        for i in range(2, n):
-            if n % i == 0:
-                curr_list = [i]
-
-
-    def get_factors_helper(self, start, finish, array):
-        for i in range(start, finish):
-            if finish % i == 0:
-                array.append(i)
-                self.get_factors_helper()
-
-
-    # def factors(number, max_factor=sys.maxint):
-    #     result = []
-    #
-    #     factor = min(number / 2, max_factor)
-    #     while factor >= 2:
-    #         if number % factor == 0:
-    #             divisor = number / factor
-    #
-    #             if divisor <= factor and divisor <= max_factor:
-    #                 result.append([factor, divisor])
-    #
-    #             result.extend([factor] + item for item in self.factors(divisor, factor))
-    #
-    #         factor -= 1
-    #
-    #     return result
+        pass
 
 
 

@@ -11,20 +11,23 @@ class Solution(object):
         :type s: str
         :rtype: List[str]
         """
+        result = []
         queue = collections.deque()
-        queue.appendleft(s)
-        results = set()
-        while len(queue) > 0:
-            curr_str = queue.pop()
-            for i in range(len(curr_str)):
-                modified_str = curr_str[:i] + curr_str[i+1:]
-                if self.check_valid(modified_str):
-                    results.add(modified_str)
-                else:
-                    queue.appendleft(modified_str)
-            if len(results) > 0:
-                break
-        return list(results)
+        
+        # queue = collections.deque()
+        # queue.appendleft(s)
+        # results = set()
+        # while len(queue) > 0:
+        #     curr_str = queue.pop()
+        #     for i in range(len(curr_str)):
+        #         modified_str = curr_str[:i] + curr_str[i+1:]
+        #         if self.check_valid(modified_str):
+        #             results.add(modified_str)
+        #         else:
+        #             queue.appendleft(modified_str)
+        #     if len(results) > 0:
+        #         break
+        # return list(results)
 
 
     #     result = set([])

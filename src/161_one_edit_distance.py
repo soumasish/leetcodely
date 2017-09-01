@@ -15,17 +15,15 @@ class Solution(object):
         return self.oneDel(s, t) or self.oneModify(s, t)
 
     def oneDel(self, s, t):
-        if len(s) == len(t) or abs(len(s) - len(t)) > 1:
+        if abs(len(s) - len(t)) > 1:
             return False
-        min_len, i, count = min(len(s), len(t)), 0, 0
-        while i < min_len:
-            if s[i] != t[i]:
-                if len(s) > len(t):
-                    return s[i::] == t
-                else:
-                    return t[i::] == s
-            i += 1
-        return count <= 1
+        longer = s if len(s) > len(t) else t
+        shorter = s if longer == t else t
+        for i in range(len(longer)):
+            reduced = longer[:i] + longer[i+1:]
+            if reduced == shorter:
+                return True
+        return False
 
     def oneModify(self, s, t):
         if len(s) != len(t):

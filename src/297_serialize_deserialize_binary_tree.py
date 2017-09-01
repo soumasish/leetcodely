@@ -15,6 +15,24 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
+class BST:
+    def __init__(self):
+        self.root = None
+
+    def add(self, item):
+        self.root = self.add_helper(item, self.root)
+
+    def add_helper(self, item, node):
+        if not node:
+            return TreeNode(item)
+        if item < node.val:
+            node.left = self.add_helper(item, node.left)
+        else:
+            node.right = self.add_helper(item, node.right)
+        return node
+
+
 class Codec:
     def serialize(self, root):
         """Encodes a tree to a single string.
@@ -22,17 +40,18 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        curr_str = ''
-        self.serialize_helper(root, curr_str)
-        return curr_str
+        data = []
+        self.serialize_helper(root, data)
+        return ''.join(data)
 
-    def serialize_helper(self, root, curr_str):
+    def serialize_helper(self, root, data):
         if not root:
-            curr_str += '#'
+            data.append('#,')
             return
-        curr_str += str(root.val)
-        self.serialize_helper(root.left, curr_str)
-        self.serialize_helper(root.right, curr_str)
+        data.append(str(root.val))
+        data.append(',')
+        self.serialize_helper(root.left, data)
+        self.serialize_helper(root.right, data)
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -40,16 +59,32 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        itr = iter(data)
-        return self.deserialize_helper(data, itr)
-
+        data_list = data.split(',')
+        itr = iter(data_list)
+        return self.deserialize_helper(data_list, itr)
 
     def deserialize_helper(self, data, itr):
-        item = next(itr)
-        if not item or item == '#':
+        try:
+            item = next(itr)
+        except StopIteration:
+            return
+        if item == '#':
             return None
-        p = TreeNode(int(item))
-        p.left = self.deserialize_helper(data, itr)
-        p.right = self.deserialize_helper(data, itr)
-        return p
+        root = TreeNode(item)
+        root.left = self.deserialize_helper(data, itr)
+        root.right = self.deserialize_helper(data, itr)
+        return root
 
+if __name__ == '__main__':
+    bst = BST()
+    bst.add(9)
+    bst.add(11)
+    bst.add(5)
+    bst.add(3)
+    bst.add(7)
+    bst.add(15)
+    codec = Codec()
+    data = codec.serialize(bst.root)
+    print(data)
+    root = codec.deserialize(data)
+    print(root.val)

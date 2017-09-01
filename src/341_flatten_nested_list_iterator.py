@@ -15,6 +15,9 @@ By calling next repeatedly until hasNext returns false, the order of elements re
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
+
+
+
 class NestedInteger(object):
    def isInteger(self):
        """
@@ -43,28 +46,29 @@ class NestedIterator(object):
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
         """
-        self.master_list = nestedList
-        self.root = nestedList[0]
-        self.curr_list = None
+        self.stack = []
+        for item in list(reversed(nestedList)):
+            self.stack.append(item)
 
     def next(self):
         """
         :rtype: int
         """
-        if self.root.isInteger():
-            res = self.root.getInteger()
-            self.master_list.next()
-            return res
-        else:
-            if not self.curr_list:
-                self.curr_list = self.root.getList()
-
-            res = self.curr_list.next()
+        return self.stack.pop().getInteger()
 
     def hasNext(self):
         """
         :rtype: bool
         """
+        while len(self.stack) > 0:
+            if self.stack[-1].isInteger():
+                return True
+            else:
+                item_list = self.stack.pop().getList()
+                for item in list(reversed(item_list)):
+                    self.stack.append(item)
+        return False
+
 
 
 # Your NestedIterator object will be instantiated and called as such:

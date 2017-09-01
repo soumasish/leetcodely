@@ -10,7 +10,6 @@ endWord = "cog"
 wordList = ["hot","dot","dog","lot","log","cog"]
 As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
 return its length 5."""
-
 import collections
 
 
@@ -22,4 +21,41 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: int
         """
+        queue = collections.deque()
+        queue.appendleft(beginWord)
+        queue.appendleft('#')
+        count = 0
+        visited = {}
+
+        while len(queue) > 0:
+            word = queue.pop()
+            if word == '#':
+                if len(queue) > 0:
+                    queue.appendleft('#')
+                    count += 1
+            elif word == endWord:
+                return count + 1
+            else:
+                successors = self.one_edit_distance_away(word, wordList, visited)
+                for i, v in enumerate(successors):
+                    queue.appendleft(v)
+        return -1
+
+    def one_edit_distance_away(self, word, array, visited):
+        res = []
+        for item in array:
+            count = 0
+            if item not in visited:
+                for i in range(len(word)):
+                    if item[i] != word[i]:
+                        count += 1
+                if count == 1:
+                    res.append(item)
+                    visited[item] = 1
+        return res
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.ladderLength('hit', 'cog', ["hot","dot","dog","lot","log","cog"]))
 

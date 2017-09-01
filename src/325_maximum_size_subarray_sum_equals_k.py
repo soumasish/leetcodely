@@ -10,20 +10,22 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        index_sum, total = {}, 0,
-        for i, v in enumerate(nums):
-            total += v
-            if total not in index_sum:
-                index_sum[total] = i
-        sum, max_len = 0, -sys.maxsize
-        for i, v in enumerate(nums):
-            sum += v
-            if sum == k:
-                max_len = max(max_len, i+1)
-            if sum - k in index_sum:
-                max_len = max(max_len, index_sum[sum-k])
 
-        return max_len
+
+        # index_sum, total = {}, 0,
+        # for i, v in enumerate(nums):
+        #     total += v
+        #     if total not in index_sum:
+        #         index_sum[total] = i
+        # sum, max_len = 0, -sys.maxsize
+        # for i, v in enumerate(nums):
+        #     sum += v
+        #     if sum == k:
+        #         max_len = max(max_len, i+1)
+        #     if sum - k in index_sum:
+        #         max_len = max(max_len, index_sum[sum-k])
+        #
+        # return max_len
 
 
 solution = Solution()

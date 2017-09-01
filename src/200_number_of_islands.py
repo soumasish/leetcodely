@@ -8,60 +8,30 @@ class Solution(object):
         :type grid: List[List[str]]
         :rtype: int
         """
-        num_islands = 0
-        visited = [[0 for _ in len(grid[0])] for _ in range(len(grid))]
+        count = 0
+        visited = [[0 for _ in range(len(grid[i]))] for i in range(len(grid))]
         for i in range(len(grid)):
             for j in range(len(grid[i])):
-                if grid[i][j] == 1 and visited[i][j] == 0:
+                if grid[i][j] == '1' and visited[i][j] == 0:
                     self.dfs(grid, visited, i, j)
-                    num_islands += 1
-        return num_islands
+                    count += 1
+        return count
 
     def dfs(self, grid, visited, row, col):
         visited[row][col] = 1
-        if row + 1 < len(grid) and visited[row+1][col] == 0:
-            self.dfs(grid, visited, row+1, col)
-        if row -1 >= 0 and visited[row-1][col] == 0:
-            self.dfs(grid, visited, row-1, col)
-        if col + 1 < len(grid[row]) and visited[row][col +1] == 0:
-            self.dfs(grid, visited, row, col+1)
-        if col - 1 >= 0 and visited[row][col -1] == 0:
-            self.dfs(grid, visited, row, col-1)
-    #     num_islands = 0
-    #     visited = [[0] * len(grid[0]) for _ in range(len(grid))]
-    #
-    #     for row in range(len(grid)):
-    #         for col in range(len(grid[row])):
-    #             if grid[row][col] == '1' and visited[row][col] == '0':
-    #                 num_islands += 1
-    #                 self.dfs(grid, visited, row, col)
-    #     return num_islands
-    #
-    # def dfs(self, grid, visited, row, col):
-    #     if row >= 0 and col >= 0 and row < len(grid) and col < len(grid[0]) and grid[row][col] == '1' and visited[row][
-    #         col] == '0':
-    #         visited[row][col] = '1'
-    #         self.dfs(grid, visited, row, col + 1)
-    #         self.dfs(grid, visited, row + 1, col)
-    #         self.dfs(grid, visited, row, col - 1)
-    #         self.dfs(grid, visited, row - 1, col)
-
-
-def app():
-    grid1 = [[1, 1, 1, 1, 0],
-             [1, 1, 0, 1, 0],
-             [1, 1, 0, 0, 0],
-             [0, 0, 0, 0, 0]
-             ]
-    grid2 = [['11000'],
-             ['11000'],
-             ['00100'],
-             ['00011']
-             ]
-    s = Solution()
-    print(s.numIslands(grid1))
-    print(s.numIslands(grid2))
+        if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[row]) or visited[row][col] == 1 or grid[row][col] == '0':
+            return
+        self.dfs(grid, visited, row + 1, col)
+        self.dfs(grid, visited, row - 1, col)
+        self.dfs(grid, visited, row, col + 1)
+        self.dfs(grid, visited, row, col - 1)
 
 
 if __name__ == '__main__':
-    app()
+    grid = [['1', '1', '0', '0', '0'],
+            ['1', '1', '0', '0', '0'],
+            ['0', '0', '1', '0', '0'],
+            ['0', '0', '0', '1', '1']
+            ]
+    s = Solution()
+    print(s.numIslands(grid))

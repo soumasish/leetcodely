@@ -3,10 +3,8 @@
 
 
 def two_sum(nums, target):
-    map = {}
-    for i, v in enumerate(nums):
-        diff = target - v
-        if diff in map:
-            return [map[diff], i]
-        else:
-            map[v] = i
+    index_map = {}
+    for i in range(len(nums)):
+        if target - nums[i] in index_map:
+            return i, index_map[target - nums[i]]
+        index_map[nums[i]] = i

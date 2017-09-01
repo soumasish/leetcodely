@@ -20,9 +20,9 @@ class Solution(object):
         return all_paths
 
     def path_helper(self, root, curr_path, all_paths):
-        if root.left == root.right == None:
+        if not root.left and not root.right:
             curr_path += root.val
-            all_paths.apped(curr_path)
+            all_paths.append(curr_path)
             return
         if root.left:
             self.path_helper(root.left, curr_path + str(root.val), all_paths)

@@ -22,29 +22,27 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
-        if intervals is None or len(intervals) == 0:
+        if not intervals or len(intervals) == 0:
             return []
-        if len(intervals) == 1:
-            return intervals
-        sorted_intervals = sorted(intervals, key=lambda x: x.start)
         results = []
-
+        sorted_intervals = sorted(intervals, key=lambda x: x.start)
         previous = sorted_intervals[0]
         for i in range(1, len(sorted_intervals)):
             current = sorted_intervals[i]
-            if previous.end >= current.start:
-                new_interval = Interval(previous.start, current.end) if previous.end <= current.end else Interval(previous.start, previous.end)
-                if i == len(sorted_intervals) - 1:
-                    results.append(new_interval)
-                else:
-                    previous = new_interval
-            else:
+            if previous.end < current.start:
                 results.append(previous)
-                if i == len(sorted_intervals) -1:
-                    results.append(current)
+                previous = current
+            elif previous.end >= current.start:
+                if previous.end <= current.end:
+                    new_interval = Interval(previous.start, current.end)
                 else:
-                    previous = current
+                    new_interval = Interval(previous.start, previous.end)
+                previous = new_interval
+        results.append(previous)
         return results
+
+
+
 
 if __name__ == '__main__':
     solution = Solution()
