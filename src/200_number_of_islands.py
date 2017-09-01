@@ -19,10 +19,11 @@ class Solution(object):
 
     def dfs(self, grid, visited, row, col):
         visited[row][col] = 1
-        if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[row]) or visited[row][col] == 1 or grid[row][col] == '0':
-            return
-        self.dfs(grid, visited, row + 1, col)
-        self.dfs(grid, visited, row - 1, col)
+        if row + 1 < len(grid) and visited[row+1][col] == 0 and grid[row+1][col] == '1':
+            self.dfs(grid, visited, row + 1, col)
+        if row -1 >= 0 and visited[row-1][col] == 0 and grid[row-1][col] == '1':
+            self.dfs(grid, visited, row - 1, col)
+        if col + 1 < len(grid[row])
         self.dfs(grid, visited, row, col + 1)
         self.dfs(grid, visited, row, col - 1)
 
