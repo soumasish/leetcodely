@@ -23,9 +23,10 @@ class Solution(object):
             self.dfs(grid, visited, row + 1, col)
         if row -1 >= 0 and visited[row-1][col] == 0 and grid[row-1][col] == '1':
             self.dfs(grid, visited, row - 1, col)
-        if col + 1 < len(grid[row])
-        self.dfs(grid, visited, row, col + 1)
-        self.dfs(grid, visited, row, col - 1)
+        if col + 1 < len(grid[row]) and visited[row][col + 1] == 0 and grid[row][col+1] == '1':
+            self.dfs(grid, visited, row, col + 1)
+        if col - 1 >= 0 and visited[row][col - 1] == 0 and grid[row][col - 1] == '1':
+            self.dfs(grid, visited, row, col - 1)
 
 
 if __name__ == '__main__':
