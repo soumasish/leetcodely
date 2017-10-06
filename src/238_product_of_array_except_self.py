@@ -11,30 +11,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        # a, b, left, right, result = 1, 1, [], [], []
-        #
-        # for i, v in enumerate(nums):
-        #     left.append(a)
-        #     a *= nums[i]
-        #
-        # for i, v in reversed(list(enumerate(nums))):
-        #     right.append(b)
-        #     b *= nums[i]
-        # right = list(reversed(right))
-        #
-        # for i in range(len(left)):
-        #     result.append(left[i] * right[i])
-        # return result
-        a, b, left, right, result = 1, 1, [], [], []
-        for i in range(len(nums)):
-            left.append(a)
-            right.append(b)
-            a *= nums[i]
-            b *= nums[-i-1]
-        right = list(reversed(right))
-        for i in range(len(nums)):
-            result.append(left[i] * right[i])
-        return result
+        left_product = [1]
+        right_product = [1]
+        for i in range(1, len(nums)):
+            curr_left = left_product[i-1] * nums[i-1]
 
 
 

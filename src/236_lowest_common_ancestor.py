@@ -15,6 +15,7 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
+
         if root is None or root == p or root == q:
             return root
         left = self.lowestCommonAncestor(root.left, p, q)

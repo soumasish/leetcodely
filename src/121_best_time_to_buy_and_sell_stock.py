@@ -21,9 +21,8 @@ class Solution(object):
         min_buying, profit = sys.maxsize, 0
 
         for i, v in enumerate(prices):
-             if v < min_buying:
-                 min_buying = v
-             profit = max(profit, v - min_buying)
+            min_buying = min(min_buying, v)
+            profit = max(profit, v - min_buying)
         return profit
 
 

@@ -10,22 +10,23 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        total = nums[0]
+        cumulative_sum = [0 for _ in range(len(nums))]
+        cumulative_sum[0] = nums[0]
+        for i in range(1, len(nums)):
+            total += cumulative_sum[i]
+            cumulative_sum[i] = total
 
-
-        # index_sum, total = {}, 0,
-        # for i, v in enumerate(nums):
-        #     total += v
-        #     if total not in index_sum:
-        #         index_sum[total] = i
-        # sum, max_len = 0, -sys.maxsize
-        # for i, v in enumerate(nums):
-        #     sum += v
-        #     if sum == k:
-        #         max_len = max(max_len, i+1)
-        #     if sum - k in index_sum:
-        #         max_len = max(max_len, index_sum[sum-k])
-        #
-        # return max_len
+        i, j = 0, len(nums)-1
+        while i < j:
+            curr = nums[j] - nums[i]
+            if curr < k:
+                i += 1
+            elif curr > k:
+                j -= 1
+            else:
+                return j - i + 1
+        return 0
 
 
 solution = Solution()

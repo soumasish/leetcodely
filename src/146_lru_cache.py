@@ -9,7 +9,6 @@
     used item before inserting a new item."""
 from collections import deque
 
-
 class LRUCache:
     def __init__(self, capacity):
         self.currSize = 0
@@ -26,7 +25,7 @@ class LRUCache:
         else:
             return -1
 
-    def set(self, key, value):
+    def put(self, key, value):
         if key in self.store:
             # The key got used, thus update chronology
             self.queue.remove(key)
@@ -41,3 +40,7 @@ class LRUCache:
             self.queue.appendleft(key)
             self.store[key] = value
             self.currSize += 1
+
+"""On get update order
+On put -> if key already present update order
+If key new pop the least recently used and update key"""

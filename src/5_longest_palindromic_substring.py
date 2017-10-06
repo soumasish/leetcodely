@@ -7,45 +7,28 @@ Input: 'cbbd'
 Output: 'bb'
 """
 
+
 class Solution(object):
     def longestPalindrome(self, s):
         """
         :type s: str
         :rtype: str
         """
-        trigger = True
-        left, right, len_of_the_curr_palindrome, len_of_the_longest_palindrome = 0, 0, 0, 0
+        longest = ''
         for i in range(2*len(s)):
-            center = i % 2
-            if trigger:
-                left = center
-                right = left + 1
-                while left >= 0 and right < len(s):
-                    if s[left] == s[right]:
-                        len_of_the_curr_palindrome += 2
-                        len_of_the_longest_palindrome = max(len_of_the_curr_palindrome, len_of_the_longest_palindrome)
-                    else:
-                        break
-                    left -= 1
-                    right +=1
-                trigger = not trigger
+            left = i//2
+            right = i//2 + i%2
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                sub = s[left:right+1]
+                if len(sub) > len(longest):
+                    longest = sub
+                left -= 1
+                right += 1
+        return longest
 
-            else:
-                left = center-1
-                right = center+1
-                while left >= 0 and right < len(s):
-                    if s[left] == s[right]:
-                        len_of_the_curr_palindrome += 3
-                        len_of_the_longest_palindrome = max(len_of_the_curr_palindrome, len_of_the_longest_palindrome)
-                    else:
-                        break
-                    left -= 1
-                    right +=1
-                trigger = not trigger
-        return len_of_the_longest_palindrome
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.longestPalindrome('cbbd'))
+    print(solution.longestPalindrome('babad'))
 
 
