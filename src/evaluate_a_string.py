@@ -17,8 +17,9 @@ class Solution:
                 result.append(item)
             else:
                 while len(stack) > 0 and self.has_higher_precedence(stack[-1], item):
-                    result.append(stack.pop())
-                result.append(item)
+                    result.append(stack[-1])
+                    stack.pop()
+                stack.append(item)
         while len(stack) > 0:
             result.append(stack.pop())
         return result
@@ -55,4 +56,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.evaluate('3+2-7/4*3'))
+    print(solution.evaluate('3+12-7/4*3'))
