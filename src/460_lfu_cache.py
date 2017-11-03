@@ -5,25 +5,27 @@ get(key) - Get the value (will always be positive) of the key if the key exists 
 put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, 
 when there is a tie (i.e., two or more keys that have the same frequency), the least recently used key 
 would be evicted."""
-import heapq
+import queue
 
 class LFUCache(object):
     def __init__(self, capacity):
         """
         :type capacity: int
         """
-        self.store = {}
-        self.usage = heapq([])
-        self.capacity = capacity
-        self.size = 0
+        self.value_map = {}
+        self.freq_map = {}
+        self.usage_queue = queue.PriorityQueue(capacity, key=self.cmp_nodes)
+
+
 
     def get(self, key):
         """
         :type key: int
         :rtype: int
         """
-        if key in self.store:
-            return self.store[key]
+        if key in self.value_map:
+            self.freq_map[key].update()
+            return self.value_map[key]
         else:
             return -1
 
@@ -33,14 +35,16 @@ class LFUCache(object):
         :type value: int
         :rtype: void
         """
-        self.store[key] = value
-        heapq.heappush(self.usage, KeyUsage(key, 1))
-        self.size += 1
+        if key in
 
-class KeyUsage:
-    def __init__(self, key, usage):
+    def cmp_nodes(self, n1, n2):
+        return n1.freq < n2.freq
+
+
+class Node:
+    def __init__(self, key):
         self.key = key
-        self.usage = usage
+        self.freq = 1
 
-    def update_usage(self, key):
-        self.usage += 1
+    def update(self):
+        self.freq += 1

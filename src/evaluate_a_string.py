@@ -50,7 +50,7 @@ class Solution:
                 elif item == '*':
                     total = prev * curr
                 else:
-                    total = prev // curr
+                    total = prev / curr
                 stack.append(total)
         return stack.pop()
 

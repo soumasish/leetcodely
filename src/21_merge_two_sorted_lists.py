@@ -18,32 +18,15 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        curr = dummy = ListNode(0)
+        curr = head = ListNode(0)
         while l1 and l2:
             if l1.val < l2.val:
-                curr.next = l1
+                curr.next = ListNode(l1.val)
                 l1 = l1.next
             else:
-                curr.next = l2
+                curr.next = ListNode(l2.val)
                 l2 = l2.next
+            curr = curr.next
         curr.next = l1 or l2
-        print(dummy.next.val)
-        return dummy.next
+        return head.next
 
-
-if __name__ == '__main__':
-    l1 = ListNode(2)
-    l1.next = ListNode(6)
-    l1.next.next = ListNode(9)
-    l1.next.next.next = ListNode(10)
-    l2 = ListNode(3)
-    l2.next = ListNode(6)
-    l2.next.next = ListNode(7)
-    l2.next.next.next = ListNode(11)
-
-    solution = Solution()
-    l3 = solution.mergeTwoLists(l1, l2)
-
-    while l3:
-        print(l3.val, end=' ')
-        l3 = l3.next

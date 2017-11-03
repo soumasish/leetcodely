@@ -42,6 +42,9 @@ if __name__ == '__main__':
     solution = Solution()
     print(solution.solveNQueens(4))
 
+def findNQueens():
+    pass
+
 
 
 

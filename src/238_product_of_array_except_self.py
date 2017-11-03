@@ -11,13 +11,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        left_product = [1]
-        right_product = [1]
-        for i in range(1, len(nums)):
-            curr_left = left_product[i-1] * nums[i-1]
-
-
+        left_product = [1 for _ in range(len(nums))]
+        right_product = [1 for _ in range(len(nums))]
+        cumulative_left, cumulative_right = 1, 1
+        for i in range(len(nums)):
+            left_product[i] = cumulative_left
+            cumulative_left *= nums[i]
+            right_product[-i - 1] = cumulative_right
+            cumulative_right *= nums[-i - 1]
+        print(left_product)
+        print(right_product)
+        return [left_product[i] * right_product[i] for i in range(len(nums))]
 
 solution = Solution()
-print(solution.productExceptSelf([1,2,3,4]))
+print(solution.productExceptSelf([1, 2, 3, 4]))
 

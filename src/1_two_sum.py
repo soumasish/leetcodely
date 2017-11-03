@@ -3,6 +3,7 @@
 
 """Store the number against the index in a dict
 While traversing the dict if target - curr is in the dict, return the curr index and the index of target - curr """
+
 def two_sum(nums, target):
     index_map = {}
     for i in range(len(nums)):

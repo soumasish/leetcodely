@@ -44,6 +44,18 @@ class Solution(object):
 
         s = e = 0
         num_rooms = available = 0
+        # while s < len(start_times):
+        #     if start_times[s] < end_times[e]:
+        #         if available == 0:
+        #             num_rooms += 1
+        #         else:
+        #             available -= 1
+        #         s += 1
+        #     else:
+        #         available += 1
+        #         e += 1
+        s = e = 0
+        num_rooms = available = 0
         while s < len(start_times):
             if start_times[s] < end_times[e]:
                 if available == 0:

@@ -13,7 +13,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if head is None or head.next is None:
+        if not head or not head.next:
             return head
         p = self.reverseList(head.next)
         head.next.next = head
@@ -21,10 +21,9 @@ class Solution(object):
         return p
 
     def reverseListInteratively(self, head):
-        previous, curr, nxt = None, None, head
-
-        while nxt:
+        prev, curr, nxt = None, None, head
+        while head:
             curr = nxt
             nxt = curr.next
-            curr.next = previous
-            previous = curr
+            curr.next = prev
+            prev = curr

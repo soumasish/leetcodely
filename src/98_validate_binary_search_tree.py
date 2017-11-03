@@ -24,8 +24,8 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        if not root:
-            return True
-        if root.val <= floor or root.val >= ceiling:
-            return False
-        return self.isValidBST(root.left, floor, root.val) and self.isValidBST(root.right, root.val, ceiling)
+        # if not root:
+        #     return True
+        # if root.val <= floor or root.val >= ceiling:
+        #     return False
+        # return self.isValidBST(root.left, floor, root.val) and self.isValidBST(root.right, root.val, ceiling)

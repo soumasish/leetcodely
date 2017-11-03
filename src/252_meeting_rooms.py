@@ -19,24 +19,33 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: bool
         """
-        start_times = [interval.start for interval in intervals]
-        end_times = [interval.end for interval in intervals]
-        start_times = sorted(start_times)
-        end_times = sorted(end_times)
+        # start_times = [interval.start for interval in intervals]
+        # end_times = [interval.end for interval in intervals]
+        # start_times = sorted(start_times)
+        # end_times = sorted(end_times)
+        #
+        # room_count, available_rooms, s, e = 0, 0, 0, 0
+        #
+        # while s < len(start_times):
+        #     if start_times[s] < end_times[e]:
+        #         if available_rooms == 0:
+        #             room_count += 1
+        #         else:
+        #             available_rooms -= 1
+        #         s += 1
+        #     else:
+        #         available_rooms += 1
+        #         e += 1
+        # return room_count == 1
+        sorted_meetings = intervals.sort(key=lambda x: x.start)
+        for i in range(1, len(sorted_meetings)):
+            if sorted_meetings[i-1].end > sorted_meetings[i].start:
+                return False
+        return True
 
-        room_count, available_rooms, s, e = 0, 0, 0, 0
 
-        while s < len(start_times):
-            if start_times[s] < end_times[e]:
-                if available_rooms == 0:
-                    room_count += 1
-                else:
-                    available_rooms -= 1
-                s += 1
-            else:
-                available_rooms += 1
-                e += 1
-        return room_count == 1
+
+
 
 
 
