@@ -1,7 +1,7 @@
 """Created by sgoswami on 10/8/17."""
 """You're now a baseball game point recorder.
 
-Given a list of strings, each string can be one of the 4 following types:
+Given a list of strings, each string can be one of the 4 following data_types:
 
 Integer (one round's score): Directly represents the number of points you get in this round.
 "+" (one round's score): Represents that the points you get in this round are the sum of the last two valid round's 
