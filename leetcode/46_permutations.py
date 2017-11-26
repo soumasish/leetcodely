@@ -8,31 +8,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-    #     result = []
-    #     for i in range(len(nums)):
-    #         for j in range(len(nums)):
-    #             if i != j:
-    #                 temp = self.swap(i, j, nums)
-    #                 # print(temp)
-    #                 result.append(temp)
-    #     return result
-    #
-    # def swap(self, i, j, arr):
-    #     arr[i], arr[j] = arr[j], arr[i]
-    #     res = arr[:]
-    #     arr[i], arr[j] = arr[j], arr[i]
-    #     return res
-
-
-
-        # perms = [[]]
-        # for num in nums:
-        #     curr = []
-        #     for perm in perms: #to every list
-        #         for i in range(len(perm) + 1): #in all positions
-        #             curr.append(perm[:i] + [num] + perm[i:])
-        #     perms = curr
-        # return perms
+        perms = [[]]
+        for num in nums:
+            curr = []
+            for perm in perms: #to every list
+                for i in range(len(perm) + 1): #in all positions
+                    curr.append(perm[:i] + [num] + perm[i:])
+            perms = curr
+        return perms
 
         # perms = [[]]
         # for n in nums:
