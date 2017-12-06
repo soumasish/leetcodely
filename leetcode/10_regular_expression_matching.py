@@ -26,25 +26,25 @@ class Solution(object):
         :type p: str
         :rtype: bool
         """
-#TODO: Still doesnt pass a few tests
-        memo = [[False for _ in range(len(p) + 1)] for _ in range(len(s) + 1)]
+        memo = [[False for _ in range(len(p)+1)] for _ in range(len(s)+1)]
         memo[0][0] = True
-        for i, v in enumerate(p):
-            if v == '*' and memo[0][i-1]:
-                memo[0][i+1] = True
 
-        for i, v in enumerate(s):
-            for j, w in enumerate(p):
-                if s[i] == p[j] or p[j] == '.':
-                    memo[i+1][j+1] = memo[i][j]
-                elif p[j] == '*':
-                    if s[i] != p[j-1] and p[j-1] != '.':
-                        memo[i+1][j+1] = memo[i][j-1]
-                    else:
-                        memo[i+1][j+1] = memo[i][j+1] or memo[i+1][j] or memo[i+1][j-1]
+        for i in range(1, len(memo[0])):
+            if p[i-1] == '*':
+                memo[0][i] = memo[0][i-2]
+        for i in range(1, len(memo)):
+            memo[i][0] = False
+
+        for i in range(1, len(memo)):
+            for j in range(1, len(memo[i])):
+                if s[i-1] == p[j-1] or p[j - 1] == '.':
+                    memo[i][j] = memo[i-1][j-1]
+                elif p[j-1] == '*':
+                    memo[i][j] = memo[i][j-2]
+                    if p[j-2] == s[i-1] or p[j-2] == '.':
+                        memo[i][j] = memo[i][j] or memo[i-1][j]
                 else:
                     memo[i][j] = False
-
         return memo[-1][-1]
 
 
@@ -57,3 +57,4 @@ if __name__ == '__main__':
     print(solution.isMatch('aa', '.*'))
     print(solution.isMatch('ab', '.*'))
     print(solution.isMatch('aab', 'c*a*b'))
+    print(solution.isMatch('xaabyc', 'xa*b.c'))

@@ -1,21 +1,21 @@
 """Created by sgoswami on 7/5/17."""
 """Given a digit string, return all possible letter combinations that the number could represent."""
-import collections
 
 
 class Solution(object):
     def __init__(self):
         self.digit_map = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
 
-
     def letterCombinations(self, digits):
         """
         :type digits: str
         :rtype: List[str]
         """
+        if not digits:
+            return []
         result = set()
-        return self.helper(digits, result, '')
-
+        self.helper(digits, result, '')
+        return list(result)
 
     def helper(self, digits, result, path):
         if not digits:
@@ -25,8 +25,6 @@ class Solution(object):
         letters = self.digit_map[curr]
         for letter in letters:
             self.helper(rest, result, path+letter)
-        return list(result)
-
 
 
 if __name__ == '__main__':

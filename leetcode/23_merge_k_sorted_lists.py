@@ -3,6 +3,8 @@
 import heapq
 
 # Definition for singly-linked list.
+
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -13,10 +15,12 @@ class LinkedList:
             curr = curr.next
         curr.next = ListNode(item)
 
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution(object):
     def mergeKLists(self, lists):

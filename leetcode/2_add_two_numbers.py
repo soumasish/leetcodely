@@ -33,7 +33,6 @@ class Solution(object):
             p = p.next
         return root.next
 
-
 if __name__ == '__main__':
     solution = Solution()
     print(solution.addTwoNumbers())

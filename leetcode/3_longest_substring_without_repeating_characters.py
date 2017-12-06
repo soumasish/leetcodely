@@ -24,8 +24,6 @@ class Solution(object):
         return len_of_the_longest_substring
 
 
-
-
 if __name__ == '__main__':
     solution = Solution()
     print(solution.lengthOfLongestSubstring("abba"))

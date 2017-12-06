@@ -15,7 +15,7 @@ class Solution(object):
                 return [[0, 0, 0]]
 
         sorted_nums = sorted(nums)
-        results = set([])
+        results = set()
         for i, v in enumerate(sorted_nums):
             if i > len(sorted_nums) - 2:
                 break
