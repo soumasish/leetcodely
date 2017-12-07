@@ -14,7 +14,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        start, end = 0, len(nums) -1
+        start, end = 0, len(nums) - 1
         while nums[start] < nums[end]:
             mid = start + (end - start)//2
             if target < nums[mid]:

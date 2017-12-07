@@ -3,6 +3,7 @@
 water it is able to trap after raining."""
 import sys
 
+
 class Solution(object):
     def trap(self, height):
         """
@@ -39,7 +40,7 @@ class Solution(object):
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.trap([0,1,0,2,1,0,1,3,2,1,2,1]))
+    print(solution.trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
 
 
 

@@ -19,7 +19,6 @@ class Solution(object):
                 board[i][col] = 'Q'
                 self.helper(board, i+1, col)
 
-
     def validate(self, board, x, y):
         for i in range(len(board)):
             if board[x][i] == 'Q' or board[i][y] == 'Q':

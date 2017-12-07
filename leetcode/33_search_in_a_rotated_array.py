@@ -13,15 +13,19 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        pivot = -1
         start, end = 0, len(nums)-1
         while start < end:
-            mid = start + (end - start)//2
-            if nums[mid] < nums[end]:
-                end = mid - 1
+            mid = (start + end)//2
+            if nums[mid] > nums[mid+1]:
+                pivot = mid + 1
+                break
             else:
-                start = mid + 1
-        pivot = start
-
+                if nums[start] < nums[mid]:
+                    start = mid + 1
+                else:
+                    end = mid - 1
+        print(pivot)
         while start <= end:
             mid = start + (end - start)//2
             real_mid = (mid + pivot) % len(nums)
