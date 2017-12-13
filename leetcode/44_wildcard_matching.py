@@ -25,34 +25,36 @@ class Solution(object):
         :type p: str
         :rtype: bool
         """
-        if len(s) == 0:
-            if len(p) == 0:
-                return True
-            elif p == '*':
-                return True
-            else:
-                return False
-        grid = [[False for _ in range(len(p))] for _ in range(len(s))]
-        for i, v in enumerate(grid):
-            for j, w in enumerate(grid[i]):
-                if s[i] == p[j] or p[j] == '?':
-                    if i == 0 and j == 0:
-                        grid[i][j] = True
-                    if i == 0 or j == 0:
-                        grid[i][j] = False
-                    else:
-                        grid[i][j] = grid[i-1][j-1]
-                elif p[i] == '*':
-                    if i == 0 and j == 0:
-                        grid[i][j] = True
-                    if i == 0 or j == 0:
-                        if i == 0:
-                            grid[i][j] = grid[i][j-1]
-                        else:
-                            grid[i][j] = grid[i-1][j]
+        memo = [[False for _ in range(len(p) + 1)] for _ in range(len(s) + 1)]
+        memo[0][0] = True
 
-                    else:
-                        if grid[i-1][j] is True or grid[i][j-1] is True:
-                            grid[i][j] = True
+        for i in range(1, len(memo[0])):
+            if p[i - 1] == '*':
+                memo[0][i] = memo[0][i - 2]
+        for i in range(1, len(memo)):
+            memo[i][0] = False
 
-        return grid[-1][-1]
+        for i in range(1, len(memo)):
+            for j in range(1, len(memo[i])):
+                if s[i - 1] == p[j - 1] or p[j - 1] == '?':
+                    memo[i][j] = memo[i - 1][j - 1]
+                elif p[j - 1] == '*':
+                    memo[i][j] = memo[i][j - 2]
+                    if p[j - 2] == s[i - 1] or p[j - 2] == '?':
+                        memo[i][j] = memo[i][j] or memo[i - 1][j]
+                else:
+                    memo[i][j] = False
+        return memo[-1][-1]
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.isMatch('aa', 'a'))
+    print(solution.isMatch('aa', 'aa'))
+    print(solution.isMatch('aaa', 'aa'))
+    print(solution.isMatch('aa', 'a*'))
+    print(solution.isMatch('aa', '.*'))
+    print(solution.isMatch('ab', '?*'))
+    print(solution.isMatch('aab', 'c*a*b'))
+    print(solution.isMatch('xaabyc', 'xa*b?c'))
+

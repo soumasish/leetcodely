@@ -16,9 +16,9 @@ class Solution(object):
             if curr_product < 0:
                 curr_product = 1
         return max_product
+    
 
 if __name__ == '__main__':
     solution = Solution()
-
     print(solution.maxProduct([-2]))
 

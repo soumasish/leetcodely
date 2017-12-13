@@ -10,32 +10,20 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        if not height or len(height) == 0:
-            return 0
-        left = [0 for _ in range(len(height))]
-        right = [0 for _ in range(len(height))]
 
-        left[0] = height[0]
-        right[-1] = height[-1]
-        left_max = right_max = -sys.maxsize
+        left_max, right_max = [0 for _ in range(len(height))], [0 for _ in range(len(height))]
+        left_max[0], right_max[-1] = height[0], height[-1]
+        curr_left = curr_right = -sys.maxsize
 
         for i in range(1, len(height)):
-            left_max = max(left_max, height[i-1])
-            left[i] = left_max
-        height = list(reversed(height))
-        right = list(reversed(right))
-        for i in range(1, len(height)):
-            right_max = max(right_max, height[i-1])
-            right[i] = right_max
-        height = list(reversed(height))
-        right = list(reversed(right))
-        total_water = 0
+            left_max[i] = curr_left = max(curr_left, height[i])
+            right_max[-i-1] = curr_right = max(curr_right, height[-i-1])
+
+        total = 0
         for i in range(len(height)):
-            min_value = min(left[i], right[i])
-            water_level = min_value - height[i]
-            if water_level > 0:
-                total_water += water_level
-        return total_water
+            total += max((min(left_max[i], right_max[i]) - height[i]), 0)
+
+        return total
 
 
 if __name__ == '__main__':

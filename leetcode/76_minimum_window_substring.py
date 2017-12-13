@@ -19,25 +19,16 @@ class Solution(object):
         :type t: str
         :rtype: str
         """
-        if len(s) == len(t):
-            if s == t:
-                return t
-        min_window, start_index, end_index = sys.maxsize, 0, 0
-        t_map = collections.Counter(t)
+        complete = len(t)
+        count_map = collections.Counter(t)
+        start = 0
+        last_index = {}
         for i in range(len(s)):
-            count, curr = 0, t_map.copy()
-            for j in range(i, len(s)):
-                if s[j] in curr and curr[s[j]] > 0:
-                    count += 1
-                    curr[s[j]] -= 1
-                    if count == len(t):
-                        if (j - i) + 1 < min_window:
-                            min_window = (j - i) + 1
-                            start_index, end_index = i, j+1
-                            break
-        if min_window == sys.maxsize:
-            return ''
-        return s[start_index:end_index]
+            if s[i] in t:
+                last_index[s[i]] = i
+
+
+
 
 
 if __name__ == '__main__':

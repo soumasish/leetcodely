@@ -21,17 +21,19 @@ class Solution(object):
             return 0
         elif len(s) == 1:
             return 1
-        count, i = 0, 0
-        while i < len(s):
-            single = int(s[i:i+1])
-            double = int(s[i:i+2])
-            if single != 0 and 0 < double <= 26:
-                count += 2
-            if single != 0 or 0 < double <= 26:
-                count += 1
-            i += 1
-        return count
+        memo = [0 for _ in range(len(s) + 1)]
+        memo[0] = 1
+        memo[1] = 1 if s[0] != '0' else 0
+        for i in range(2, len(s)+1):
+            single = int(s[i-1:i])
+            double = int(s[i-2:i])
+            if 0 < single <= 9:
+                memo[i] += memo[i-1]
+            if 9 < double <= 26:
+                memo[i] += memo[i-2]
+        return memo[-1]
+
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.numDecodings('12'))
+    print(solution.numDecodings('1221'))

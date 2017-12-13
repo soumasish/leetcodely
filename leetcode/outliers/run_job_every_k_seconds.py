@@ -1,5 +1,6 @@
 from threading import Timer
 
+
 class Uniqify:
     def __init__(self, k):
         self.string_map = {}
@@ -15,19 +16,6 @@ class Uniqify:
         self.timer = {}
 
 
-
-
-
-class Topology:
-    pass
-
-
-class Spout:
-    pass
-
-
-class Bolt:
-    pass
 
 
 

@@ -19,13 +19,16 @@ class TreeNode(object):
 
 
 class Solution(object):
-    def isValidBST(self, root, floor = -sys.maxsize, ceiling = sys.maxsize):
+    def isValidBST(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        # if not root:
-        #     return True
-        # if root.val <= floor or root.val >= ceiling:
-        #     return False
-        # return self.isValidBST(root.left, floor, root.val) and self.isValidBST(root.right, root.val, ceiling)
+        return self.helper(root, -sys.maxsize, sys.maxsize)
+
+    def helper(self, root, floor, ceiling):
+        if not root:
+            return True
+        if root.val < floor or root.val > ceiling:
+            return False
+        return self.helper(root.left, floor, root.val) and self.helper(root.right, root.val, ceiling)

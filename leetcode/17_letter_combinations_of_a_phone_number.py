@@ -24,7 +24,8 @@ class Solution(object):
         curr, rest = digits[0], digits[1:]
         letters = self.digit_map[curr]
         for letter in letters:
-            self.helper(rest, result, path+letter)
+            self.helper(rest, result, letter + path)
+
 
 
 if __name__ == '__main__':

@@ -11,9 +11,7 @@ class Solution(object):
         """
         stack = collections.deque()
         for item in tokens:
-            if item.isdigit():
-                stack.append(int(item))
-            elif item[1:].isdigit():
+            if self.is_number(item):
                 stack.append(int(item))
             else:
                 curr = stack.pop()
@@ -28,6 +26,10 @@ class Solution(object):
                     total = prev // curr
                 stack.append(total)
         return stack.pop()
+
+    def is_number(self, item):
+        return item.isdigit() or item.replace('-', '').isdigit()
+
 
 if __name__ == '__main__':
     solution = Solution()

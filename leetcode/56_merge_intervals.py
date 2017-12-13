@@ -16,6 +16,7 @@ class Interval(object):
     def __repr__(self):
         return '[' + str(self.start) + ', ' + str(self.end) + ']'
 
+
 class Solution(object):
     def merge(self, intervals):
         """
@@ -27,21 +28,16 @@ class Solution(object):
         results = []
         sorted_intervals = sorted(intervals, key=lambda x: x.start)
         previous = sorted_intervals[0]
+
         for i in range(1, len(sorted_intervals)):
             current = sorted_intervals[i]
-            if previous.end < current.start:
+            if current.start > previous.end:
                 results.append(previous)
-                previous = current
-            elif previous.end >= current.start:
-                if previous.end <= current.end:
-                    new_interval = Interval(previous.start, current.end)
-                else:
-                    new_interval = Interval(previous.start, previous.end)
-                previous = new_interval
+            else:
+                current = Interval(previous.start, max(previous.end, current.end))
+            previous = current
         results.append(previous)
         return results
-
-
 
 
 if __name__ == '__main__':
