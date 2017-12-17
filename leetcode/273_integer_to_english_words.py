@@ -1,5 +1,6 @@
 """Created by sgoswami on 7/4/17."""
-"""Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1."""
+"""Convert a non-negative integer to its english words representation. Given input is guaranteed 
+to be less than 2^31 - 1."""
 
 
 class Solution(object):
@@ -33,6 +34,7 @@ class Solution(object):
         else:
             return self.units[num // 100] + " Hundred " + self.helper(num % 100)
 
+
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.numberToWords(23999))
+    print(solution.numberToWords(23))

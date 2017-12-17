@@ -24,6 +24,6 @@ class Solution(object):
         prev, curr, nxt = None, None, head
         while head:
             curr = nxt
-            nxt = curr.next
+            nxt = nxt.next
             curr.next = prev
             prev = curr

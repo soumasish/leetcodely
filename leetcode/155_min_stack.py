@@ -5,6 +5,7 @@ push(x) -- Push element x onto stack.
 pop() -- Removes the element on top of the stack.
 top() -- Get the top element.
 getMin() -- Retrieve the minimum element in the stack."""
+import sys
 
 
 class MinStack(object):
@@ -12,58 +13,51 @@ class MinStack(object):
         """
         initialize your data structure here.
         """
-        self.head = None
-        self.min_head = None
+        self.stack = []
+        self.min_stack = []
 
     def push(self, x):
         """
         :type x: int
         :rtype: void
         """
-        p = Node(x)
-        q = Node(x)
-        p.next = self.head
-        p = self.head
-        if not self.min_head:
-            self.min_head = q
-        else:
-            curr = self.min_head
-            previous = None
-            while q.val > curr.val:
-                previous = curr
-                curr = curr.next
-            previous.next = q
-            q.next = curr
+        self.stack.append(x)
+        if len(self.min_stack) == 0 or x <= self.min_stack[-1]:
+            self.min_stack.append(x)
 
     def pop(self):
         """
         :rtype: void
         """
-        v = self.head.val
-        prev, curr = None, self.min_head
-        while curr.val != v:
-            prev = curr
-            curr = curr.next
-        prev.next = curr.next
-        self.head = self.head.next
+        if self.stack[-1] == self.min_stack[-1]:
+            self.stack.pop()
+            self.min_stack.pop()
+        else:
+            self.stack.pop()
 
     def top(self):
         """
         :rtype: int
         """
-        return self.head.val
+        return self.stack[-1]
 
     def getMin(self):
         """
         :rtype: int
         """
-        return self.min_head.val
+        return self.min_stack[-1]
 
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
 
+if __name__ == '__main__':
+    minStack = MinStack()
+    minStack.push(12)
+    minStack.push(9)
+    minStack.push(13)
+    minStack.push(3)
+    print(minStack.getMin())
+    minStack.pop()
+    print(minStack.getMin())
+    print(minStack.top())
 
 
 

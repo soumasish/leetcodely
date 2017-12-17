@@ -20,29 +20,29 @@ class Solution(object):
         """
 
         # if Node has a right child, go all the way down
-        # if p.right:
-        #     curr = p.right
-        #     while curr.left:
-        #         curr = curr.left
-        # return curr
-        # # first ancestor whose left child the node is
-        # ans = None
-        # curr = root
-        # while curr is not p:
-        #     if curr.val < p.val:
-        #         curr = curr.right
-        #     else:
-        #         ans = curr
-        #         curr = curr.left
-        # return ans
-        #
-        #
-
+        if p.right:
+            curr = p.right
+            while curr.left:
+                curr = curr.left
+        return curr
+        # first ancestor whose left child the node is
         ans = None
-        while root:
-            if root.val <= p.val:
-                root = root.right
+        curr = root
+        while curr is not p:
+            if curr.val < p.val:
+                curr = curr.right
             else:
-                ans = root
-                root = root.left
+                ans = curr
+                curr = curr.left
         return ans
+
+
+
+        # ans = None
+        # while root:
+        #     if root.val <= p.val:
+        #         root = root.right
+        #     else:
+        #         ans = root
+        #         root = root.left
+        # return ans

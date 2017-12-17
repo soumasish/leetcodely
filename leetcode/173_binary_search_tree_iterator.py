@@ -29,7 +29,6 @@ class BSTIterator(object):
         array.append(root)
         self.inorder_helper(root.right, array)
 
-
     def hasNext(self):
         """
         :rtype: bool

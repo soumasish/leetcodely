@@ -11,7 +11,6 @@ class TwoSum(object):
         """
         Initialize your data structure here.
         """
-        self.store = []
         self.map = {}
 
     def add(self, number):
@@ -24,7 +23,6 @@ class TwoSum(object):
             self.map[number] += 1
         else:
             self.map[number] = 1
-            self.store.append(number)
 
     def find(self, value):
         """
@@ -32,15 +30,10 @@ class TwoSum(object):
         :type value: int
         :rtype: bool
         """
-        for i in self.store:
-            diff = value - i
-            trigger = False
-            if diff == i and diff in self.map:
-                trigger = self.map[diff] > 1
-            elif diff != i and diff in self.map:
+        for k, v in self.map.items():
+            if value - k in self.map:
                 return True
-        return trigger
-
+        return False
 
 if __name__ == '__main__':
     twoSum = TwoSum()

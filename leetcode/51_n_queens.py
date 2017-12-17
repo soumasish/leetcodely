@@ -37,6 +37,7 @@ class Solution(object):
             y += 1
         return True
 
+
 if __name__ == '__main__':
     solution = Solution()
     print(solution.solveNQueens(4))

@@ -13,8 +13,12 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        pq = []
+        queue = []
         for num in nums:
-            heapq.heappush(pq, num)
+            heapq.heappush(queue, num)
+        return heapq.nlargest(k, queue)[-1]
 
-        return heapq.nlargest(k, pq)[-1]
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.findKthLargest([3, 2, 1, 5, 6, 4], 2))
