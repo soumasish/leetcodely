@@ -1,3 +1,7 @@
+"""Given a mathematical expression in the form of a string evaluate it maintaining the natural order of precedence of
+the operators."""
+"""This solution uses the shunting-yard algorithm approach and is suitable when the number of operands are minimal."""
+
 import re
 
 

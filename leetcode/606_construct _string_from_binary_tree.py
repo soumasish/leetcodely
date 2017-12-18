@@ -18,3 +18,8 @@ class Solution(object):
         :type t: TreeNode
         :rtype: str
         """
+        tree_list = []
+        self.helper()
+
+    def helper(self):
+        pass

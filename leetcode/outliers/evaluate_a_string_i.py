@@ -1,4 +1,6 @@
-"""Created by sgoswami on 10/5/17."""
+"""Given a mathematical expression in the form of a string evaluate it maintaining the natural order of precedence of
+the operators."""
+"""This method uses the convert to infix approach."""
 import re
 import collections
 
