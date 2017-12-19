@@ -45,11 +45,8 @@ class Codec:
         return self.deserialize_helper(tree_list, itr)
 
     def deserialize_helper(self, tree_list, itr):
-        try:
-            value = next(itr)
-        except StopIteration:
-            return
-        if value == '#':
+        value = next(itr, None)
+        if not value or value == '#':
             return None
         p = TreeNode(value)
         p.left = self.deserialize_helper(tree_list, itr)

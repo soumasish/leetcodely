@@ -8,6 +8,7 @@ Note:
     Length of each word is greater than 0 and won't exceed 10.
     1 ≤ rows, cols ≤ 20,000.
 """
+#TODO: Debug edge cases
 
 class Solution:
     def wordsTyping(self, sentence, rows, cols):
@@ -17,35 +18,30 @@ class Solution:
         :type cols: int
         :rtype: int
         """
-        count, row_count = 0, 0
-        while True:
-            if row_count < rows:
-                curr_len = 0
-                for word in sentence:
-                    if curr_len + len(word) < cols:
-                        curr_len += len(word)
-                        curr_len += 1
-                    elif curr_len + len(word) > cols:
-                        if row_count < rows:
-                            row_count += 1
-                            curr_len = len(word)
-                            curr_len += 1
-                        else:
-                            return count
+        count, curr, trigger = 0, 0, True
+        while rows > 0:
+            for word in sentence:
+                if curr + len(word) < cols:
+                    curr += len(word)
+                    curr += 1
+                elif curr + len(word) > cols:
+                    if rows > 0:
+                        rows -= 1
+                        curr = len(word)
+                        curr += 1
                     else:
-                        curr_len += len(word)
+                        rows -= 1
+                        trigger = False
+                        break
+                else:
+                    curr += len(word)
+                    rows -= 1
+                    curr = 0
+            if trigger:
                 count += 1
-            else:
-                break
         return count
 
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.wordsTyping(["a", "bcd", "e"], 3, 6))
-
-
-
-
-
-
+    print(solution.wordsTyping(["f","p","a"], 8, 7))
