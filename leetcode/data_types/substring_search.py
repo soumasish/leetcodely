@@ -6,26 +6,13 @@ class SubStringSearch:
 
     @staticmethod
     def naive_search(t, p):
-        i, j, count, idx, started = 0, 0, 0, -1, False
-        while i < len(t) and j < len(p):
-            if t[i] == p[j]:
-                count += 1
-                if not started:
-                    started = True
-                    idx = i
-                else:
-                    if count == len(p):
-                        return idx
+        for i in range(len(t)):
+            j, k = i, 0
+            while j < len(t) and k < len(p) and t[j] == p[k]:
                 j += 1
-                i += 1
-            else:
-                if started:
-                    started = False
-                    count = 0
-                    j = 0
-                    idx = -1
-                else:
-                    i += 1
+                k += 1
+            if k == len(p):
+                return i
         return -1
 
     @staticmethod

@@ -1,4 +1,4 @@
-"""Created by sgoswami on 9/14/17."""
+"""Find the second largest element in a binary search tree."""
 
 
 class TreeNode:
