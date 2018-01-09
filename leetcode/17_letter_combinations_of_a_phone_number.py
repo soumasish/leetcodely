@@ -27,7 +27,6 @@ class Solution(object):
             self.helper(rest, result, letter + path)
 
 
-
 if __name__ == '__main__':
     solution = Solution()
     print(solution.letterCombinations('23'))
