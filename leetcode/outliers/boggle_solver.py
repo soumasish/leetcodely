@@ -23,3 +23,7 @@ class Solution:
 
     def valid(self, board, row, col):
         return 0 <= row < len(board) and 0 <= col < len(board[row])
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.find_all_words([['a', 'p', 'p'], ['b', 'a', 'l'], [ 'd', 't', 'e']], set(['apple', 'balet', 'app', 'pat', 'pet', 'let', 'lap' ])))
