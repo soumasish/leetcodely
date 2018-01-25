@@ -3,35 +3,42 @@ queens which do not attack each other. """
 
 
 class Solution:
-    def findNQueens(self, n: int)->list:
-        positions = [None for _ in range(n)]
-        has_solution = self.helper(n, 0, positions)
-        if has_solution:
-            return positions
-        else:
-            return []
 
-    def helper(self, n, row, positions):
+    def findNQueens(self, n: int)->list:
+        grid = [[0 for _ in range(n)] for _ in range(n)]
+        solved = self.helper(n, 0, grid)
+        if solved:
+            return grid
+        else:
+            return None
+
+    def helper(self, n, row, grid):
         if n == row:
             return True
-        col = 0
-        for i in range(n):
-            found_safe = True
-            for j in range(row):
-                if positions[j].col == col or (positions[j].row - positions[j].col == row - col) or (positions[j].row + positions[j].col == row + col):
-                    found_safe = False
-                    break
-            if found_safe:
-                positions[row] = Position(row, col)
-                if self.helper(n, row+1, positions):
+        for col in range(n):
+            if self.is_safe(row, col, grid):
+                grid[row][col] = 1
+                if self.helper(n, row + 1, grid):
                     return True
+                else:
+                    grid[row][col] = 0
         return False
 
-
-class Position:
-    def __init__(self, row, col):
-        self.row = row
-        self.col = col
+    def is_safe(self, row, col, grid):
+        for i in range(len(grid)):
+            if grid[row][i] == 1 or grid[i][col] == 1:
+                return False
+        i = 1
+        while row - i >= 0 and col - i >= 0:
+            if grid[row - i][col - i] == 1:
+                return False
+            i += 1
+        i = 1
+        while row + i < len(grid) and col + i < len(grid):
+            if grid[row + i][col + i] == 1:
+                return False
+            i += 1
+        return True
 
 
 if __name__ == '__main__':

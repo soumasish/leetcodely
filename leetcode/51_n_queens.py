@@ -7,44 +7,49 @@ class Solution(object):
         :type n: int
         :rtype: List[List[str]]
         """
-        results = []
-        board = [['.' for _ in range(n)] for _ in range(n)]
-        self.helper(0, results, board)
+        result = []
+        grid = [['.' for _ in range(n)] for _ in range(n)]
+        self.helper(n, 0, grid, result)
+        return result
 
-    def helper(self, col, board, result):
-        if col == len(board):
-            pass
-        for i in range(len(board)):
-            if self.validate(board, i, col):
-                board[i][col] = 'Q'
-                self.helper(board, i+1, col)
+    def helper(self, n, row, grid, result):
+        if n == row:
+            g = grid[:]
+            result.append(["".join(item) for item in g])
+            return
+        for col in range(n):
+            if self.is_safe(row, col, grid):
+                grid[row][col] = 'Q'
+                self.helper(n, row + 1, grid, result)
+                grid[row][col] = '.'
 
-    def validate(self, board, x, y):
+    def is_safe(self, row, col, board):
         for i in range(len(board)):
-            if board[x][i] == 'Q' or board[i][y] == 'Q':
+            if board[row][i] == 'Q' or board[i][col] == 'Q':
                 return False
-        i, j = 0, 0
-        while x - i >= 0 and y - j >= 0:
-            if board[x-i][y-j] == 'Q':
+        i = 0
+        while row - i >= 0 and col - i >= 0:
+            if board[row - i][col - i] == 'Q':
                 return False
             i += 1
-            j += 1
-        i, j = 0, 0
-        while x + i < len(board) and y - j >= 0:
-            if board[x + i][y - j] == 'Q':
+        i = 0
+        while row + i < len(board) and col + i < len(board):
+            if board[row + i][col - i] == 'Q':
                 return False
             i += 1
-            y += 1
+        i = 1
+        while row + i < len(board) and col - i >= 0:
+            if board[row + i][col - i] == 'Q':
+                return False
+            i += 1
+        i = 1
+        while row - i >= 0 and col + i < len(board):
+            if board[row - i][col + i] == 'Q':
+                return False
+            i += 1
         return True
 
 
 if __name__ == '__main__':
     solution = Solution()
     print(solution.solveNQueens(4))
-
-def findNQueens():
-    pass
-
-
-
-

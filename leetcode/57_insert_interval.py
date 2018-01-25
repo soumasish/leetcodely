@@ -40,8 +40,3 @@ class Solution(object):
             res.append(intervals[i])
             i += 1
         return res
-
-        previous = intervals[0]
-
-
-

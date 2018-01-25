@@ -42,4 +42,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.merge([Interval(1,3), Interval(2,6), Interval(8,10), Interval(15,18)]))
+    print(solution.merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15, 18)]))

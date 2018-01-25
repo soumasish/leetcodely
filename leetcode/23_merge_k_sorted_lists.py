@@ -38,12 +38,11 @@ class Solution(object):
                 node = node.next
         if len(queue) == 0:
             return None
-        val = heapq.heappop(queue)
+        val = heapq.heappop(queue, None)
         head = previous = ListNode(val)
         while True:
-            try:
-                v = heapq.heappop(queue)
-            except IndexError:
+            v = heapq.heappop(queue, None)
+            if not v:
                 break
             curr = ListNode(v)
             previous.next = curr

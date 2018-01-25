@@ -12,12 +12,16 @@ class Solution(object):
         """
 
         left_max, right_max = [0 for _ in range(len(height))], [0 for _ in range(len(height))]
-        left_max[0], right_max[-1] = height[0], height[-1]
-        curr_left = curr_right = -sys.maxsize
+        left_max[0], right_max[-1] = 0, 0
+        max_left, max_right = height[0], height[-1]
 
         for i in range(1, len(height)):
-            left_max[i] = curr_left = max(curr_left, height[i])
-            right_max[-i-1] = curr_right = max(curr_right, height[-i-1])
+            max_left = max(max_left, height[i - 1])
+            left_max[i] = max_left
+
+        for i in range(len(height) - 2, 0, -1):
+            right_max = max(right_max, height[i + 1])
+            right_max[i] = max_right
 
         total = 0
         for i in range(len(height)):

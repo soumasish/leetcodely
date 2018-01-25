@@ -3,6 +3,8 @@
 the area of largest rectangle in the histogram."""
 
 #TODO: Still not completely correct
+
+
 class stack:
     def __init__(self):
         self.store = []
@@ -57,6 +59,7 @@ class Solution(object):
                 curr_area = heights[top] * (i - stack[-1] -1)
             area = max(area, curr_area)
         return area
+
 
 if __name__ == '__main__':
     solution = Solution()

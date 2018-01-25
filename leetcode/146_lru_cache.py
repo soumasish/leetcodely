@@ -7,13 +7,14 @@
     set(key, value) - Set or insert the value if the key is not already present.
     When the cache reached its capacity, it should invalidate the least recently
     used item before inserting a new item."""
-from collections import deque
+import collections
+
 
 class LRUCache:
     def __init__(self, capacity):
         self.currSize = 0
         self.capacity = capacity
-        self.queue = deque([])
+        self.queue = collections.deque()
         self.store = {}
 
     def get(self, key):

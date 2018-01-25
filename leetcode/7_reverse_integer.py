@@ -17,6 +17,7 @@ class Solution(object):
         else:
             return 0
 
+
 if __name__ == '__main__':
     solution = Solution()
     print(solution.reverse(-123))

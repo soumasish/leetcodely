@@ -23,6 +23,7 @@ class Solution(object):
             return True
         return False
 
+
 if __name__ == '__main__':
     solution = Solution()
     print(solution.isPalindrome("A man, a plan, a canal: Panama"))

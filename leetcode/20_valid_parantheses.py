@@ -3,6 +3,7 @@
 
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not."""
 
+
 class Solution(object):
     def isValid(self, s):
         """

@@ -1,6 +1,7 @@
 """Created by sgoswami on 8/30/17."""
 """Implement pow(x, n)."""
 
+
 class Solution(object):
     def myPow(self, x, n):
         """

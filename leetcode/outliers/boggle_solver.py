@@ -4,8 +4,8 @@ class Solution:
 
     def find_all_words(self, board, word_set):
         result = []
-        for i in range(board):
-            for j in range(board[i]):
+        for i in range(len(board)):
+            for j in range(len(board[i])):
                 result += self.helper(board, word_set, board[i][j], i, j, set([(i, j)]))
         return set(result)
 
@@ -23,6 +23,7 @@ class Solution:
 
     def valid(self, board, row, col):
         return 0 <= row < len(board) and 0 <= col < len(board[row])
+
 
 if __name__ == '__main__':
     solution = Solution()

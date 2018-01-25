@@ -8,6 +8,7 @@ Note:
 You are not suppose to use the library's sort function for this problem."""
 import collections
 
+
 class Solution(object):
     def sortColors(self, nums):
         """
