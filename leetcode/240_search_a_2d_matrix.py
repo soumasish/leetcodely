@@ -4,6 +4,7 @@ This matrix has the following properties:
 Integers in each row are sorted in ascending from left to right.
 Integers in each column are sorted in ascending from top to bottom."""
 
+
 class Solution(object):
     def searchMatrix(self, matrix, target):
         """
@@ -11,6 +12,8 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
+        if not matrix or len(matrix) == 0 or len(matrix[0]) == 0:
+            return False
         row, col = len(matrix) - 1, 0
         while row >= 0 and col < len(matrix[row]):
             if matrix[row][col] == target:
@@ -21,3 +24,8 @@ class Solution(object):
                 else:
                     col += 1
         return False
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.searchMatrix([[-1], [-1]], 0))

@@ -1,8 +1,6 @@
 """Created by sgoswami on 8/22/17."""
 """Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity."""
-import heapq
-
-# Definition for singly-linked list.
+from .data_types.heap import MinHeap
 
 
 class LinkedList:
@@ -28,24 +26,5 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-
         if not lists or len(lists) == 0:
             return None
-        queue = []
-        for node in lists:
-            while node:
-                heapq.heappush(queue, node.val)
-                node = node.next
-        if len(queue) == 0:
-            return None
-        val = heapq.heappop(queue, None)
-        head = previous = ListNode(val)
-        while True:
-            v = heapq.heappop(queue, None)
-            if not v:
-                break
-            curr = ListNode(v)
-            previous.next = curr
-            previous = curr
-        return head
-

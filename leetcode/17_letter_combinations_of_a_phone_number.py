@@ -14,17 +14,18 @@ class Solution(object):
         if not digits:
             return []
         result = set()
-        self.helper(digits, result, '')
-        return list(result)
 
-    def helper(self, digits, result, path):
-        if not digits:
-            result.add(path)
-            return
-        curr, rest = digits[0], digits[1:]
-        letters = self.digit_map[curr]
-        for letter in letters:
-            self.helper(rest, result, letter + path)
+        def _helper(digits, path):
+            if not digits:
+                result.add(path)
+                return
+            curr, rest = digits[0], digits[1:]
+            letters = self.digit_map[curr]
+            for letter in letters:
+                _helper(rest, path + letter)
+
+        _helper(digits, '')
+        return list(sorted(result))
 
 
 if __name__ == '__main__':

@@ -24,14 +24,15 @@ class SinglyLinkedList:
         self.size -= 1
 
     def __iter__(self):
+        self.top = self.head
         return self
 
     def __next__(self):
-        if self.head:
-            curr = self.head
+        if self.top:
+            curr = self.top
         else:
             raise StopIteration()
-        self.head = self.head.next
+        self.top = self.top.next
         return curr.val
 
     def __len__(self):
@@ -42,10 +43,10 @@ class SinglyLinkedList:
             return '[]'
         s = '['
         curr = self.head
-        while curr:
-            s += str(curr.val)
+        for item in self:
+            s += str(item)
             if curr.next:
-                s += '->'
+                s += ','
             curr = curr.next
         s += ']'
         return s
@@ -63,6 +64,3 @@ if __name__ == '__main__':
     slist.add(13)
     slist.add(14)
     print(slist)
-    print(len(slist))
-    for i in slist:
-        print(i)

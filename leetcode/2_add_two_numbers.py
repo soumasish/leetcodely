@@ -20,7 +20,7 @@ class Solution(object):
         """
         p = root = ListNode(0)
         carry = 0
-        while l1 or l2 or carry:
+        while l1 or l2:
             v1 = v2 = 0
             if l1:
                 v1 = l1.val
@@ -32,6 +32,7 @@ class Solution(object):
             p.next = ListNode(val)
             p = p.next
         return root.next
+
 
 if __name__ == '__main__':
     solution = Solution()

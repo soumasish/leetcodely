@@ -27,18 +27,6 @@ class Stack:
             raise ValueError('Peeking into an empty stack!')
         return self.top.val
 
-    def __iter__(self):
-        self.head = self.top
-        return self
-
-    def __next__(self):
-        if self.head:
-            curr = self.head
-        else:
-            raise StopIteration()
-        self.head = self.head.next
-        return curr.val
-
     def __str__(self):
         curr = self.top
         s = '['

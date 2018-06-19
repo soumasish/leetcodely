@@ -21,14 +21,15 @@ class Solution(object):
                     return False
         return len(stack) == 0
 
-    def match(self, a, b):
-        if a == '(' and b == ')':
+    def match(self, c, t):
+        if c == '(' and t == ')':
             return True
-        if a == '{' and b == '}':
+        if c == '{' and t == '}':
             return True
-        if a == '[' and b == ']':
+        if c == '[' and t == ']':
             return True
         return False
+
 
 if __name__ == '__main__':
     solution = Solution()

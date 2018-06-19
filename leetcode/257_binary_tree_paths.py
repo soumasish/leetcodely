@@ -17,11 +17,22 @@ class Solution(object):
         :rtype: List[str]
         """
         all_paths = []
-        curr_path = ''
-        self.helper(root, all_paths, curr_path)
+        self.helper(root, '', all_paths)
         return all_paths
 
-    def helper(self, root, all_paths, curr_path):
+    # def helper(self, root, all_paths, curr_path):
+    #     if not root.left and not root.right:
+    #         curr_path += str(root.val)
+    #         all_paths.append(curr_path)
+    #         return
+    #     curr_path += str(root.val)
+    #     curr_path += '->'
+    #     if root.left:
+    #         self.helper(root.left, all_paths, curr_path)
+    #     if root.right:
+    #         self.helper(root.right, all_paths, curr_path)
+
+    def helper(self, root, curr_path, all_paths):
         if not root.left and not root.right:
             curr_path += str(root.val)
             all_paths.append(curr_path)
@@ -29,9 +40,10 @@ class Solution(object):
         curr_path += str(root.val)
         curr_path += '->'
         if root.left:
-            self.helper(root.left, all_paths, curr_path)
+            self.helper(root.left, curr_path, all_paths)
         if root.right:
-            self.helper(root.right, all_paths, curr_path)
+            self.helper(root.right, curr_path, all_paths)
+
 
 if __name__ == '__main__':
     bst = BinarySearchTree()
