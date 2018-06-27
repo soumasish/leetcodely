@@ -16,14 +16,21 @@ class Solution:
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        i = len(nums) - 1
-        index = -1
-        while i > 0:
-            if nums[i - 1] < nums[i]:
-                index = i
-                break
+
+        if not nums:
+            return nums
+        l = len(nums)
+        i, j = l - 2, l - 1
+        while i >= 0 and nums[i] >= nums[i + 1]:
             i -= 1
-        if index == -1:
-            return list(reversed(nums))
-        j = index
-        self._find_next_highest_and_swap(index, nums)
+        while j > i and nums[j] <= nums[i]:
+            j -= 1
+        nums[i], nums[j] = nums[j], nums[i]
+        nums[i + 1:] = sorted(nums[i + 1:])
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.nextPermutation([1, 2, 3]))
+    print(solution.nextPermutation([3, 2, 1]))
+    print(solution.nextPermutation([1, 1, 5]))

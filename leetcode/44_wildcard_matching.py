@@ -30,20 +30,14 @@ class Solution(object):
 
         for i in range(1, len(memo[0])):
             if p[i - 1] == '*':
-                memo[0][i] = memo[0][i - 2]
-        for i in range(1, len(memo)):
-            memo[i][0] = False
+                memo[0][i] = memo[0][i - 1]
 
         for i in range(1, len(memo)):
             for j in range(1, len(memo[i])):
                 if s[i - 1] == p[j - 1] or p[j - 1] == '?':
                     memo[i][j] = memo[i - 1][j - 1]
                 elif p[j - 1] == '*':
-                    memo[i][j] = memo[i][j - 2]
-                    if p[j - 2] == s[i - 1] or p[j - 2] == '?':
-                        memo[i][j] = memo[i][j] or memo[i - 1][j]
-                else:
-                    memo[i][j] = False
+                    memo[i][j] = memo[i - 1][j] or memo[i][j - 1]
         return memo[-1][-1]
 
 

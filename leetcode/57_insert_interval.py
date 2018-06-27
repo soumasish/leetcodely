@@ -16,6 +16,7 @@ class Interval(object):
         self.start = s
         self.end = e
 
+
 class Solution(object):
     def insert(self, intervals, newInterval):
         """

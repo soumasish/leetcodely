@@ -26,5 +26,19 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
+        heap, count = MinHeap(), 0
         if not lists or len(lists) == 0:
             return None
+        for item in lists:
+            while item:
+                count += 1
+                heap.push(item.val)
+                item = item.next
+        head = curr = ListNode(0)
+        while count > 0:
+            item = heap.pop()
+            p = ListNode(item)
+            curr.next = p
+            curr = curr.next
+            count -= 1
+        return head.next

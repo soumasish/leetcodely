@@ -9,7 +9,7 @@ s = "leetcode",
 dict = ["leet", "code"].
 
 Return true because "leetcode" can be segmented as "leet code"."""
-import collections
+
 
 class Solution(object):
     def wordBreak(self, s, wordDict):
@@ -18,36 +18,15 @@ class Solution(object):
         :type wordDict: List[str]
         :rtype: bool
         """
-        # Modeled as a graph problem - every index is a vertex and every edge is a completed word
-        # The problem thus boils down to if a path exists.
-
-        queue = collections.deque()
-        visited = set()
-        queue.appendleft(0)
-        visited.add(0)
-        # while len(queue) > 0:
-        #     curr_index = queue.pop()
-        #     for i in range(curr_index, len(s)+1):
-        #         if i in visited:
-        #             continue
-        #         if s[curr_index:i] in wordDict:
-        #             if i == len(s):
-        #                 return True
-        #             queue.appendleft(i)
-        #             visited.add(i)
-        # return False
-        while len(queue) > 0:
-            curr_index = queue.pop()
-            for i in range(curr_index, len(s) + 1):
-                if i not in visited:
-                    if s[curr_index:i] in wordDict:
-                        if i == len(s):
-                            return True
-                        queue.appendleft(i)
-                        visited.add(i)
-        return False
+        memo = [False for _ in range(len(s) + 1)]
+        memo[0] = True
+        for i in range(1, len(s) + 1):
+            for w in wordDict:
+                if memo[i - len(w)] and s[i - len(w):i] == w:
+                    memo[i] = True
+        return memo[-1]
 
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.wordBreak('leetcode', ['leet', 'code']))
+    print(solution.wordBreak('applepieapple', ['apple', 'pie']))

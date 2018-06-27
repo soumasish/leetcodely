@@ -41,6 +41,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
-
-
+    print(s.spiralOrder([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]))

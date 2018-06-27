@@ -23,21 +23,21 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
-        if not intervals or len(intervals) == 0:
+        if not intervals:
             return []
-        results = []
-        sorted_intervals = sorted(intervals, key=lambda x: x.start)
-        previous = sorted_intervals[0]
-
-        for i in range(1, len(sorted_intervals)):
-            current = sorted_intervals[i]
-            if current.start > previous.end:
-                results.append(previous)
-            else:
-                current = Interval(previous.start, max(previous.end, current.end))
-            previous = current
-        results.append(previous)
-        return results
+        result = []
+        intervals = sorted(intervals, key=lambda x: x.start)
+        previous = intervals[0]
+        for i in range(1, len(intervals)):
+            curr = intervals[i]
+            if previous.end < curr.start:
+                result.append(previous)
+                previous = curr
+            elif previous.end >= curr.start:
+                curr = Interval(s=previous.start, e=max(previous.end, curr.end))
+                previous = curr
+        result.append(previous)
+        return result
 
 
 if __name__ == '__main__':
