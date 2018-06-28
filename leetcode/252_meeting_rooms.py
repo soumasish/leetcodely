@@ -5,7 +5,7 @@ determine if a person could attend all meetings.
 For example,
 Given [[0, 30],[5, 10],[15, 20]],
 return false."""
-
+import heapq
 
 # Definition for an interval.
 class Interval(object):
@@ -13,35 +13,20 @@ class Interval(object):
         self.start = s
         self.end = e
 
+
 class Solution(object):
     def canAttendMeetings(self, intervals):
         """
         :type intervals: List[Interval]
         :rtype: bool
         """
-        start_times = [interval.start for interval in intervals]
-        end_times = [interval.end for interval in intervals]
-        start_times = sorted(start_times)
-        end_times = sorted(end_times)
-
-        room_count, available_rooms, s, e = 0, 0, 0, 0
-
-        while s < len(start_times):
-            if start_times[s] < end_times[e]:
-                if available_rooms == 0:
-                    room_count += 1
-                else:
-                    available_rooms -= 1
-                s += 1
-            else:
-                available_rooms += 1
-                e += 1
-        return room_count == 1
-
-
-
-
-
-
-
-
+        if not intervals or len(intervals) == 0:
+            return True
+        heap = []
+        intervals = sorted(intervals, key=lambda x: x.start)
+        heapq.heappush(heap, intervals[0].end)
+        for i in range(1, len(intervals)):
+            if intervals[i].start >= heap[0]:
+                heapq.heappop(heap)
+            heapq.heappush(heap, intervals[i].end)
+        return len(heap) == 1

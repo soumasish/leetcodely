@@ -14,15 +14,24 @@ class Solution(object):
         """
         if not matrix or len(matrix) == 0 or len(matrix[0]) == 0:
             return False
+        # row, col = len(matrix) - 1, 0
+        # while row >= 0 and col < len(matrix[row]):
+        #     if matrix[row][col] == target:
+        #         return True
+        #     else:
+        #         if target < matrix[row][col]:
+        #             row -= 1
+        #         else:
+        #             col += 1
+        # return False
         row, col = len(matrix) - 1, 0
         while row >= 0 and col < len(matrix[row]):
-            if matrix[row][col] == target:
+            if target < matrix[row][col]:
+                row -= 1
+            elif target > matrix[row][col]:
+                col += 1
+            elif target == matrix[row][col]:
                 return True
-            else:
-                if target < matrix[row][col]:
-                    row -= 1
-                else:
-                    col += 1
         return False
 
 
