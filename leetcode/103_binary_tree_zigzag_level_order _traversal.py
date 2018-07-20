@@ -73,6 +73,7 @@ class Solution(object):
                         queue.appendleft(curr.right)
         return res
 
+
 if __name__ == '__main__':
     bst = BST()
     bst.add(9)

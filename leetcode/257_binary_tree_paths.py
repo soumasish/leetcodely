@@ -10,39 +10,38 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def binaryTreePaths(self, root):
         """
         :type root: TreeNode
         :rtype: List[str]
         """
-        all_paths = []
-        self.helper(root, '', all_paths)
-        return all_paths
+        answer = []
 
-    # def helper(self, root, all_paths, curr_path):
-    #     if not root.left and not root.right:
-    #         curr_path += str(root.val)
-    #         all_paths.append(curr_path)
-    #         return
-    #     curr_path += str(root.val)
-    #     curr_path += '->'
-    #     if root.left:
-    #         self.helper(root.left, all_paths, curr_path)
-    #     if root.right:
-    #         self.helper(root.right, all_paths, curr_path)
+        def do_path(node, path):
+            if not root:
+                return None
 
-    def helper(self, root, curr_path, all_paths):
-        if not root.left and not root.right:
-            curr_path += str(root.val)
-            all_paths.append(curr_path)
-            return
-        curr_path += str(root.val)
-        curr_path += '->'
-        if root.left:
-            self.helper(root.left, curr_path, all_paths)
-        if root.right:
-            self.helper(root.right, curr_path, all_paths)
+            if not node.left and not node.right:
+                path.append(str(node.val))
+                s = '->'.join(path)
+                answer.append(s)
+                path.pop()
+                return
+
+            if node.left:
+                path.append(str(node.val))
+                do_path(node.left, path)
+                path.pop()
+
+            if node.right:
+                path.append(str(node.val))
+                do_path(node.right, path)
+                path.pop()
+
+        do_path(root, [])
+        return answer
 
 
 if __name__ == '__main__':

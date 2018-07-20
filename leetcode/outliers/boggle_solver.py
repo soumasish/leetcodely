@@ -27,4 +27,5 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.find_all_words([['a', 'p', 'p'], ['b', 'a', 'l'], [ 'd', 't', 'e']], set(['apple', 'balet', 'app', 'pat', 'pet', 'let', 'lap' ])))
+    print(solution.find_all_words([['a', 'p', 'p'], ['b', 'a', 'l'], ['d', 't', 'e']],
+                                  set(['apple', 'balet', 'app', 'pat', 'pet', 'let', 'lap'])))

@@ -4,6 +4,7 @@ forms a container, such that the container contains the most water.
 
 Note: You may not slant the container and n is at least 2."""
 
+
 class Solution(object):
     def maxArea(self, height):
         """

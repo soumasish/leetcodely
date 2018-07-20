@@ -30,6 +30,7 @@ class Solution(object):
                 high = mid - 1
             else:
                 return mid
+        return -1
 
 
 if __name__ == '__main__':

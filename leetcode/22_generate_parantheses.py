@@ -34,4 +34,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.generateParenthesis(3))
+    print(solution.generateParenthesis(2))

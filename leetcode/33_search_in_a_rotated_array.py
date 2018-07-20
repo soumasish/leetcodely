@@ -25,16 +25,30 @@ class Solution(object):
                     start = mid + 1
                 else:
                     end = mid - 1
-        print(pivot)
+        # print(pivot)
+        # while start <= end:
+        #     mid = start + (end - start)//2
+        #     real_mid = (mid + pivot) % len(nums)
+        #     if target < nums[real_mid]:
+        #         start = mid
+        #     elif target > nums[real_mid]:
+        #         end = mid - 1
+        #     else:
+        #         return real_mid
+        # return -1
+
+        if target > nums[pivot]:
+            start, end = pivot, len(nums) - 1
+        else:
+            start, end = 0, pivot - 1
         while start <= end:
             mid = start + (end - start)//2
-            real_mid = (mid + pivot) % len(nums)
-            if target < nums[real_mid]:
-                start = mid
-            elif target > nums[real_mid]:
+            if target > nums[mid]:
+                start = mid + 1
+            elif target < nums[mid]:
                 end = mid - 1
             else:
-                return real_mid
+                return mid
         return -1
 
 
