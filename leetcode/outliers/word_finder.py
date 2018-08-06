@@ -1,16 +1,16 @@
 """
-# Find a word within a grid of alphabets and count all the possible paths
-# Directions: horizontal, vertical or diagonal to any coordinate with a distance 1
-# Constraint: Path has to be a unique set of coordinates
+Find a word within a grid of alphabets and count all the possible paths
+Directions: horizontal, vertical or diagonal to any coordinate with a distance 1
+Constraint: Path has to be a unique set of coordinates
 
-# S T A R
-# A R T Y
-# X K C S
-# T R A P
+S T A R
+A R T Y
+X K C S
+T R A P
 
-# START
+START
 
-# mahesh@zenefits.com
+mahesh@zenefits.com
 """
 
 
