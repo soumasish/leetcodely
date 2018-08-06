@@ -27,7 +27,7 @@ class Solution:
 
     def find_min_index(self, arr):
         min_index, min_val = -1, sys.maxsize
-        for i,v in enumerate(arr):
+        for i, v in enumerate(arr):
             if v < min_val:
                 min_index, min_val = i, v
         return min_index

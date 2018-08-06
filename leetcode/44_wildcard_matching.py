@@ -1,6 +1,7 @@
 """Created by sgoswami on 4/17/17 as part of leetcode"""
 """Implement wildcard pattern matching with support for \'?\' and \'*\'"""
-"""'?' Matches any single character.
+"""
+'?' Matches any single character.
 '*' Matches any sequence of characters (including the empty sequence).
 
 The matching should cover the entire input string (not partial).
@@ -15,7 +16,8 @@ isMatch("aaa","aa") → false
 isMatch("aa", "*") → true
 isMatch("aa", "a*") → true
 isMatch("ab", "?*") → true
-isMatch("aab", "c*a*b") → false"""
+isMatch("aab", "c*a*b") → false
+"""
 
 
 class Solution(object):

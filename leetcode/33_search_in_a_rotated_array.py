@@ -14,10 +14,10 @@ class Solution(object):
         :rtype: int
         """
         pivot = -1
-        start, end = 0, len(nums)-1
+        start, end = 0, len(nums) - 1
         while start < end:
-            mid = (start + end)//2
-            if nums[mid] > nums[mid+1]:
+            mid = (start + end) // 2
+            if nums[mid] > nums[mid + 1]:
                 pivot = mid + 1
                 break
             else:
@@ -25,24 +25,14 @@ class Solution(object):
                     start = mid + 1
                 else:
                     end = mid - 1
-        # print(pivot)
-        # while start <= end:
-        #     mid = start + (end - start)//2
-        #     real_mid = (mid + pivot) % len(nums)
-        #     if target < nums[real_mid]:
-        #         start = mid
-        #     elif target > nums[real_mid]:
-        #         end = mid - 1
-        #     else:
-        #         return real_mid
-        # return -1
 
-        if target > nums[pivot]:
+        if nums[pivot] <= target <= nums[-1]:
             start, end = pivot, len(nums) - 1
-        else:
+        elif nums[0] <= target <= nums[pivot - 1]:
             start, end = 0, pivot - 1
+
         while start <= end:
-            mid = start + (end - start)//2
+            mid = start + (end - start) // 2
             if target > nums[mid]:
                 start = mid + 1
             elif target < nums[mid]:
@@ -54,5 +44,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.search([17, 19, 20, 2, 3, 4, 9, 11, 13, 14], 9))
-
+    print(solution.search([4, 5, 6, 7, 0, 1, 2], 0))

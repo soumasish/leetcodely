@@ -9,8 +9,15 @@ class Solution(object):
         :type digits: List[int]
         :rtype: List[int]
         """
-        number = int(''.join([str(i) for i in digits]))
-        return [int(i) for i in str(number+1)]
+        res = digits[:]
+        carry = 1
+        for i in range(len(digits) - 1, -1, -1):
+            val = digits[i] + carry
+            carry, val = divmod(val, 10)
+            res[i] = val
+            if i == 0 and carry > 0:
+                res.insert(0, carry)
+        return res
 
 
 if __name__ == '__main__':

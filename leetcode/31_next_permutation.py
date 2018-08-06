@@ -11,6 +11,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 
 class Solution:
+
     def nextPermutation(self, nums):
         """
         :type nums: List[int]

@@ -11,6 +11,7 @@ For example:
     27 -> AA
     28 -> AB """
 
+
 class Solution(object):
     def convertToTitle(self, n):
         """
@@ -21,8 +22,9 @@ class Solution(object):
         while n > 0:
             result.append(chr((n-1) % 26 + ord('A')))
             print(result)
-            n = (n -1) //26
+            n = (n - 1) // 26
         return ''.join(reversed(result))
+
 
 if __name__ == '__main__':
     solution = Solution()

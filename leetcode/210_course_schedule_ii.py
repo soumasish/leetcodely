@@ -36,8 +36,6 @@ class Graph:
         else:
             q_node = Node(q)
         p_node.add(q_node)
-        self.adj_list[p] = p_node
-        self.adj_list[q] = q_node
 
     def get_all_vertices(self):
         return self.adj_list.items()
@@ -54,6 +52,7 @@ class Node:
     def get_neighbors(self):
         return self.neighbors
 
+
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
         """
@@ -61,27 +60,24 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-        graph = Graph()
-        for item in prerequisites:
-            graph.add(item[0], item[1])
-
-        stack = []
-        visited = set()
-        for k, v in graph.get_all_vertices():
-            if v in visited:
-                continue
-            else:
-                self.top_sort_util(v, stack, visited)
-        return [item.val for item in stack]
-
-    def top_sort_util(self, vertex, stack, visited):
-        visited.add(vertex)
-        for v in vertex.get_neighbors():
-            if v in visited:
-                continue
-            else:
-                self.top_sort_util(v)
-        stack.append(vertex)
-
-
-
+    #     graph = Graph()
+    #     for item in prerequisites:
+    #         graph.add(item[0], item[1])
+    #
+    #     stack = []
+    #     visited = set()
+    #     for k, v in graph.get_all_vertices():
+    #         if v in visited:
+    #             continue
+    #         else:
+    #             self.top_sort_util(v, stack, visited)
+    #     return [item.val for item in stack]
+    #
+    # def top_sort_util(self, vertex, stack, visited):
+    #     visited.add(vertex)
+    #     for v in vertex.get_neighbors():
+    #         if v in visited:
+    #             continue
+    #         else:
+    #             self.top_sort_util(v)
+    #     stack.append(vertex)

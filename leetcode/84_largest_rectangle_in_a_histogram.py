@@ -3,9 +3,10 @@
 the area of largest rectangle in the histogram."""
 
 #TODO: Still not completely correct
+import sys
 
 
-class stack:
+class Stack:
     def __init__(self):
         self.store = []
         self.size = 0
@@ -37,28 +38,24 @@ class Solution(object):
         """
         if not heights or len(heights) == 0:
             return 0
-        stack = []
-        i, area = 0, -1
-        while i < len(heights):
-            if len(stack) == 0 or heights[stack[-1]] <= heights[i]:
-                stack.append(i)
-                i += 1
+        stack = Stack()
+        max_area = -sys.maxsize
+        for i, v in enumerate(heights):
+            if stack.is_empty() or stack.peek() < v:
+                stack.push(i)
             else:
-                top = stack.pop()
-                if len(stack) == 0:
-                    curr_area = heights[top] * i
-                else:
-                    curr_area = heights[top] * (i - stack[-1] - 1)
-                area = max(area, curr_area)
+                while stack.peek() > v or stack.is_empty():
+                    index = stack.pop()
+                    area = heights[stack.peek()] * (index + 1 - stack.peek())
+                    max_area = max(area, max_area)
+        while stack.is_empty():
+            index = stack.pop()
+            area = heights[stack.peek()] * (index + 1 - stack.peek())
+            max_area = max(area, max_area)
 
-        while len(stack) > 0:
-            top = stack.pop()
-            if len(stack) == 0:
-                curr_area = heights[top] * i
-            else:
-                curr_area = heights[top] * (i - stack[-1] -1)
-            area = max(area, curr_area)
-        return area
+        return max_area
+
+
 
 
 if __name__ == '__main__':

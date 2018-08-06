@@ -3,6 +3,7 @@
 For example, given the array [2,3,-2,4],
 the contiguous subarray [2,3] has the largest product = 6."""
 
+
 class Solution(object):
     def maxProduct(self, nums):
         """

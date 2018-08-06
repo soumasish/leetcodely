@@ -4,6 +4,7 @@ right to left for the next level and alternate between)."""
 
 import collections
 
+
 class BST:
     def __init__(self):
         self.root = None
@@ -32,11 +33,13 @@ class BST:
         print(root.val, end=', ')
         self.inorder_helper(root.right)
 
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution(object):
     def zigzagLevelOrder(self, root):

@@ -5,6 +5,7 @@ If you were only permitted to complete at most one transaction (ie, buy one and 
 design an algorithm to find the maximum profit."""
 import sys
 
+
 class Solution(object):
     def maxProfit(self, prices):
         """

@@ -11,6 +11,7 @@ class RandomListNode(object):
 
 from collections import OrderedDict
 
+
 class Solution(object):
     def copyRandomList(self, head):
         """
