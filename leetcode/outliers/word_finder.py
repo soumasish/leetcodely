@@ -1,14 +1,14 @@
 """
-Find a word within a grid of alphabets and count all the possible paths
+Given a gird of letter and a word find all the possible paths that make a word
 Directions: horizontal, vertical or diagonal to any coordinate with a distance 1
-Constraint: Path has to be a unique set of coordinates
+Constraint: Each path has to be a unique set of coordinates
 
 S T A R
 A R T Y
 X K C S
 T R A P
 
-START
+START - > 2
 
 mahesh@zenefits.com
 """
@@ -16,7 +16,7 @@ mahesh@zenefits.com
 
 class WordFinder:
     def __init__(self):
-        self.neighbors = [[-1, 1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1]]
+        self.neighbors = [[-1, -1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1]]
 
     def find_all_paths(self, grid, word):
         count = 0
@@ -25,12 +25,12 @@ class WordFinder:
                 if grid[i][j] == word[0]:
                     visited = [[False for _ in range(len(grid[0]))] for _ in range(len(grid))]
                     result = []
-                    self.helper(grid, 0, 0, visited, word, 0, result)
+                    self.helper(grid, i, j, visited, word, 0, result)
                     count += len(result)
         return count
 
     def helper(self, grid, row, col, visited, word, index, result):
-        if index == len(word):
+        if index == len(word) - 1:
             result.append(1)
         adjacent = []
         for item in self.neighbors:
