@@ -3,12 +3,22 @@ Given a 2D grid of letters and a word find all the possible paths that can be us
 Directions: horizontal, vertical or diagonal to any coordinate with a distance of 1.
 Constraint: Each path has to be a unique set of coordinates.
 
+Example: Given the following grid,
+
 S T A R
 A R T Y
 X K C S
 T R A P
 
-START - > 4
+And the word,
+START
+The answer is 4
+
+Paths (row, col):
+path1:    0 0   0 1   1 0   1 1    1 2
+path2:    0 0   0 1   0 2   1 1    1 2
+path3:    0 0   0 1   1 0   0 3    1 2
+path4:    2 3   1 2   0 2   1 1    0 1
 
 """
 
