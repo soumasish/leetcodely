@@ -34,13 +34,14 @@ class WordFinder:
                 if grid[i][j] == word[0]:
                     visited = [[False for _ in range(len(grid[0]))] for _ in range(len(grid))]
                     result = []
-                    self.helper(grid, i, j, visited, word, 0, result)
+                    self.helper(grid, i, j, visited, word, 0, result, [])
                     count += len(result)
         return count
 
-    def helper(self, grid, row, col, visited, word, index, result):
+    def helper(self, grid, row, col, visited, word, index, result, curr):
         if index == len(word) - 1:
-            result.append(1)
+            result.append(curr[:])
+            curr = []
         adjacent = []
         for item in self.neighbors:
             adjacent.append([row + item[0], col + item[1]])
@@ -49,7 +50,8 @@ class WordFinder:
                 if not visited[adj[0]][adj[1]]:
                     if index + 1 < len(word) and grid[adj[0]][adj[1]] == word[index + 1]:
                         visited[adj[0]][adj[1]] = True
-                        self.helper(grid, adj[0], adj[1], visited, word, index + 1, result)
+                        curr.append(grid[adj[0]][adj[1]])
+                        self.helper(grid, adj[0], adj[1], visited, word, index + 1, result, curr)
                         visited[adj[0]][adj[1]] = False
 
 
