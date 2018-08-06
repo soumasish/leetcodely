@@ -1,7 +1,7 @@
 """
-Given a gird of letter and a word find all the possible paths that make a word
-Directions: horizontal, vertical or diagonal to any coordinate with a distance 1
-Constraint: Each path has to be a unique set of coordinates
+Given a 2D grid of letters and a word find all the possible paths that can be used to form the word.
+Directions: horizontal, vertical or diagonal to any coordinate with a distance of 1.
+Constraint: Each path has to be a unique set of coordinates.
 
 S T A R
 A R T Y
@@ -10,7 +10,6 @@ T R A P
 
 START - > 4
 
-mahesh@zenefits.com
 """
 
 
