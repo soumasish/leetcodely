@@ -24,11 +24,12 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        return self.helper(root, -sys.maxsize, sys.maxsize)
 
-    def helper(self, root, floor, ceiling):
-        if not root:
-            return True
-        if root.val < floor or root.val > ceiling:
-            return False
-        return self.helper(root.left, floor, root.val) and self.helper(root.right, root.val, ceiling)
+        def helper(root, floor, ceiling):
+            if not root:
+                return True
+            if root.val <= floor or root.val >= ceiling:
+                return False
+            return helper(root.left, floor, root.val) and helper(root.right, root.val, ceiling)
+
+        return helper(root, -sys.maxsize, sys.maxsize)
