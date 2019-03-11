@@ -2,12 +2,12 @@
 
 ### The repo is organized into the following submodules:
 - **leetcode** (Root module which contains the solutions to a host of leetcode problems)
-..- **computational_geometry** (If you're interviewing for the likes of Uber/ Lyft)
-..- **conceptual** (Some core ideas that powers python)
-..- **data_types** (Python implementation of the commonly used data types)
-..- **multithreading** (If you're interviewing senior engineering roles)
-..- **outliers** (Some common interview problems, which I couldn't find on leetcode)
-..- **regex** (Some typical regex problems)
+    - **computational_geometry** (If you're interviewing for the likes of Uber/ Lyft)
+    - **conceptual** (Some core ideas that powers python)
+    - **data_types** (Python implementation of the commonly used data types)
+    - **multithreading** (If you're interviewing senior engineering roles)
+    - **outliers** (Some common interview problems, which I couldn't find on leetcode)
+    - **regex** (Some typical regex problems)
 
 
 
