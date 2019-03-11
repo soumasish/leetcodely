@@ -6,6 +6,12 @@ from .data_types.binary_search_tree import BinarySearchTree
 
 
 # Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 
 class Solution(object):
     def levelOrder(self, root):
@@ -15,24 +21,24 @@ class Solution(object):
         """
         if not root:
             return []
-        res, curr_list = [], []
+        res, level = [], []
         queue = deque()
         queue.appendleft(root)
         queue.appendleft('#')
         while len(queue) > 0:
-            curr_node = queue.pop()
-            if curr_node == '#':
+            curr = queue.pop()
+            if curr == '#':
                 if len(queue) > 0:
                     queue.appendleft('#')
-                res.append(curr_list)
-                curr_list = []
+                res.append(level[:])
+                level = []
                 continue
             else:
-                curr_list.append(curr_node.val)
-            if curr_node.left:
-                queue.appendleft(curr_node.left)
-            if curr_node.right:
-                queue.appendleft(curr_node.right)
+                level.append(curr.val)
+            if curr.left:
+                queue.appendleft(curr.left)
+            if curr.right:
+                queue.appendleft(curr.right)
         return res
 
 
