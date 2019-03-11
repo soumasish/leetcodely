@@ -1,13 +1,13 @@
 # Python Solutions to Leetcode and Everything You Need for the SDE Interview
 
 ### The repo is organized into the following submodules:
-- leetcode *(Root module which contains the solutions to a host of leetcode problems)*
- - computational_geometry *(If you're interviewing for the likes of Uber/ Lyft)*
- - conceptual *(Some core ideas that powers python)*
- - data_types *(Python implementation of the commonly used data types)*
- - multithreading *(If you're interviewing senior engineering roles)*
- - outliers *(Some common interview problems, which I couldn't find on leetcode)*
- - regex *(Some typical regex problems)*
+- **leetcode** (Root module which contains the solutions to a host of leetcode problems)
+..- **computational_geometry** (If you're interviewing for the likes of Uber/ Lyft)
+..- **conceptual** (Some core ideas that powers python)
+..- **data_types** (Python implementation of the commonly used data types)
+..- **multithreading** (If you're interviewing senior engineering roles)
+..- **outliers** (Some common interview problems, which I couldn't find on leetcode)
+..- **regex** (Some typical regex problems)
 
 
 
@@ -24,6 +24,7 @@
 | 11 | [Container With Most Water](https://github.com/soumasish/leetcode/blob/master/leetcode/container_with_most_water.py) | Medium |
 | 15 | [3Sum](https://github.com/soumasish/leetcode/blob/master/leetcode/3sum.py) | Medium |
 | 17 | [Letter Combination of Phone Number](https://github.com/soumasish/leetcode/blob/master/leetcode/letter_combinations_of_a_phone_number.py) | Medium |
+| 20 | [Valid Parantheses](https://github.com/soumasish/leetcode/blob/master/leetcode/valid_parantheses.py) | Easy |
 | 94 | [Binary Tree Inorder Traversal](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_inorder_traversal.py) | Medium |
 | 95 | [Unique Binary Search Trees -II](https://github.com/soumasish/leetcode/blob/master/leetcode/unique_binary_search_trees_ii.py) | Medium |
 | 98 | [Validate Binary Search Tree](https://github.com/soumasish/leetcode/blob/master/leetcode/validate_binary_search_tree.py) | Medium |
