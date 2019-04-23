@@ -1,4 +1,4 @@
-from leetcode.data_types.heap import MinHeap, MaxHeap
+from python.ds import MinHeap, MaxHeap
 
 
 class Solution:

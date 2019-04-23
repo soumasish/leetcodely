@@ -1,6 +1,6 @@
 """Created by sgoswami on 8/22/17."""
 """Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity."""
-from .data_types.heap import MinHeap
+from python.ds import MinHeap
 
 
 class LinkedList:

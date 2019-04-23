@@ -1,7 +1,7 @@
 """Created by sgoswami on 8/13/17."""
 """Given a binary tree, return all root-to-leaf paths."""
 
-from leetcode.data_types.binary_search_tree import BinarySearchTree
+from python.leetcode import BinarySearchTree
 
 # Definition for a binary tree node.
 class TreeNode(object):

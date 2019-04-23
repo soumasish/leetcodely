@@ -1,5 +1,5 @@
 import unittest
-from leetcode.data_types.graph import Graph
+from python.ds.graph import Graph
 
 
 class GraphTestMethods(unittest.TestCase):

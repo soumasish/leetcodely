@@ -1,7 +1,7 @@
 """Given a Binary Search Tree (BST) with the root node root, return the minimum difference between the values of any
 two different nodes in the tree."""
 
-from leetcode.data_types.binary_search_tree import BinarySearchTree
+from python.leetcode import BinarySearchTree
 import sys
 
 

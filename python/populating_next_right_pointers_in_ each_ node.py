@@ -33,6 +33,7 @@ class TreeLinkNode:
         self.right = None
         self.next = None
 
+
 class Solution:
     # @param root, a tree link node
     # @return nothing
