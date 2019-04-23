@@ -8,23 +8,28 @@ class TreeNode:
 
 class Solution:
     def generateTrees(self, n: int) -> list[TreeNode]:
-        if n == 0:
-            return []
 
-        def _generated_trees(i, j):
-            if i == j + 1:
-                return [None]
-            ans = []
-            for k in range(i, j + 1):
-                left = _generated_trees(i, k - 1)
-                right = _generated_trees(k + 1, j)
+        def helper(start, stop):
+            res = []
 
-                for left_sub_tree in left:
-                    for right_sub_tree in right:
-                        root = TreeNode(k)
-                        root.left = left_sub_tree
-                        root.right = right_sub_tree
-                        ans.append(root)
-            return ans
+            if start > stop:
+                res.append(None)
+                return res
+            if start == stop:
+                res.append(TreeNode(start))
+                return res
+            left, right = [], []
+            for i in range(start, stop+1):
+                left = helper(start, i-1)
+                right = helper(i+1, stop)
 
-        return _generated_trees(1, n)
+                for lnode in left:
+                    for rnode in right:
+                        root = TreeNode(i)
+                        root.left = lnode
+                        root.right = rnode
+                        res.append(root)
+            return res
+        return helper(1, n)
+
+

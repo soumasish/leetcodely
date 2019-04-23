@@ -31,6 +31,27 @@ class BinarySearchTree:
         else:
             return True
 
+    def delete(self, key):
+
+        def _delete(root, key):
+            if not root:
+                return
+            if key > root.val:
+                root.right = _delete(root.right, key)
+            elif key < root.val:
+                root.left = _delete(root.left, key)
+            else:
+                if not root.right:
+                    return root.left
+                else:
+                    p = root.right
+                    while p.left:
+                        p = p.left
+                    root.val = p.val
+                    root.right = _delete(root.right, p.val)
+            return root
+        return _delete(self.root, key)
+
 
 class TreeNode:
     def __init__(self, val):

@@ -15,7 +15,8 @@
 |---|:--------|:------|
 | 1 | [Two Sum](https://github.com/soumasish/leetcode/blob/master/leetcode/two_sum.py) | Easy  |
 | 2 | [Add Two Numbers](https://github.com/soumasish/leetcode/blob/master/leetcode/add_two_numbers.py) | Medium |
-| 3 | [ Longest Substring without Repeating Characters](https://github.com/soumasish/leetcode/blob/master/leetcode/longest_substring_without_repeating_characters.py) | Medium |
+| 3 | [Longest Substring without Repeating Characters](https://github.com/soumasish/leetcode/blob/master/leetcode/longest_substring_without_repeating_characters.py) | Medium |
+| 4 | [Median of Two Sorted Arrays](https://github.com/soumasish/leetcode/blob/master/leetcode/median_of_two_sorted_arrays.py) | Medium |
 | 5 | [Longest Palindromic Substring](https://github.com/soumasish/leetcode/blob/master/leetcode/longest_palindromic_substring.py) | Medium |
 | 7 | [Reverse Integer](https://github.com/soumasish/leetcode/blob/master/leetcode/reverse_integer.py) | Easy |
 | 8 | [String to Integer](https://github.com/soumasish/leetcode/blob/master/leetcode/string_to_integer.py) | Medium |
@@ -31,3 +32,10 @@
 | 100 | [Same Tree](https://github.com/soumasish/leetcode/blob/master/leetcode/same_tree.py) | Easy |
 | 101 | [Symmetric Tree](https://github.com/soumasish/leetcode/blob/master/leetcode/symmetric_tree.py)| Easy |
 | 102 | [Binary Tree Level Order Traversal](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_level_order_traversal.py) | Medium |
+| 437 | [Path Sum III](https://github.com/soumasish/leetcode/blob/master/leetcode/path_sum_iii.py) | Easy |
+| 449 | [Serialize & Deserialize a BST](https://github.com/soumasish/leetcode/blob/master/leetcode/serailize_and_deserialize_bst.py) | Medium |
+| 450 | [Delete a Node in a BST](https://github.com/soumasish/leetcode/blob/master/leetcode/delete_node_in_binary_search_tree.py) | Medium |
+| 501 | [Find Mode in Binary Search Tree](https://github.com/soumasish/leetcode/blob/master/leetcode/find_mode_in_binary_search_tree.py) | Medium |
+| 508 | [Most Frequent Subtree sum](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py) | Medium |
+| 510 | [In Order Successor II](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii) | Medium |
+
