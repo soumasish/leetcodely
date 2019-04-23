@@ -1,21 +1,13 @@
-# Python Solutions to Leetcode and Everything You Need for the SDE Interview
+# Algorithmic Thinking: A Hands-on Approach to Understanding Algorithms & Data Structures 
 
-Contrary to what the name might suggest, this repo didn't originate as a practise pad for the tech interview preparation. This is meant to be a reference for someone following my writings on algorithms and data structures at www.soumasish.io.
-Learning algorithms is in way about picking up a few tools and then learning which ones to use for what and in what combination and order. The best way to do that is by practising on actual problems - and while I'm a big believer in abstracting algorithms from their langugage implementations, pseudo-code doesn't provide the gratification of building something. Python is this the chosen language. If you wish to contribute to this repo in a different language, I'd be happy to reorganize content for multi-language support.
+This repo is meant to complement http://soumasish.io where I try to explain algorithms and data structures the way I understand them. Leetcode is used as a tool here for solving actual problems from each algorithmic paradigm - which opens up the repo to anyone who'd wish to work simply with leetcode without bothering about the blog - and that's fine too.
 
-### The repo is organized into the following submodules:
-- **leetcode** (Root module which contains the solutions to a host of leetcode problems)
-    - **computational_geometry** (If you're interviewing for the likes of Uber/ Lyft)
-    - **conceptual** (Some core ideas that powers python)
-    - **data_types** (Python implementation of the commonly used data types)
-    - **multithreading** (If you're interviewing senior engineering roles)
-    - **outliers** (Some common interview problems, which I couldn't find on leetcode)
-    - **regex** (Some typical regex problems)
+ There's a folder for languages inside of which a few problems have been added to get things going. If you wish to contribute, a big thanks, feel free to send me a PR.
 
+## Contents
 
-
-| # | Python  | Javascript |
-|---|:--------|:-----------|
+| # | Python  | Javascript | Java | C++ | Swift |
+|---|:--------|:-----------|:-----|:----|:------|
 | 1 | [Two Sum](https://github.com/soumasish/leetcode/blob/master/leetcode/two_sum.py) |   |
 | 2 | [Add Two Numbers](https://github.com/soumasish/leetcode/blob/master/leetcode/add_two_numbers.py) |  |
 | 3 | [Longest Substring without Repeating Characters](https://github.com/soumasish/leetcode/blob/master/leetcode/longest_substring_without_repeating_characters.py) |  |
