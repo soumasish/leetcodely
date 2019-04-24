@@ -8,7 +8,7 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 
 | # | Problem |Python  | Javascript | Java | C++ | Swift |
 |---|:--------|:-----------|:-----|:----|:-------|:------|
-| 1 |Two Sum |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/two_sum.py)| | |
+| 1 |Two Sum |[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)| | |
 | 2 |Add Two Numbers |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| | | 
 | 3 |Longest Substring without Repeating Characters |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/longest_substring_without_repeating_characters.py) | | | |
 | 4 |Median of Two Sorted Arrays |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/median_of_two_sorted_arrays.py) | | | |
@@ -37,6 +37,7 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 501 |Find Mode in Binary Search Tree |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/find_mode_in_binary_search_tree.py) | | | |
 | 508 |Most Frequent Subtree sum|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py) | | | |
 | 510 |In Order Successor II|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii) | | | |
-| 958 |Check Completeness of Binary Tree|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/check_completeness_of_binary_tree.py)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/check_completeness_of_binary_tree.py) | | |
+| 824 |Goat Latin| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js) | | |
+| 958 |Check Completeness of Binary Tree|[x](https://github.com/soumasish/leetcodely/blob/master/python/check_completeness_of_binary_tree.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/checkCompletenessOfBinaryTree.js) | | |
 
 
