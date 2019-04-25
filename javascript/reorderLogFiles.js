@@ -1,3 +1,5 @@
+//// Created by leananepari on 04/24/19. ////
+
 // You have an array of logs.  Each log is a space delimited string of words.
 
 // For each log, the first word in each log is an alphanumeric identifier.  Then, either:
@@ -45,10 +47,9 @@ const reorderLogFiles = (logs) => {
   for (let i = 0; i < sorted.length; i++) {
       let joined = '';
       if (Array.isArray(obj[sorted[i]])) {
-         joined = obj[sorted[i]][0] + ' ' + sorted[i];
-         var save = obj[sorted[i]][1];
-         obj[sorted[i]] = save;
-         output.push(joined);
+        joined = obj[sorted[i]][0] + ' ' + sorted[i];
+        obj[sorted[i]].splice(0, 1)
+        output.push(joined);
       } else {
           joined = obj[sorted[i]] + ' ' + sorted[i];
           output.push(joined);
