@@ -38,6 +38,7 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 508 |Most Frequent Subtree sum|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py) | | | |
 | 510 |In Order Successor II|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii) | | | |
 | 530 |Minimum Absolute Difference|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minAbsoluteDifference.js)| | |
+| 599 |[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumIndexSumOfTwoLists.js)
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)| | |
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)| | |
