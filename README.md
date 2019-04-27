@@ -55,8 +55,3 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 1008 |[Construct Binary Search Tree From Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_binary_search_tree_from_preorder.py) | | |
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py) | | |
 | 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py) | | |
-
-
-
-
-
