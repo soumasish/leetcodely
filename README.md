@@ -8,8 +8,7 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 
 | # | Problem |Python  | Javascript | Java | C++ | Swift |
 |---|:--------|:-----------|:-----|:----|:-------|:------|
-| 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)| |
-<<<<<<< HEAD
+| 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)| | |
 | 2 |Add Two Numbers |[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| | | 
 | 3 |Longest Substring without Repeating Characters |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/longest_substring_without_repeating_characters.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestSubstringWithoutRepeatingCharacters.js)| | |
 | 4 |Median of Two Sorted Arrays |[x](https://github.com/soumasish/leetcode/blob/master/leetcode/median_of_two_sorted_arrays.py) | | | |
@@ -39,8 +38,7 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 508 |Most Frequent Subtree sum|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py) | | | |
 | 510 |In Order Successor II|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii) | | | |
 | 530 |Minimum Absolute Difference|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/inorder_successor_ii)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minAbsoluteDifference.js)| | |
-| 599 |[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumIndexSumOfTwoLists.js)
-=======
+| 599 |[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumIndexSumOfTwoLists.js)| | | | 
 | 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| | | 
 | 3 |[Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_without_repeating_characters.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestSubstringWithoutRepeatingCharacters.js)| | |
 | 4 |[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/median_of_two_sorted_arrays.py) | | | |
@@ -72,7 +70,6 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 510 |[In Order Successor II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py) | | | |
 | 530 |[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/minAbsoluteDifference.js)| | |
 | 654 |[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_binary_tree.py)| | | |
->>>>>>> master
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)| | |
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//inorder_successor_ii)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)| | |
