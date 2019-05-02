@@ -40,22 +40,24 @@ class Solution(object):
             return 0
         stack = Stack()
         max_area = -sys.maxsize
-        for i, v in enumerate(heights):
-            if stack.is_empty() or stack.peek() < v:
-                stack.push(i)
+        for i in range(len(heights)):
+            if stack.is_empty() or stack.peek() < heights[i]:
+                stack.push(heights[i])
             else:
-                while stack.peek() > v or stack.is_empty():
-                    index = stack.pop()
-                    area = heights[stack.peek()] * (index + 1 - stack.peek())
+                while stack.peek() > heights[i] or stack.is_empty():
+                    count = 1
+                    curr = stack.pop()
+                    area = count * curr
                     max_area = max(area, max_area)
+                    count += 1
         while stack.is_empty():
-            index = stack.pop()
-            area = heights[stack.peek()] * (index + 1 - stack.peek())
+            count = 1
+            curr = stack.pop()
+            area = count * curr
             max_area = max(area, max_area)
+            count += 1
 
         return max_area
-
-
 
 
 if __name__ == '__main__':

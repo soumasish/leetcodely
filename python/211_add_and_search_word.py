@@ -7,6 +7,7 @@ import collections
 
 # TODO: Failing tests
 
+
 class WordDictionary(object):
     def __init__(self):
         """

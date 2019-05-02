@@ -21,7 +21,7 @@ class Solution:
         if not nums:
             return nums
         l = len(nums)
-        i, j = l - 2, l - 1
+        i, j = l - 1, l - 1
         while i >= 0 and nums[i] >= nums[i + 1]:
             i -= 1
         while j > i and nums[j] <= nums[i]:
