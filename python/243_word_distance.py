@@ -37,6 +37,8 @@ class Solution(object):
             elif arr1[a] > arr2[b] and b < len(arr2):
                 b += 1
         return curr_min
+
+
 if __name__ == '__main__':
     solution = Solution()
     print(solution.shortestDistance(["practice", "makes", "perfect", "coding", "makes"], 'practice', 'coding'))

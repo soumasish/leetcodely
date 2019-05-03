@@ -41,6 +41,7 @@ class Solution:
             num -= 1
         return res
 
+
 if __name__ == '__main__':
     solution = Solution()
     print(solution.generate(5))
