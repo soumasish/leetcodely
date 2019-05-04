@@ -19,39 +19,26 @@ class Solution(object):
         :type t: str
         :rtype: str
         """
-        # orignal, duplicate = collections.Counter(t), collections.Counter(t)
-        # start, end, counter = 0, 0, len(t)
-        # final = s
-        # while end < len(s):
-        #     if s[end] in t and duplicate[s[end]] > 0:
-        #         duplicate[s[end]] -= 1
-        #         counter -= 1
-        #     end += 1
-        #     while counter == 0:
-        #         curr = s[start:end]
-        #         if len(curr) < len(final):
-        #             final = curr
-        #         if s[start] in t and duplicate[s[start]] <= orignal[s[start]]:
-        #             duplicate[s[start]] += 1
-        #             counter += 1
-        #         start += 1
-        # if final == s:
-        #     return ""
-        # else:
-        #     return final
-        i, j = 0, 0
-        check = set(t)
-        curr = set()
-        index_map = {}
-        min_len = sys.maxsize
-        while i < len(s):
-            if s[i] not in index_map:
-                index_map[s[i]] = i
-                curr.add(s[i])
-                if len(curr) == len(check):
-                    min_len = min(min_len, i - j + 1)
-            else:
-                pass
+        s_map = {t[i]: i for i in range(len(t))}
+        t_map = {s[i]: i for i in range(len(s))}
+
+        ans = s
+        for i in range(len(t)):
+            if s[i] not in t_map or t_map[s[i]] < s_map[s[i]]:
+                return ""
+        i, j, k, count = 0, 0, 0, 0
+        while i < len(s) and j < len(s) - len(t):
+            if count == len(s):
+                curr = s[j:i+1]
+                if len(curr) < len(ans):
+                    ans = curr
+                j += 1
+                i += 1
+
+            if t[i] == s[k]:
+                i += 1
+                k += 1
+
 
 
 

@@ -60,24 +60,24 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
-    #     graph = Graph()
-    #     for item in prerequisites:
-    #         graph.add(item[0], item[1])
-    #
-    #     stack = []
-    #     visited = set()
-    #     for k, v in graph.get_all_vertices():
-    #         if v in visited:
-    #             continue
-    #         else:
-    #             self.top_sort_util(v, stack, visited)
-    #     return [item.val for item in stack]
-    #
-    # def top_sort_util(self, vertex, stack, visited):
-    #     visited.add(vertex)
-    #     for v in vertex.get_neighbors():
-    #         if v in visited:
-    #             continue
-    #         else:
-    #             self.top_sort_util(v)
-    #     stack.append(vertex)
+        graph = Graph()
+        for item in prerequisites:
+            graph.add(item[0], item[1])
+
+        stack = []
+        visited = set()
+        for k, v in graph.get_all_vertices():
+            if v in visited:
+                continue
+            else:
+                self.top_sort_util(v, stack, visited)
+        return [item.val for item in stack]
+
+    def top_sort_util(self, vertex, stack, visited):
+        visited.add(vertex)
+        for v in vertex.get_neighbors():
+            if v in visited:
+                continue
+            else:
+                self.top_sort_util(v)
+        stack.append(vertex)

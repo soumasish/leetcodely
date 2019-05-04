@@ -17,16 +17,24 @@ class Solution:
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head:
-            return
-        trigger = True
-        prev = curr = head
-        while curr:
-            curr = curr.next
-            if curr and trigger:
-                v = curr.val
-                curr.val = prev.val
-                prev.val = v
-            trigger = not trigger
-            prev = curr
+        if not head or not head.next:
+            return head
+
+        prev = head
+        curr = prev.next
+        while prev and curr:
+            v = prev.val
+            prev.val = curr.val
+            curr.val = v
+            prev = curr.next
+            if prev:
+                curr = prev.next
         return head
+
+l = ListNode(1)
+l.next = ListNode(2)
+l.next.next = ListNode(3)
+l.next.next.next = ListNode(4)
+
+solution = Solution()
+print(solution.swapPairs(l))

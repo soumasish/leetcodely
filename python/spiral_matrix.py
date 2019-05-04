@@ -18,8 +18,10 @@ class Solution(object):
         if not matrix or len(matrix) == 0:
             return matrix
         result = []
-        row_begin, row_end, col_begin, col_end = 0, len(matrix) - 1, 0, len(matrix[0]) - 1
-        while row_begin <= row_end and col_begin <= col_end:
+
+        def traverse(row_begin, col_begin, row_end, col_end):
+            if row_begin > row_end or col_begin > col_end:
+                return
             for i in range(col_begin, col_end + 1):
                 result.append(matrix[row_begin][i])
             row_begin += 1
@@ -35,6 +37,8 @@ class Solution(object):
             for i in range(row_end, row_begin - 1, -1):
                 result.append(matrix[i][col_begin])
             col_begin += 1
+            traverse(row_begin, col_begin, row_end, col_end)
+        traverse(0, 0, len(matrix) - 1, len(matrix[0]) - 1)
 
         return result
 

@@ -25,6 +25,32 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 21 |[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |[x](https://github.com/soumasish/leetcodely/blob/master/python/merge_two_sorted_lists.py) | | | |
 | 22 |[Generate Paratheses](https://leetcode.com/problems/generate-parentheses/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/generate_parantheses.py) | | | |
 | 23 |[Merge K Sorted Lists](https://leetcode.com/problems/generate-parentheses/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/merge_k_sorted_lists.py) | | | |
+| 24 |[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/swap_nodes_in_pairs.py) | | | |
+| 26 |[Remove Duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/remove_duplicates.py) | | | |
+| 31 |[Next Permutation](https://leetcode.com/problems/next-permutation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/next_permutation.py) | | | |
+| 33 |[Search in a Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_in_a_rotated_array.py) | | | |
+| 34 |[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_for_a_range.py)| | | |
+| 37 |[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sudoku_solver.py)| | | |
+| 42 |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/trapping_rain_water.py)| | | |
+| 44 |[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/wildcard_matching.py)| | | |
+| 46 |[Permutations](https://leetcode.com/problems/permutations/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/permutations.py)| | | |
+| 48 |[Rotate Image](https://leetcode.com/problems/rotate-image/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/rotate_image.py)| | | |
+| 50 |[Pow(x,n)](https://leetcode.com/problems/powx-n/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/pow_x_n.py)| | | |
+| 51 |[N-Queens](https://leetcode.com/problems/n-queens/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/n_queens.py)| | | |
+| 53 |[Maximum Subarray Sum](https://leetcode.com/problems/maximum-subarray/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_subarray.py)| | | |
+| 54 |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/spiral_matrix.py)| | | |
+| 56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/merge_intervals.py)| | | |
+| 57 |[Insert Interval](https://leetcode.com/problems/insert-interval/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/insert_interval.py)| | | |
+| 66 |[Plus One](https://leetcode.com/problems/plus-one/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/plus_one.py)| | | |
+| 67 |[Add Binary](https://leetcode.com/problems/add-binary/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_binary.py)| | | |
+| 68 |[Text Justification](https://leetcode.com/problems/text-justification/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/text_justification.py)| | | |
+| 69 |[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sqrt_x.py)| | | |
+| 75 |[Sort Colors](https://leetcode.com/problems/sort-colors/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sort_colors.py)| | | |
+| 76 |[Min Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/minimum_window_substring.py)| | | |
+| 78 |[Subsets](https://leetcode.com/problems/minimum-window-substring/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/subsets.py)| | | |
+| 84 |[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/largest_rectangle_in_a_histogram.py)| | | |
+| 85 |[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximal_rectangle.py)| | | |
+| 91 |[Decode Ways](https://leetcode.com/problems/decode-ways/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/decode_ways.py) | | | |
 | 94 |[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_inorder_traversal.py) | | | |
 | 95 |[Unique Binary Search Trees -II](https://leetcode.com/problems/unique-binary-search-trees-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/unique_binary_search_trees_ii.py) | | | |
 | 98 |[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/validate_binary_search_tree.py) | | | |
@@ -32,6 +58,7 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 101 |[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/symmetric_tree.py)| | | |
 | 102 |[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_level_order_traversal.py) | | | |
 | 116 |[Populating Next Right Pointers](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//populating_next_right_pointers_in_each_node.py) | | | |
+| 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/pythonnumber_of_islands.py) | | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py) | | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py) | | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py) | | | |
@@ -43,16 +70,19 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)| | |
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//inorder_successor_ii)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)| | |
-| 824 |[Goat Latin](https://leetcode.com/problems/goat-latin/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js) | | |
+| 824 |[Goat Latin](https://leetcode.com/problems/goat-latin/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js)| | |
+| 839 |[Similar String Groups](https://leetcode.com/problems/similar-string-groups/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_binary_tree.py) | |
 | 865 |[Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/smallest_subtree_with_all_deepest_nodes.js) | | |
 | 896 |[Monotonic Array](https://leetcode.com/problems/monotonic-array/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/monotonicArray.js) | | |
 | 921 |[Minimum Add to Make Paranthesis Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/check_completeness_of_binary_tree.py)|[x](https://github.com/soumasish/leetcodely/blob/master/python//minAddToMakeParanthesisValid.js)| | |
-| 924 |[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimizeMalwareSpread.js)
+| 924 |[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/malware_spread_problem.py)| | | |
 | 937 |[Reorder Log Files](https://leetcode.com/problems/reorder-log-files/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/reorderLogFiles.js)| | |
 | 938 |[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/rangeSumOfBST.js) | | |
 | 953 |[Verify and Aient Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/verifyingAlienDictionary.js)| | |
-| 958 |[Check Completeness of Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//check_completeness_of_binary_tree.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/checkCompletenessOfBinaryTree.js) | | |
+| 958 |[Check Completeness of Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/check_completeness_of_binary_tree.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/checkCompletenessOfBinaryTree.js) | | |
+| 959 |[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/regions_cut_by_slashes.py)| | | |
 | 973 |[K Closest Point to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/kClosetPointstoOrigin.js) | | |
+| 990 |[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/satisfiability_of_equations.py) | | | |
 | 1008 |[Construct Binary Search Tree From Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_binary_search_tree_from_preorder.py) | | |
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py) | | |
 | 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py) | | |
