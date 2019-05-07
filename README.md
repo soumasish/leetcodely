@@ -8,8 +8,8 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 
 | # | Problem |Python  | Javascript | Java | C++ | Swift |
 |---|:--------|:-----------|:-----|:----|:-------|:------|
-| 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)|
-( https://github.com/vishwass/leetcodely/blob/master/java/solutions/TwoSum.java )| | |
+| 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)|[x]
+(https://github.com/vishwass/leetcodely/blob/master/java/solutions/TwoSum.java)| | |
 | 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| | | 
 | 3 |[Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_without_repeating_characters.py)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestSubstringWithoutRepeatingCharacters.js)| | |
 | 4 |[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/median_of_two_sorted_arrays.py) | | | |
