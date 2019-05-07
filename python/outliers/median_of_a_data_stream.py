@@ -1,4 +1,4 @@
-from python.ds import MinHeap, MaxHeap
+from python.ds.heap import MinHeap, MaxHeap
 
 
 class Solution:

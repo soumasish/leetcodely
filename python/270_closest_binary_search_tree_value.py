@@ -1,6 +1,6 @@
 """Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target"""
 import sys
-from python.leetcode import BinarySearchTree
+from python.ds.binary_search_tree import BinarySearchTree
 
 
 # Definition for a binary tree node.
