@@ -16,4 +16,11 @@ class Solution:
         :type str: str
         :rtype: bool
         """
-        eiddcchtti
+        arr = str.split(" ")
+        if len(arr) != len(pattern):
+            return False
+        check = {pattern[0]: arr[0]}
+        for i in range(1, len(str)):
+            if pattern[i] == pattern[i-1]:
+                pass
+
