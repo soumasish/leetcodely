@@ -19,7 +19,6 @@ order is [0,1]
 4, [[1,0],[2,0],[3,1],[3,2]]
 There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 
 1 and 2 should be taken after you finished course 0. So one correct course order is [0,1,2,3]. Another correct ordering is[0,2,1,3]."""
-import collections
 
 
 class Graph:
@@ -31,10 +30,13 @@ class Graph:
             p_node = self.adj_list[p]
         else:
             p_node = Node(p)
+            self.adj_list[p] = p_node
         if q in self.adj_list:
             q_node = self.adj_list[q]
         else:
             q_node = Node(q)
+            self.adj_list[q] = q_node
+
         p_node.add(q_node)
 
     def get_all_vertices(self):
@@ -54,7 +56,7 @@ class Node:
 
 
 class Solution(object):
-    def findOrder(self, numCourses, prerequisites):
+    def findOrder(self, prerequisites):
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -81,3 +83,7 @@ class Solution(object):
             else:
                 self.top_sort_util(v)
         stack.append(vertex)
+
+
+solution = Solution()
+print(solution.findOrder([[1, 0], [2, 0], [3, 1], [3, 2]]))
