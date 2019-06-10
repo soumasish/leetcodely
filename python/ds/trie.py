@@ -45,7 +45,7 @@ class Trie:
 
 class TrieNode:
     def __init__(self):
-        self.children = defaultdict(TrieNode)
+        self.children = {}
         self.end_of_word = False
 
 

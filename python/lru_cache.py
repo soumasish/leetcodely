@@ -7,7 +7,6 @@
     set(key, value) - Set or insert the value if the key is not already present.
     When the cache reached its capacity, it should invalidate the least recently
     used item before inserting a new item."""
-from collections import OrderedDict
 
 
 class LRUCache:
@@ -15,20 +14,27 @@ class LRUCache:
         """
         :type capacity: int
         """
-        self.table = OrderedDict()
+        self.head = None
+        self.tail = None
+        self.table = {}
         self.capacity = capacity
+        self.curr_index = 0
 
     def get(self, key):
         """
         :type key: int
         :rtype: int
         """
-        if key not in self.table:
+        if key in self.table:
+            p = self.table[key]
+            p.prev.next = p.next if p.next else None
+            p.next.prev = p.prev if p.prev else None
+            p.next = self.head
+            self.head.prev = p
+            self.head = p
+            return self.head.value
+        else:
             return -1
-        value = self.table[key]
-        self.table.pop(key)
-        self.table[key] = value
-        return value
 
     def put(self, key, value):
         """
@@ -37,14 +43,35 @@ class LRUCache:
         :rtype: void
         """
         if key in self.table:
-            self.table.pop(key)
-            self.table[key] = value
+            p = self.table[key]
+            p.value = value
         else:
+            p = Node(key, value)
+            self.table[key] = p
             if self.capacity == 0:
-                self.table.popitem(last=False)
+                q = self.table[self.tail.key]
+                self.table.pop(q.key)
+                self.tail = self.tail.next
+                p.next = self.head
+                self.head.prev = p
+                self.head = p
+
             else:
+                if not self.head:
+                    self.head = self.tail = p
+                else:
+                    p.next = self.head
+                    self.head.prev = p
+                    self.head = p
                 self.capacity -= 1
-            self.table[key] = value
+
+
+class Node:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next = None
 
 
 if __name__ == '__main__':

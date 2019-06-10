@@ -1,8 +1,7 @@
 # Algorithmic Thinking: A Hands-on Approach to Understanding Algorithms & Data Structures 
 
-This repo is meant to complement http://soumasish.io where I try to explain algorithms and data structures the way I understand them. Leetcode is used as a tool here for solving actual problems from each algorithmic paradigm - which opens up the repo to anyone who'd wish to work simply with leetcode without bothering about the blog - and that's fine too.
-
- There's a folder for languages inside of which a few problems have been added to get things going. If you wish to contribute, a big thanks, feel free to send me a PR.
+This repo is a practise pad for learning algorithms and data structures and practising for coding interviews. There's a folder for languages inside of which are solutions specific to the language. There's a ds(data structures folder inside of each language segment that provides a language specific implementation of the common data types. That's a good place to get started. The repo is meant to be used in consonance with https://leetcode.com and thus the descriptions and explanatory examples can be found in the problem statement on the website.)
+If you wish to contribute, a big thanks, feel free to send me a PR. If you wish to contribute in a different language that's great too, just update the index accordingly.
 
 ## Contents
 
@@ -57,7 +56,19 @@ This repo is meant to complement http://soumasish.io where I try to explain algo
 | 100 |[Same Tree](https://leetcode.com/problems/same-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/same_tree.py) | | | |
 | 101 |[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/symmetric_tree.py)| | | |
 | 102 |[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_level_order_traversal.py) | | | |
-| 116 |[Populating Next Right Pointers](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//populating_next_right_pointers_in_each_node.py) | | | |
+| 103 |[Binary Tree Zig Zag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_zigzag_level_order_traversal.py) | | | |
+| 104 |[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/maximum_depth_of_binary_tree.py) | | | |
+| 116 |[Populating Next Right Pointers](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/populating_next_right_pointers_in_each_node.py) | | | |
+| 117 |[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/populating_next_right_pointers_in_each_node_II.py) | | | |
+| 118 |[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/pascals_triangle.py) | | | |
+| 121 |[Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/best_time_to_buy_and_sell_stock.py) | | | |
+| 125 |[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/valid_palindrome.py) | | | |
+| 127 |[Word Ladder](https://leetcode.com/problems/word-ladder/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_ladder.py) | | | |
+| 128 |[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_consecutive_sequence.py) | | | |
+| 133 |[Clone Graph](https://leetcode.com/problems/clone-graph/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/clone_graph.py) | | | |
+| 138 |[Copy List of Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/copy_list_with_random_pointer.py) | | | |
+| 139 |[Word Break](https://leetcode.com/problems/word-break/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_break.py) | | | |
+| 146 |[LRU Cache](https://leetcode.com/problems/lru-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lru_cache.py) | | | |
 | 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/pythonnumber_of_islands.py) | | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py) | | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py) | | | |
