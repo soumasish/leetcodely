@@ -6,11 +6,11 @@
 # Example 2 1 1 3
 #         2 1 1 2
 #         2 2 3 5
-# In the above example the number is 2 and the number of repetitions is 5
+# In the above example the number is 2 and the number of repetitions is 4
 # Example 2 3 3 2
 #         2 3 3 2
 #         2 2 3 5
-# In this example the answer is 3, both 2 and 3 have 4 adjacent occurences, but 3 is higher than 2
+# In this example the answer is 3, both 2 and 3 have 4 adjacent occurences, but 3 is higher than 2, so the answer is 3.
 
 import collections
 
