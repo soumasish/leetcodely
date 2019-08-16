@@ -88,7 +88,6 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 896 |[Monotonic Array](https://leetcode.com/problems/monotonic-array/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/monotonicArray.js) | | |
 | 921 |[Minimum Add to Make Paranthesis Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/check_completeness_of_binary_tree.py)|[x](https://github.com/soumasish/leetcodely/blob/master/python//minAddToMakeParanthesisValid.js)| |
 | 924 |[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/malware_spread_problem.py)| | |
-| 924 |[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimizeMalwareSpread.js.js)| |
 | 937 |[Reorder Log Files](https://leetcode.com/problems/reorder-log-files/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/reorderLogFiles.js)| |
 | 938 |[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/rangeSumOfBST.js) | |
 | 953 |[Verify and Aient Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/verifyingAlienDictionary.js)| | |
