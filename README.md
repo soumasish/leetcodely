@@ -69,6 +69,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 138 |[Copy List of Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/copy_list_with_random_pointer.py) | | | |
 | 139 |[Word Break](https://leetcode.com/problems/word-break/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_break.py)| | |
 | 146 |[LRU Cache](https://leetcode.com/problems/lru-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lru_cache.py)| | |
+| 150 |[Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/evaluate_reverse_polish_notation.py)| | |
 | 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/pythonnumber_of_islands.py)| | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | |
