@@ -70,7 +70,23 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 139 |[Word Break](https://leetcode.com/problems/word-break/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_break.py)| | |
 | 146 |[LRU Cache](https://leetcode.com/problems/lru-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lru_cache.py)| | |
 | 150 |[Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/evaluate_reverse_polish_notation.py)| | |
-| 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/pythonnumber_of_islands.py)| | |
+| 152 |[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_product_subarray.py)| | |
+| 155 |[Min Stack](https://leetcode.com/problems/min-stack/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/min_stack.py)| | |
+| 156 |[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_upside_down.py)| | |
+| 157 |[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/read_n_chars_given_read_4.py)| | |
+| 158 |[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/read_n_characters_given_read_4_ii.py)| | |
+| 159 |[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_with_at_most_2_distinct_characters.py)| | |
+| 161 |[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/one_edit_distance.py)| | |
+| 162 |[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_peak_element.py)| | |
+| 163 |[Missing Ranges](https://leetcode.com/problems/missing-ranges/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/missing_ranges.py)| | |
+| 165 |[Compare Versions](https://leetcode.com/problems/compare-version-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/compare_version_numbers.py)| | |
+| 168 |[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/excel_column_sheet_title.py)| | |
+| 170 |[Two Sum III - Data structure design](https://leetcode.com/problems/excel-sheet-column-title/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum_iii_data_structure_design.py)| | |
+| 171 |[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/excel_sheet_column_number.py)| | |
+| 173 |[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_search_tree_iterator.py)| | |
+| 187 |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_dna_sequence.py)| | |
+| 198 |[House Robber](https://leetcode.com/problems/house-robber/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/house_robber.py)| | |
+| 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/number_of_islands.py)| | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
