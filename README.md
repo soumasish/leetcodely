@@ -94,6 +94,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 215 |[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/kth_largest_element_in_an_array.py)| | | |
 | 221 |[Maximal Square](https://leetcode.com/problems/maximal-square/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximal_square.py)| | | |
 | 231 |[Power of Two](https://leetcode.com/problems/power-of-two/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/power_of_two.py)| | | |
+| 236 |[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lowest_common_ancestor.py)| | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
