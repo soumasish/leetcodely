@@ -95,6 +95,9 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 221 |[Maximal Square](https://leetcode.com/problems/maximal-square/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximal_square.py)| | | |
 | 231 |[Power of Two](https://leetcode.com/problems/power-of-two/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/power_of_two.py)| | | |
 | 236 |[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lowest_common_ancestor.py)| | | |
+| 237 |[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_a_linked_list.py)| | | |
+| 238 |[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/product_of_array_except_self.py)| | | |
+| 239 |[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sliding_window_maximum.py)| | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
