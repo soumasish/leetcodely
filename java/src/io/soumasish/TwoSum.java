@@ -5,18 +5,22 @@ import java.util.Map;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer,Integer> numbers = new HashMap<Integer,Integer>();
-        for(int i=0;i<nums.length;i++){
-            if(numbers.containsKey(target-nums[i])){
-                int otherIndex = numbers.get(target-nums[i]);
-                if(nums[i] > (target-nums[i])){
-                    return new int[]{otherIndex, i};
-                }else{
-                    return new int[]{i, otherIndex};
-                }
+        int[] result = {-1, -1};
+        Map<Integer, Integer> check = new HashMap<>();
+        for(int i=0; i < nums.length; i++){
+            if (check.containsKey(target - nums[i])){
+                result[0] = check.get(target - nums[i]);
+                result[1] = i;
+                break;
+            }else{
+                check.put(nums[i], i);
             }
-            numbers.put(nums[i],i);
         }
-        return new int[]{0,1};
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
