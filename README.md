@@ -86,7 +86,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 173 |[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_search_tree_iterator.py)| | | |
 | 187 |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_dna_sequence.py)| | | |
 | 198 |[House Robber](https://leetcode.com/problems/house-robber/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/house_robber.py)| | | |
-| 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/number_of_islands.py)| | | |
+| 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/number_of_islands.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/NumberOfIslands.java)| | |
 | 208 |[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/implement_trie.py)| | | |
 | 210 |[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/course_schedule_ii.py)| | | |
 | 211 |[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_and_search_word.py)| | | |
@@ -107,7 +107,8 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 530 |[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/minAbsoluteDifference.js)| | | |
 | 654 |[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_binary_tree.py)| | | |
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
-| 734 |[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarity.java)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
+| 734 |[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarity.java)| | |
+| 737 |[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarityII.java)| | |
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)|
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)|
 | 824 |[Goat Latin](https://leetcode.com/problems/goat-latin/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js)|
