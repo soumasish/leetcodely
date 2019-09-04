@@ -110,6 +110,16 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 254 |[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[x](https://github.com/soumasish/leetcodely/blob/master/factor_combinations.py)| | | |
 | 256 |[Paint House](https://leetcode.com/problems/paint-house/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_house.py)| | | |
 | 257 |[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_paths.py)| | | |
+| 259 |[3Sum Samller](https://leetcode.com/problems/3sum-smaller/)|[x](https://github.com/soumasish/leetcodely/blob/master/3sum_smaller.py)| | | |
+| 266 |[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[x](https://github.com/soumasish/leetcodely/blob/master/palindrome_permutation.py)| | | |
+| 270 |[Closest Binary Search Tree Value](https://leetcode.com/problems/encode-and-decode-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/closest_binary_search_tree_value.py)| | | |
+| 271 |[Encode & Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/encode_and_decode_strings.py)| | | |
+| 273 |[Integer to English Word](https://leetcode.com/problems/integer-to-english-words/)|[x](https://github.com/soumasish/leetcodely/blob/master/integer_to_english_words.py)| | | |
+| 274 |[H Index](https://leetcode.com/problems/h-index/)|[x](https://github.com/soumasish/leetcodely/blob/master/h_index.py)| | | |
+| 276 |[Paint Fence](https://leetcode.com/problems/paint-fence/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_fence.py)| | | |
+| 277 |[Find Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[x](https://github.com/soumasish/leetcodely/blob/master/find_celebrity.py)| | | |
+| 278 |[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[x](https://github.com/soumasish/leetcodely/blob/master/first_bad_version.py)| | | |
+| 281 |[Zig Zag Interator](https://leetcode.com/problems/zigzag-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/zig_zag_iterator.py)| | | |
 | 283 |[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[x](https://github.com/soumasish/leetcodely/blob/master/move_zeroes.py)| | | |
 | 284 |[Peeking Interator](https://leetcode.com/problems/peeking-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/peeking_iterator.py)| | | |
 | 285 |[Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/inorder_successor.py)| | | |
