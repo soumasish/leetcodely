@@ -141,9 +141,20 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 737 |[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarityII.java)| | |
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)|
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)|
+| 817 |[Linked List Components](https://leetcode.com/problems/linked-list-components/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/linked_list_components.py)| | | |\
 | 824 |[Goat Latin](https://leetcode.com/problems/goat-latin/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js)|
+| 830 |[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/positions_of_large_groups.py)| | | |
+| 832 |[Flipping An Image](https://leetcode.com/problems/similar-string-groups/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/flipping_an_image.py)| | ||
 | 839 |[Similar String Groups](https://leetcode.com/problems/similar-string-groups/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_binary_tree.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js)|
+| 840 |[Magic Squares in a Grid](https://leetcode.com/problems/magic-squares-in-grid/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/magic_squares_in_a_grid.py) | | | |
 | 841 |[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/keysAndRooms.js)|
+| 844 |[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/backspace_string_compare.py) | | | |
+| 849 |[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximize_distance_to_closest_person.py) | | | |
+| 852 |[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/peak_index_in_a_mountain_array.py) | | | |
+| 853 |[Car Fleet](https://leetcode.com/problems/car-fleet/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/car_fleet.py) | | | |
+| 854 |[K Similar Strings](https://leetcode.com/problems/k-similar-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/k_similar_strings.py) | | | |
+| 859 |[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/buddy_strings.py) | | | |
+| 864 |[Shortest Path to All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/shortest_path_to_all_keys.py) | | | |
 | 865 |[Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/smallest_subtree_with_all_deepest_nodes.js)|
 | 896 |[Monotonic Array](https://leetcode.com/problems/monotonic-array/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/monotonicArray.js)|
 | 921 |[Minimum Add to Make Paranthesis Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/check_completeness_of_binary_tree.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/python//minAddToMakeParanthesisValid.js)|
