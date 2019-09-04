@@ -110,6 +110,8 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 254 |[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[x](https://github.com/soumasish/leetcodely/blob/master/factor_combinations.py)| | | |
 | 256 |[Paint House](https://leetcode.com/problems/paint-house/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_house.py)| | | |
 | 257 |[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_paths.py)| | | |
+| 283 |[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[x](https://github.com/soumasish/leetcodely/blob/master/move_zeroes.py)| | | |
+| 284 |[Peeking Interator](https://leetcode.com/problems/peeking-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/peeking_iterator.py)| | | |
 | 285 |[Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/inorder_successor.py)| | | |
 | 286 |[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[x](https://github.com/soumasish/leetcodely/blob/master/walls_and_gates.py)| | | |
 | 289 |[Game of Life](https://leetcode.com/problems/game-of-life/)|[x](https://github.com/soumasish/leetcodely/blob/master/game_of_life.py)| | | |
@@ -138,7 +140,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 924 |[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/malware_spread_problem.py)| | | |
 | 937 |[Reorder Log Files](https://leetcode.com/problems/reorder-log-files/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/reorderLogFiles.js)|
 | 938 |[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/rangeSumOfBST.js)| 
-| 953 |[Verify and Aient Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/verifyingAlienDictionary.js)|
+| 953 |[Verify and Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/verifyingAlienDictionary.js)|
 | 958 |[Check Completeness of Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/check_completeness_of_binary_tree.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/checkCompletenessOfBinaryTree.js)|
 | 959 |[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/regions_cut_by_slashes.py)| | | |
 | 973 |[K Closest Point to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/kClosetPointstoOrigin.js)|
