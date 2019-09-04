@@ -105,7 +105,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 246 |[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/strobogrammatic_number.py)| | | |
 | 246 |[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/strobogrammatic_number_ii.py)| | | |
 | 251 |[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[x](https://github.com/soumasish/leetcodely/blob/master/flatten_2d_vector.py)| | | |
-| 252 |[Meeting Rooms](hhttps://leetcode.com/problems/meeting-rooms/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms.py)| | | |
+| 252 |[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms.py)| | | |
 | 253 |[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms_ii.py)| | | |
 | 254 |[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[x](https://github.com/soumasish/leetcodely/blob/master/factor_combinations.py)| | | |
 | 256 |[Paint House](https://leetcode.com/problems/paint-house/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_house.py)| | | |
