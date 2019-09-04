@@ -1,6 +1,6 @@
-# Algorithmic Thinking: A Hands-on Approach to Understanding Algorithms & Data Structures 
+# Solutions to Leetcode Problems in Multiple Languages 
 
-This repo is a practise pad for learning algorithms and data structures and practising for coding interviews. There's a folder for languages inside of which are solutions specific to the language. There's a ds(data structures folder inside of each language segment that provides a language specific implementation of the common data types. That's a good place to get started. The repo is meant to be used in consonance with https://leetcode.com and thus the descriptions and explanatory examples can be found in the problem statement on the website.)
+
 If you wish to contribute, a big thanks, feel free to send me a PR. If you wish to contribute in a different language that's great too, just update the index accordingly.
 
 ## Contents
