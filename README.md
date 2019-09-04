@@ -67,7 +67,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 128 |[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_consecutive_sequence.py)| | | |
 | 133 |[Clone Graph](https://leetcode.com/problems/clone-graph/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/clone_graph.py)| | | |
 | 138 |[Copy List of Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/copy_list_with_random_pointer.py)| | | |
-| 139 |[Word Break](https://leetcode.com/problems/word-break/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_break.py)| | | |
+| 139 |[Word Break](https://leetcode.com/problems/word-break/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_break.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/WordBreak.java) | | |
 | 146 |[LRU Cache](https://leetcode.com/problems/lru-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lru_cache.py)| | | |
 | 150 |[Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/evaluate_reverse_polish_notation.py)| | | |
 | 152 |[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_product_subarray.py)| | | |
@@ -98,6 +98,24 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 237 |[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_a_linked_list.py)| | | |
 | 238 |[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/product_of_array_except_self.py)| | | |
 | 239 |[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sliding_window_maximum.py)| | | |
+| 240 |[Search a 2D matrix](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_a_2d_matrix.py)| | | |
+| 243 |[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/shortest_word_distance.py)| | | |
+| 244 |[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/shortest_word_distance_ii.py)| | | |
+| 245 |[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/shortest_word_distance_iii.py)| | | |
+| 246 |[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/strobogrammatic_number.py)| | | |
+| 246 |[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/strobogrammatic_number_ii.py)| | | |
+| 251 |[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[x](https://github.com/soumasish/leetcodely/blob/master/flatten_2d_vector.py)| | | |
+| 252 |[Meeting Rooms](hhttps://leetcode.com/problems/meeting-rooms/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms.py)| | | |
+| 253 |[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms_ii.py)| | | |
+| 254 |[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[x](https://github.com/soumasish/leetcodely/blob/master/factor_combinations.py)| | | |
+| 256 |[Paint House](https://leetcode.com/problems/paint-house/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_house.py)| | | |
+| 257 |[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_paths.py)| | | |
+| 285 |[Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/inorder_successor.py)| | | |
+| 286 |[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[x](https://github.com/soumasish/leetcodely/blob/master/walls_and_gates.py)| | | |
+| 289 |[Game of Life](https://leetcode.com/problems/game-of-life/)|[x](https://github.com/soumasish/leetcodely/blob/master/game_of_life.py)| | | |
+| 290 |[Word Pattern](https://leetcode.com/problems/word-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/word_pattern.py)| | | |
+| 297 |[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/serialize_deserialize_binary_tree.py)| | | |
+| 298 |[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_longest_consecutive_sequence.py)| | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
@@ -130,3 +148,5 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py)| | | |
 | 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)| | | | 
 | 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/BinaryTreeColoringGame.java)| | |
+| 1165 |[Single Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SingleRowKeyboard.java)| | |
+
