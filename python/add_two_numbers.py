@@ -20,7 +20,7 @@ class Solution(object):
         """
         p = root = ListNode(0)
         carry = 0
-        while l1 or l2:
+        while l1 or l2 or carry:
             v1 = v2 = 0
             if l1:
                 v1 = l1.val
