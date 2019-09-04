@@ -168,8 +168,10 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 990 |[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/satisfiability_of_equations.py)| | | |
 | 997 |[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/findTheTownJudge.js)
 | 1008 |[Construct Binary Search Tree From Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_binary_search_tree_from_preorder.py)| | |
+| 1021 |[Remove Outermost Parantheses](https://leetcode.com/problems/remove-outermost-parentheses/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/remove_outermost_parantheses.py)| | | |
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py)| | | |
-| 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)| | | | 
+| 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)| | | |
+| 1027 |[Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_arithmetic_sequence.py)| | | | 
 | 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/BinaryTreeColoringGame.java)| | |
 | 1165 |[Single Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SingleRowKeyboard.java)| | |
 
