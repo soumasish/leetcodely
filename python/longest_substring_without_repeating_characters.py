@@ -13,18 +13,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        index_map = {}
-        starting_index_of_the_curr_substring, len_of_the_curr_substring, len_of_the_longest_substring = 0, 0, 0
-        for i, v in enumerate(s):
-            if v in index_map:
-                starting_index_of_the_curr_substring = index_map[v] + 1
-            len_of_the_curr_substring = i - starting_index_of_the_curr_substring + 1
-            len_of_the_longest_substring = max(len_of_the_longest_substring, len_of_the_curr_substring)
-            index_map[v] = i
-        return len_of_the_longest_substring
+        pass
 
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.lengthOfLongestSubstring("abba"))
-    print(solution.lengthOfLongestSubstring("bpfbhmipx"))
+    # print(solution.lengthOfLongestSubstring("abba"))
+    print(solution.lengthOfLongestSubstring("tmmzuxt"))
