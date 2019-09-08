@@ -128,6 +128,28 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 290 |[Word Pattern](https://leetcode.com/problems/word-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/word_pattern.py)| | | |
 | 297 |[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/serialize_deserialize_binary_tree.py)| | | |
 | 298 |[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_longest_consecutive_sequence.py)| | | |
+| 301 |[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[x](https://github.com/soumasish/leetcodely/blob/master/remove_invalid_parahthesis.py)| | | |
+| 312 |[Burst Balloons](https://leetcode.com/problems/burst-balloons/)|[x](https://github.com/soumasish/leetcodely/blob/master/burst_balloons.py)| | | |
+| 314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_vertical_order_traversal.py)| | | |
+| 316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)|[x](https://github.com/soumasish/leetcodely/blob/master/remove_duplicate_letters.py)| | | |
+| 325|[Maximum Size Subarray Sum Equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[x](https://github.com/soumasish/leetcodely/blob/master/maximum_size_subarray_sum_equals_k.py)| | | |
+| 326|[Power of Three](https://leetcode.com/problems/power-of-three/)|[x](https://github.com/soumasish/leetcodely/blob/master/power_of_three.py)| | | |
+| 339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[x](https://github.com/soumasish/leetcodely/blob/nested_list_weight_sum.py)| | | |
+| 340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[x](https://github.com/soumasish/leetcodely/blob/longest_substring_with_at_most_k_distinct_characters.py)| | | |
+| 341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/flatten_nested_list_iterator.py)| | | |
+| 345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/reverse_vowels_of_a_string.py)| | | |
+| 346|[Moving Average of a Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[x](https://github.com/soumasish/leetcodely/blob/moving_average_of_a_data_stream.py)| | | |
+| 348|[Design Tic Tac Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[x](https://github.com/soumasish/leetcodely/blob/design_tic_tac_toe.py)| | | |
+| 357|[Count Number of Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[x](https://github.com/soumasish/leetcodely/blob/count_number_with_unique_digits.py)| | | |
+| 359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[x](https://github.com/soumasish/leetcodely/blob/logger_rate_limiter.py)| | | |
+| 361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[x](https://github.com/soumasish/leetcodely/blob/bomb_enemy.py)| | | |
+| 364|[Nested List Weighted Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[x](https://github.com/soumasish/leetcodely/blob/nested_list_weight_sum_ii.py)| | | |
+| 367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[x](https://github.com/soumasish/leetcodely/blob/valid_perfect_square.py)| | | |
+| 380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[x](https://github.com/soumasish/leetcodely/blob/insert_delete_get_random.py)| | | |
+| 383|[Ransom Note](https://leetcode.com/problems/ransom-note/)|[x](https://github.com/soumasish/leetcodely/blob/ransom_note.py)| | | |
+| 387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/first_unique_character_in_a_string.py)| | | |
+| 388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[x](https://github.com/soumasish/leetcodely/blob/longest_absolute_file_path.py)| | | |
+| 392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[x](https://github.com/soumasish/leetcodely/blob/is_subsequence.py)| | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
@@ -166,7 +188,8 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 959 |[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/regions_cut_by_slashes.py)| | | |
 | 973 |[K Closest Point to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/kClosetPointstoOrigin.js)|
 | 990 |[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/satisfiability_of_equations.py)| | | |
-| 997 |[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[x](https://github.com/soumasish/leetcodely/blob/master/javascript/findTheTownJudge.js)
+| 997 |[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/findTheTownJudge.js)|
+| 1004 |[Maximum Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/max_consecutive_ones_iii.py)| | |
 | 1008 |[Construct Binary Search Tree From Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_binary_search_tree_from_preorder.py)| | |
 | 1021 |[Remove Outermost Parantheses](https://leetcode.com/problems/remove-outermost-parentheses/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/remove_outermost_parantheses.py)| | | |
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py)| | | |
