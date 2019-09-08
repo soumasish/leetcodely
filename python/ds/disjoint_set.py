@@ -11,7 +11,8 @@ class DisjointSet:
     def find(self, item):
         if self.parent[item] == item:
             return item
-        self.parent[item] = self.find(self.parent[item])
+        while self.parent != item:
+            item = self.parent[self.parent[item]]
         return self.parent[item]
 
     def count(self):
