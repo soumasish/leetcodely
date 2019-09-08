@@ -150,9 +150,21 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/first_unique_character_in_a_string.py)| | | |
 | 388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[x](https://github.com/soumasish/leetcodely/blob/longest_absolute_file_path.py)| | | |
 | 392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[x](https://github.com/soumasish/leetcodely/blob/is_subsequence.py)| | | |
+| 404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[x](https://github.com/soumasish/leetcodely/blob/sum_of_left_leaves.py)| | | |
+| 416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|[x](https://github.com/soumasish/leetcodely/blob/partition_equal_subset_sum.py)| | | |
+| 418|[Sentence Screen Fitting](https://leetcode.com/problems/sentence-screen-fitting/)|[x](https://github.com/soumasish/leetcodely/blob/sentence_screen_formatting.py)| | | |
+| 419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[x](https://github.com/soumasish/leetcodely/blob/battleships_in_a_board.py)| | | |
+| 433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)|[x](https://github.com/soumasish/leetcodely/blob/minimum_genetic_mutation.py)| | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | | |
+| 438 |[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_all_anagrams_in_a_string.py)| | | |
+| 447 |[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/number_of_boomerangs.py)| | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
+| 451 |[Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|[x](https://github.com/soumasish/leetcodely/blob/master/sort_characters_by_frequency.py)| | |
+| 459 |[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/repeated_substring_pattern.py)| | |
+| 460 |[LFU Cache](https://leetcode.com/problems/lfu-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/lfu_cache.py)| | |
+| 464 |[Can I Win](https://leetcode.com/problems/)|[x](https://github.com/soumasish/leetcodely/blob/master/can_i_win.py)| | |
+| 482 |[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[x](https://github.com/soumasish/leetcodely/blob/master/license_key_formatting.py)| | |
 | 501 |[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_mode_in_binary_search_tree.py)| | | |
 | 508 |[Most Frequent Subtree sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py)| | | |
 | 510 |[In Order Successor II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | | |
