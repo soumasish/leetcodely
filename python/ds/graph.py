@@ -1,5 +1,5 @@
 from collections import deque
-from .graph_errors import GraphError
+from python.ds.graph_errors import GraphError
 
 
 class Graph:
@@ -28,52 +28,72 @@ class Graph:
         except ValueError as e:
             raise GraphError(str(e))
 
-    def get_adjacent_vertices(self, v):
-        return self.vertex_map[v].get_adjacent_vertices()
-
     def get_edge_weight(self, v1, v2):
         pass
 
-    def get_indegree(self, v):
+    def _get_indegree(self, v):
         indegree = 0
-        for vertex, neighbors in self.vertex_map.items():
+        for item in self.vertex_map.values():
+            neighbors = item.get_neighbors()
             if v in neighbors:
                 indegree += 1
         return indegree
 
-    def breadth_first(self, start=0):
+    def breadth_first(self, start=1):
+        p = None
+        if not start:
+            p = self.vertex_map[1]
+        else:
+            try:
+                p = self.vertex_map[start]
+            except KeyError:
+                raise GraphError("Not a valid key for this graph")
         queue = deque()
-        queue.appendleft(start)
+        queue.appendleft(p)
         visited = set()
         while len(queue) > 0:
             vertex = queue.pop()
             if vertex not in visited:
-                neighbors = vertex.get_adjacent_vertices()
+                neighbors = vertex.get_neighbors()
                 for neighbor in neighbors:
                     if neighbor not in visited:
                         queue.appendleft(neighbor)
 
-    def depth_first(self, visited, current=0):
-        if current in visited:
-            return
-        visited.add(current)
-        for vertex in current.get_adjacent_vertices():
-            self.depth_first(visited, vertex)
+    def depth_first(self, start=0):
+        p = None
+        if not start:
+            p = self.vertex_map[1]
+        else:
+            try:
+                p = self.vertex_map[start]
+            except KeyError:
+                raise GraphError('Not a valid key for this graph')
+        visited = set()
+
+        def helper(node):
+            if node in visited:
+                return
+            visited.add(node)
+            for vertex in node.get_neighbors():
+                helper(vertex)
+        helper(p)
 
     def topological_sort(self):
         queue = deque()
-        indegree_map = {vertex: vertex.get_indegree for vertex in self.get_adjacent_vertices()}
+        indegree_map = {vertex: self._get_indegree(vertex) for vertex in self.vertex_map.values()}
+
         for k, v in indegree_map.items():
             if v == 0:
                 queue.appendleft(k)
-        sorted_list = []
+        result = []
         while len(queue) > 0:
             vertex = queue.pop()
-            sorted_list.append(vertex)
-            for v in self.get_adjacent_vertices(vertex):
-                indegree_map[v] -= 1
-                if indegree_map[v] == 0:
-                    queue.appendleft(vertex)
+            result.append(vertex)
+            for neighbor in vertex.get_neighbors():
+                indegree_map[neighbor] -= 1
+                if indegree_map[neighbor] == 0:
+                    queue.appendleft(neighbor)
+        return result
 
     def _build_distance_table(self, source):
         distance_table = {item: (None, None) for item in self.vertex_list}
@@ -105,6 +125,9 @@ class Graph:
             path = [source] + path
             return path
 
+    def get_all_nodes(self):
+        return [(key.id, key.value) for key, value in self.vertex_map.items()]
+
     def __str__(self):
         s = "{ "
         for k, v in self.vertex_map.items():
@@ -130,7 +153,7 @@ class Node:
             raise ValueError("Vertex cannot be added to itself!")
         self.neighbors.add(v)
 
-    def get_adjacent_vertices(self):
+    def get_neighbors(self):
         return sorted(list(self.neighbors))
 
     def __lt__(self, other):
@@ -140,10 +163,27 @@ class Node:
         return self.id > other.id
 
     def __eq__(self, other):
-        return self.id, self.value == other.id, self.value
+        return self.id == other.id
 
     def __hash__(self):
         return hash((self.id, self.value))
 
     def __repr__(self):
-        return '(id:{}, value:{}, neighbors:{}'.format(self.id, self.value, str(self.neighbors))
+        return '(id:{}, value:{}, neighbors: {} )'.format(self.id, self.value, str(self.neighbors))
+
+
+if __name__ == '__main__':
+    graph = Graph(directed=True)
+    graph.add_edge(1, 2)
+    graph.add_edge(2, 3)
+    graph.add_edge(1, 3)
+    graph.add_edge(3, 4)
+    graph.add_edge(4, 5)
+    graph.add_edge(5, 6)
+    graph.add_edge(3, 7)
+    # graph.breadth_first()
+    # print(graph)
+    # graph.depth_first(1)
+    # print(graph)
+
+    print(graph.topological_sort())

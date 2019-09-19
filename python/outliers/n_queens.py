@@ -4,7 +4,7 @@ queens which do not attack each other. """
 
 class Solution:
 
-    def findNQueens(self, n: int)->list:
+    def findNQueens(self, n: int) -> list:
         grid = [[0 for _ in range(n)] for _ in range(n)]
         solved = self.helper(n, 0, grid)
         if solved:
