@@ -11,6 +11,7 @@ functions should not be considered as this function's exclusive time. You should
 function sorted by their function id."""
 #TODO: Doesn't provide exclusive time, current logic supports total time
 
+
 class Solution(object):
     def exclusiveTime(self, n, logs):
         """
@@ -18,22 +19,27 @@ class Solution(object):
         :type logs: List[str]
         :rtype: List[int]
         """
-        res = []
+        res = [0 for _ in range(n)]
         stack = []
+        curr_time = 0
         for log in logs:
-            fn, typ, tm = log.split(':')
-            fn, tm = int(fn), int(tm)
-
-            if typ == 'start':
-                stack.append((fn, tm))
-
+            split = log.split(':')
+            f, action, timestamp = int(split[0]), split[1], int(split[2])
+            if action == 'start':
+                if len(stack) > 0:
+                    id = stack[-1]
+                    res[id] += timestamp - curr_time - 1
+                stack.append(f)
+                curr_time = timestamp
             else:
-                item = stack.pop()
-                res.append((fn, tm - item[1] + 1))
-        res = sorted(res, key=lambda x : x[0])
-        print(res)
-        ans = [x[1] for x in res]
-        return ans
+                cur_id = stack.pop()
+                res[cur_id] += timestamp - curr_time + 1
+                curr_time = timestamp
+        return res
+
+
+
+
 
 if __name__ == '__main__':
     solution = Solution()

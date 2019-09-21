@@ -20,17 +20,25 @@ class Solution(object):
         :type t2: TreeNode
         :rtype: TreeNode
         """
-        if t1 is None and t2 is None:
-            return None
-        curr_val = 0
-        if t1 :
-            curr_val += t1.val
-        if t2:
-            curr_val += t2.val
-        node = TreeNode(curr_val)
-        node.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
-        node.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
-        return node
+        if not t1:
+            return t2
+        if not t2:
+            return t1
+        stack = [[t1, t2]]
+        while len(stack) > 0:
+            current = stack.pop()
+            if not current[0] or not current[1]:
+                continue
+            current[0].val += current[1].val
+            if not current[0].left:
+                current[0].left = current[1].left
+            else:
+                stack.append([current[0].left, current[1].left])
+            if not current[0].right:
+                current[0].right = current[1].right
+            else:
+                stack.append([current[0].right, current[1].right])
+        return t1
 
 
 

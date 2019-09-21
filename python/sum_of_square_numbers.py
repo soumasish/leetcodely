@@ -3,6 +3,7 @@
 such that a2 + b2 = c."""
 import math
 
+
 class Solution(object):
     def judgeSquareSum(self, c):
         """
@@ -21,6 +22,7 @@ class Solution(object):
             else:
                 return True
         return False
+
 
 if __name__ == '__main__':
     solution = Solution()

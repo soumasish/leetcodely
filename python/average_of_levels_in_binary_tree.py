@@ -50,6 +50,8 @@ class Solution(object):
                     res.append(curr_total/curr_count)
                     queue.appendleft(delimiter)
                     curr_count, curr_total = 0, 0
+                else:
+                    res.append(curr_total/curr_count)
                 continue
             curr_total += curr.val
             curr_count += 1

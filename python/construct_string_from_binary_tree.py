@@ -12,14 +12,23 @@ pairs that don't affect the one-to-one mapping relationship between the string a
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def tree2str(self, t):
         """
         :type t: TreeNode
         :rtype: str
         """
-        tree_list = []
-        self.helper()
+        if not t:
+            return ''
+        if not t.left and not t.right:
+            return str(t.val)
+        l = self.tree2str(t.left)
+        r = self.tree2str(t.right)
+        res = str(t.val) + '(' + l + ')'
+        if t.right:
+            res += '(' + r + ')'
+        return res
 
-    def helper(self):
-        pass
+
+

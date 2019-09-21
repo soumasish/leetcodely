@@ -26,13 +26,3 @@ class Solution:
             level = sorted([x[0] for x in dic[i]])
             res.append(level)
         return res
-
-
-
-
-
-class SuperTreeNode:
-    def __init__(self, node, hd, vd):
-        self.val = node.val
-        self.left = node.left
-        self.right = node.right
