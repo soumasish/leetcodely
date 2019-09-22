@@ -12,21 +12,20 @@ class Solution(object):
         :type pairs: List[List[int]]
         :rtype: int
         """
-        curr_length = 0
-        for i in range(len(pairs)):
-            res = [pairs[i]]
-            curr = pairs[i]
-            for j in range(len(pairs)):
-                if j != i:
-                    if pairs[j][0] > curr[1]:
-                        res.append(pairs[j])
-                        curr = pairs[j]
-            curr_length = max(curr_length, len(res))
-        return curr_length
+        sorted_pairs = sorted(pairs, key= lambda x:x[1])
+        if len(sorted_pairs) == 0:
+            return 0
+        curr = sorted_pairs[0][1]
+        chain_len = 1
+        for i, pair in enumerate(sorted_pairs):
+            if curr < pair[0]:
+                chain_len += 1
+                curr = pair[1]
+        return chain_len
 
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.findLongestChain([[-10, -8],[8, 9],[-5, 0],[6, 10],[-6, -4],[1, 7],[9, 10],[-4, 7]]))
+    print(solution.findLongestChain([[1, 2], [2, 3], [3, 4]]))
 
 

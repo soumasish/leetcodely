@@ -184,7 +184,13 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 633 |[Sum of Square numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_square_numbers.py)| | |
 | 636 |[Exclusive Time Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/exclusive_time_functions.py)| | |
 | 637 |[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/average_of_levels_in_binary_tree.py)| | |
+| 645 |[Set Mismatch](https://leetcode.com/problems/set-mismatch/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/set_mismatch.py)| | |
+| 646 |[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_length_of_pair_chain.py)| | |
+| 647 |[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/palindromic_substring.py)| | |
+| 653 |[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum_iv_input_is_a_bst.py)| | |
 | 654 |[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_binary_tree.py)| | | |
+| 681 |[Next Closest Time](https://leetcode.com/problems/next-closest-time/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/next_closest_time.py)| | | |
+| 682 |[Baseball Game](https://leetcode.com/problems/baseball-game/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/baseball_game.py)| | | |
 | 702 |[Search In a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_in_a_sorted_array_of_unknown_size.py) | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
 | 734 |[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarity.java)| | |

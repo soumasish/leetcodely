@@ -7,13 +7,14 @@ Given an array nums representing the data status of this set after the error. Yo
 occurs twice and then find the number that is missing. Return them in the form of an array."""
 import collections
 
+
 class Solution(object):
     def findErrorNums(self, nums):
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        index_map = {i+1:0 for i in range(len(nums))}
+        index_map = {i+1: 0 for i in range(len(nums))}
         duplicate, missing = -1, -1
         for item in nums:
             index_map[item] += 1
@@ -28,4 +29,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.findErrorNums([1,5,3,2,2,7,6,4,8,9]))
+    print(solution.findErrorNums([1, 5, 3, 2, 2, 7, 6, 4, 8, 9]))

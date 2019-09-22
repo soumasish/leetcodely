@@ -5,6 +5,7 @@ The substrings with different start indexes or end indexes are counted as differ
  of same characters."""
 #TODO: Not passing all test cases
 
+
 class Solution(object):
     def countSubstrings(self, s):
         """
@@ -20,6 +21,7 @@ class Solution(object):
                 left -= 1
                 right += 1
         return ans
+
 
 if __name__ == '__main__':
     solution = Solution()
