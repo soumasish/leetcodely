@@ -127,7 +127,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 286 |[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[x](https://github.com/soumasish/leetcodely/blob/master/walls_and_gates.py)| | | |
 | 289 |[Game of Life](https://leetcode.com/problems/game-of-life/)|[x](https://github.com/soumasish/leetcodely/blob/master/game_of_life.py)| | | |
 | 290 |[Word Pattern](https://leetcode.com/problems/word-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/word_pattern.py)| | | |
-| 297 |[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/serialize_deserialize_binary_tree.py)| | | |
+| 297 |[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/serialize_deserialize_binary_tree.py)| | | |
 | 298 |[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_longest_consecutive_sequence.py)| | | |
 | 301 |[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[x](https://github.com/soumasish/leetcodely/blob/master/remove_invalid_parahthesis.py)| | | |
 | 312 |[Burst Balloons](https://leetcode.com/problems/burst-balloons/)|[x](https://github.com/soumasish/leetcodely/blob/master/burst_balloons.py)| | | |

@@ -95,23 +95,24 @@ class Graph:
                     queue.appendleft(neighbor)
         return result
 
-    def _build_distance_table(self, source):
-        distance_table = {item: (None, None) for item in self.vertex_list}
-        distance_table[source] = (0, source)
+    def build_distance_table(self, source):
+        _source = self.vertex_map[source]
+        distance_table = {value: [None, None] for value in self.vertex_map.values()}
+        distance_table[_source] = [0, _source]
         queue = deque()
-        queue.appendleft(source)
+        queue.appendleft(_source)
         while len(queue) > 0:
             current_vertex = queue.pop()
             current_distance = distance_table[current_vertex][0]
-            for neighbor in self.get_adjacent_vertices(current_vertex):
+            for neighbor in current_vertex.get_neighbors():
                 if not distance_table[neighbor][0]:
-                    distance_table[neighbor] = (1 + current_distance, current_vertex)
-                    if len(self.get_adjacent_vertices(neighbor)) > 0:
+                    distance_table[neighbor] = [1 + current_distance, current_vertex]
+                    if len(neighbor.get_neighbors()) > 0:
                         queue.appendleft(neighbor)
         return distance_table
 
     def shortest_path(self, source, destination):
-        distance_table = self._build_distance_table(source)
+        distance_table = self.build_distance_table(source)
         path = [destination]
         previous_vertex = distance_table[destination][1]
 
