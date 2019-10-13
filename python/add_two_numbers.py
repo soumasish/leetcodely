@@ -34,7 +34,5 @@ class Solution(object):
         return root.next
 
 
-if __name__ == '__main__':
-    solution = Solution()
-    print(solution.addTwoNumbers())
+
 

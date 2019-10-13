@@ -13,7 +13,15 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        pass
+        index_map = {}
+        j = 0
+        max_len = 0
+        for i in range(len(s)):
+            if s[i] in index_map:
+                j = max(j, index_map[s[i]] + 1)
+            index_map[s[i]] = i
+            max_len = max(i - j + 1, max_len)
+        return max_len
 
 
 if __name__ == '__main__':
