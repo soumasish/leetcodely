@@ -5,7 +5,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 
 ## Contents
 
-| # | Problem |Python      | Java       | C++    | Javascript |
+| # | Problem |Python/SQL      | Java       | C++    | Javascript |
 |---|:--------|:-----------|:-----------|:-------|:-----------|
 | 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/TwoSum.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)|
 | 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/AddTwoNumbers.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)|
@@ -169,6 +169,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 501 |[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_mode_in_binary_search_tree.py)| | | |
 | 508 |[Most Frequent Subtree sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py)| | | |
 | 510 |[In Order Successor II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | | |
+| 511 |[Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_i.sql)| | | |
 | 515 |[Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/largest_value_in_each_tree_row.py)| | | |
 | 516 |[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_palindromic_subsequence.py)| | | |
 | 523 |[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/continuous_subarray_sum.py)| | | |
