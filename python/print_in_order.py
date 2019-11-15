@@ -27,4 +27,3 @@ class Foo:
             while self.counter != 2:
                 self.second_completed.wait()
             printThird()
-
