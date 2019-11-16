@@ -87,6 +87,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 173 |[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_search_tree_iterator.py)| | | |
 | 181 |[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/employees_earning_more_than_their_managers.sql)| | | |
 | 182 |[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/duplicate_emails.sql)| | | |
+| 183 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[x](https://github.com/soumasish/leetcodely/blob/master/sqlcustomers_who_never_order.sql)| | | |
 | 187 |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_dna_sequence.py)| | | |
 | 197 |[Rising TEmperature](https://leetcode.com/problems/rising-temperature/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/rising_temperature.sql)| | | |
 | 198 |[House Robber](https://leetcode.com/problems/house-robber/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/house_robber.py)| | | |
@@ -181,6 +182,8 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 535 |[Encode and Decod TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/enocde_and_decode_tiny_url.py)| | |
 | 537 |[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/complex_number_multiplication.py)| | |
 | 540 |[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/single_element_in_a_soted_array.py)| | |
+| 574 |[Winning Candidate](https://leetcode.com/problems/winning-candidate/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/winning_candidate.sql)| | |
+| 595 |[Big Countries](https://leetcode.com/problems/big-countries/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/big_countries.sql)| | |
 | 605 |[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/can_place_flowers.py)| | |
 | 606 |[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_string_from_binary_tree.py)| | |
 | 616 |[Add Bold Tags](https://leetcode.com/problems/add-bold-tag-in-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_bold_tag_in_string.py)| | |
@@ -235,6 +238,9 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py)| | | |
 | 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)| | | |
 | 1027 |[Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_arithmetic_sequence.py)| | | | 
+| 1050 |[Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/)| |[x](https://github.com/soumasish/leetcodely/blob/master/sql/actors_and_directors_who_cooperated_atleast_3_times.sql)| | | | 
+| 1075 |[Project Employees I](https://leetcode.com/problems/project-employees-i/)| |[x](https://github.com/soumasish/leetcodely/blob/master/sql/project_employees_i.sql)| | | | 
+| 1112 |[Highest Grade For Each Student](https://leetcode.com/problems/highest-grade-for-each-student/)| |[x](https://github.com/soumasish/leetcodely/blob/master/sql/highest_grade_for_each_student.sql)| | |
 | 1114 |[Print in Order](https://leetcode.com/problems/print-in-order/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/print_in_order.py)| | |
 | 1115 |[Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/print_foobar_alternately.py)| | |
 | 1145 |[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_coloring_game.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/BinaryTreeColoringGame.java)| | |
