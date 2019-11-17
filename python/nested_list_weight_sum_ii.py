@@ -55,6 +55,7 @@ class NestedInteger(object):
        :rtype List[NestedInteger]
        """
 
+
 class Solution(object):
     def depthSumInverse(self, nestedList):
         """

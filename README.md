@@ -28,7 +28,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 26 |[Remove Duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/remove_duplicates.py)| | |
 | 31 |[Next Permutation](https://leetcode.com/problems/next-permutation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/next_permutation.py)| | |
 | 33 |[Search in a Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_in_a_rotated_array.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SearchInRotatedArray.java)| | |
-| 34 |[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_for_a_range.py)| | | |
+| 34 |[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_first_and_last_position_of_element_in_sorted_array.py)| | | |
 | 37 |[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sudoku_solver.py)| | | |
 | 42 |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/trapping_rain_water.py)| | | |
 | 44 |[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/wildcard_matching.py)| | | |
@@ -92,6 +92,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 197 |[Rising TEmperature](https://leetcode.com/problems/rising-temperature/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/rising_temperature.sql)| | | |
 | 198 |[House Robber](https://leetcode.com/problems/house-robber/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/house_robber.py)| | | |
 | 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/number_of_islands.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/NumberOfIslands.java)| | |
+| 205 |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/isomorphic_strings.py)| [x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/IsomorphicStrings.java)| | |
 | 208 |[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/implement_trie.py)| | | |
 | 210 |[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/course_schedule_ii.py)| | | |
 | 211 |[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_and_search_word.py)| | | |
@@ -201,8 +202,10 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 681 |[Next Closest Time](https://leetcode.com/problems/next-closest-time/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/next_closest_time.py)| | | |
 | 682 |[Baseball Game](https://leetcode.com/problems/baseball-game/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/baseball_game.py)| | | |
 | 702 |[Search In a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_in_a_sorted_array_of_unknown_size.py) | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
+| 716 |[Max Stack](https://leetcode.com/problems/max-stack/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/max_stack.py) | ||
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
 | 734 |[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarity.java)| | |
+| 735 |[Asteroid COllision](https://leetcode.com/problems/asteroid-collision/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/asteroid_collision.py)| | |
 | 737 |[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarityII.java)| | |
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)|
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)|

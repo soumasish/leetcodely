@@ -53,16 +53,17 @@ class Solution(object):
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-        return self.helper(nestedList, 1)
+        res = [0]
 
-    def helper(self, nestedList, level):
-        total = 0
-        for item in nestedList:
-            if item.isInteger():
-                total += item.getInteger() * level
-            else:
-                total += self.helper(item.getList(), level + 1)
-        return total
+        def helper(lst, level):
+            for item in lst:
+                if item.isInteger():
+                    res[0] += item.getInteger() * level
+                else:
+                    helper(item.getList(), level + 1)
+
+        helper(nestedList, 1)
+        return res[0]
 
 
 if __name__ == '__main__':
