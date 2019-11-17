@@ -106,51 +106,52 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 240 |[Search a 2D matrix](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/search_a_2d_matrix.py)| | | |
 | 243 |[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/shortest_word_distance.py)| | | |
 | 244 |[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/shortest_word_distance_ii.py)| | | |
-| 245 |[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/shortest_word_distance_iii.py)| | | |
-| 246 |[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/strobogrammatic_number.py)| | | |
-| 246 |[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/strobogrammatic_number_ii.py)| | | |
-| 251 |[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[x](https://github.com/soumasish/leetcodely/blob/master/flatten_2d_vector.py)| | | |
+| 245 |[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/shortest_word_distance_iii.py)| | | |
+| 246 |[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/strobogrammatic_number.py)| | | |
+| 246 |[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/strobogrammatic_number_ii.py)| | | |
+| 251 |[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/flatten_2d_vector.py)| | | |
 | 252 |[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms.py)| | | |
-| 253 |[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/meeting_rooms_ii.py)| | | |
-| 254 |[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[x](https://github.com/soumasish/leetcodely/blob/master/factor_combinations.py)| | | |
-| 256 |[Paint House](https://leetcode.com/problems/paint-house/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_house.py)| | | |
-| 257 |[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_paths.py)| | | |
-| 259 |[3Sum Samller](https://leetcode.com/problems/3sum-smaller/)|[x](https://github.com/soumasish/leetcodely/blob/master/3sum_smaller.py)| | | |
-| 266 |[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[x](https://github.com/soumasish/leetcodely/blob/master/palindrome_permutation.py)| | | |
-| 270 |[Closest Binary Search Tree Value](https://leetcode.com/problems/encode-and-decode-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/closest_binary_search_tree_value.py)| | | |
-| 271 |[Encode & Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/encode_and_decode_strings.py)| | | |
-| 273 |[Integer to English Word](https://leetcode.com/problems/integer-to-english-words/)|[x](https://github.com/soumasish/leetcodely/blob/master/integer_to_english_words.py)| | | |
-| 274 |[H Index](https://leetcode.com/problems/h-index/)|[x](https://github.com/soumasish/leetcodely/blob/master/h_index.py)| | | |
-| 276 |[Paint Fence](https://leetcode.com/problems/paint-fence/)|[x](https://github.com/soumasish/leetcodely/blob/master/paint_fence.py)| | | |
-| 277 |[Find Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[x](https://github.com/soumasish/leetcodely/blob/master/find_celebrity.py)| | | |
-| 278 |[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[x](https://github.com/soumasish/leetcodely/blob/master/first_bad_version.py)| | | |
-| 281 |[Zig Zag Interator](https://leetcode.com/problems/zigzag-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/zig_zag_iterator.py)| | | |
-| 283 |[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[x](https://github.com/soumasish/leetcodely/blob/master/move_zeroes.py)| | | |
-| 284 |[Peeking Interator](https://leetcode.com/problems/peeking-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/peeking_iterator.py)| | | |
-| 285 |[Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/inorder_successor.py)| | | |
-| 286 |[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[x](https://github.com/soumasish/leetcodely/blob/master/walls_and_gates.py)| | | |
-| 289 |[Game of Life](https://leetcode.com/problems/game-of-life/)|[x](https://github.com/soumasish/leetcodely/blob/master/game_of_life.py)| | | |
-| 290 |[Word Pattern](https://leetcode.com/problems/word-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/word_pattern.py)| | | |
+| 253 |[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/meeting_rooms_ii.py)| | | |
+| 254 |[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//factor_combinations.py)| | | |
+| 256 |[Paint House](https://leetcode.com/problems/paint-house/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/paint_house.py)| | | |
+| 257 |[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_paths.py)| | | |
+| 259 |[3Sum Samller](https://leetcode.com/problems/3sum-smaller/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/3sum_smaller.py)| | | |
+| 266 |[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/palindrome_permutation.py)| | | |
+| 270 |[Closest Binary Search Tree Value](https://leetcode.com/problems/encode-and-decode-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/closest_binary_search_tree_value.py)| | | |
+| 271 |[Encode & Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/encode_and_decode_strings.py)| | | |
+| 273 |[Integer to English Word](https://leetcode.com/problems/integer-to-english-words/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/integer_to_english_words.py)| | | |
+| 274 |[H Index](https://leetcode.com/problems/h-index/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/h_index.py)| | | |
+| 276 |[Paint Fence](https://leetcode.com/problems/paint-fence/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/paint_fence.py)| | | |
+| 277 |[Find Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_celebrity.py)| | | |
+| 278 |[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/first_bad_version.py)| | | |
+| 281 |[Zig Zag Interator](https://leetcode.com/problems/zigzag-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/zig_zag_iterator.py)| | | |
+| 283 |[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/move_zeroes.py)| | | |
+| 284 |[Peeking Interator](https://leetcode.com/problems/peeking-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/peeking_iterator.py)| | | |
+| 285 |[Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor.py)| | | |
+| 286 |[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/walls_and_gates.py)| | | |
+| 289 |[Game of Life](https://leetcode.com/problems/game-of-life/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/game_of_life.py)| | | |
+| 290 |[Word Pattern](https://leetcode.com/problems/word-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_pattern.py)| | | |
 | 297 |[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/serialize_deserialize_binary_tree.py)| | | |
-| 298 |[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_longest_consecutive_sequence.py)| | | |
-| 301 |[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[x](https://github.com/soumasish/leetcodely/blob/master/remove_invalid_parahthesis.py)| | | |
+| 298 |[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_longest_consecutive_sequence.py)| | | |
+| 301 |[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/remove_invalid_parahthesis.py)| | | |
 | 312 |[Burst Balloons](https://leetcode.com/problems/burst-balloons/)|[x](https://github.com/soumasish/leetcodely/blob/master/burst_balloons.py)| | | |
-| 314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/binary_tree_vertical_order_traversal.py)| | | |
-| 316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)|[x](https://github.com/soumasish/leetcodely/blob/master/remove_duplicate_letters.py)| | | |
-| 325|[Maximum Size Subarray Sum Equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[x](https://github.com/soumasish/leetcodely/blob/master/maximum_size_subarray_sum_equals_k.py)| | | |
+| 314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_vertical_order_traversal.py)| | | |
+| 316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/remove_duplicate_letters.py)| | | |
+| 325|[Maximum Size Subarray Sum Equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_size_subarray_sum_equals_k.py)| | | |
 | 326|[Power of Three](https://leetcode.com/problems/power-of-three/)|[x](https://github.com/soumasish/leetcodely/blob/master/power_of_three.py)| | | |
-| 339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[x](https://github.com/soumasish/leetcodely/blob/nested_list_weight_sum.py)| | | |
-| 340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[x](https://github.com/soumasish/leetcodely/blob/longest_substring_with_at_most_k_distinct_characters.py)| | | |
-| 341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/flatten_nested_list_iterator.py)| | | |
-| 345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/reverse_vowels_of_a_string.py)| | | |
+| 339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python//nested_list_weight_sum.py)| | | |
+| 340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_with_at_most_k_distinct_characters.py)| | | |
+| 341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/flatten_nested_list_iterator.py)| | | |
+| 345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/reverse_vowels_of_a_string.py)| | | |
 | 346|[Moving Average of a Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[x](https://github.com/soumasish/leetcodely/blob/moving_average_of_a_data_stream.py)| | | |
-| 348|[Design Tic Tac Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[x](https://github.com/soumasish/leetcodely/blob/design_tic_tac_toe.py)| | | |
-| 357|[Count Number of Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[x](https://github.com/soumasish/leetcodely/blob/count_number_with_unique_digits.py)| | | |
+| 348|[Design Tic Tac Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/design_tic_tac_toe.py)| | | |
+| 357|[Count Number of Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/count_number_with_unique_digits.py)| | | |
 | 359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[x](https://github.com/soumasish/leetcodely/blob/logger_rate_limiter.py)| | | |
 | 361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[x](https://github.com/soumasish/leetcodely/blob/bomb_enemy.py)| | | |
-| 364|[Nested List Weighted Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[x](https://github.com/soumasish/leetcodely/blob/nested_list_weight_sum_ii.py)| | | |
-| 367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[x](https://github.com/soumasish/leetcodely/blob/valid_perfect_square.py)| | | |
-| 380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[x](https://github.com/soumasish/leetcodely/blob/insert_delete_get_random.py)| | | |
+| 364|[Nested List Weighted Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/nested_list_weight_sum_ii.py)| | | |
+| 366|[Find Leaves of a Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_leaves_of_a_binary_tree.py)| | | |
+| 367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/valid_perfect_square.py)| | | |
+| 380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/insert_delete_get_random.py)| | | |
 | 383|[Ransom Note](https://leetcode.com/problems/ransom-note/)|[x](https://github.com/soumasish/leetcodely/blob/ransom_note.py)| | | |
 | 387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/first_unique_character_in_a_string.py)| | | |
 | 388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[x](https://github.com/soumasish/leetcodely/blob/longest_absolute_file_path.py)| | | |
