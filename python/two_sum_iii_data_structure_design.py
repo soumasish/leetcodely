@@ -35,6 +35,7 @@ class TwoSum(object):
                 return True
         return False
 
+
 if __name__ == '__main__':
     twoSum = TwoSum()
     twoSum.add(0)

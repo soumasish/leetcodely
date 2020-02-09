@@ -37,7 +37,7 @@ class WordDistance(object):
     def shortest_distance_in_list(self, lst):
         curr = sys.maxsize
         for i in range(1, len(lst)):
-            curr = min(curr, lst[i] -lst[i-1])
+            curr = min(curr, lst[i] - lst[i-1])
         return curr
 
     def shortest_distance_between_lists(self, lst1, lst2):

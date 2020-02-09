@@ -2,6 +2,7 @@
 """Find the contiguous subarray within an array (containing at least one number) which has the largest product.
 For example, given the array [2,3,-2,4],
 the contiguous subarray [2,3] has the largest product = 6."""
+import sys
 
 
 class Solution(object):
@@ -10,13 +11,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        curr_product, max_product, min_product = nums[0], nums[0], nums[0]
+        max_prod = min_prod = overall = nums[0]
         for i in range(1, len(nums)):
-            curr_product *= nums[i]
-            max_product = max(max_product, curr_product)
-            if curr_product < 0:
-                curr_product = 1
-        return max_product
+            if nums[i] < 0:
+                max_prod, min_prod = min_prod, max_prod
+            max_prod = max(nums[i], max_prod*nums[i])
+            min_prod = min(nums[i], min_prod*nums[i])
+            overall = max(overall, max_prod)
+        return overall
     
 
 if __name__ == '__main__':

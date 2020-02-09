@@ -15,14 +15,14 @@ class Solution:
         queue.appendleft((root, 0, 0))
         dic = defaultdict(list)
         while len(queue) > 0:
-            curr = queue.pop()
+            curr = queue.popleft()
             dic[curr[1]].append((curr[0].val, curr[2]))
             if curr[0].left:
-                queue.appendleft((curr[0].left, curr[1] - 1, curr[2] - 1))
+                queue.append((curr[0].left, curr[1] - 1, curr[2] + 1))
             if curr[0].right:
-                queue.appendleft((curr[0].right, curr[1] + 1, curr[2] - 1))
+                queue.append((curr[0].right, curr[1] + 1, curr[2] + 1))
         res = []
         for i in sorted(dic.keys()):
-            level = sorted([x[0] for x in dic[i]])
+            level = sorted([x[1] for x in dic[i]])
             res.append(level)
         return res

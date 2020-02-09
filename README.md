@@ -146,12 +146,14 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/reverse_vowels_of_a_string.py)| | | |
 | 346|[Moving Average of a Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[x](https://github.com/soumasish/leetcodely/blob/moving_average_of_a_data_stream.py)| | | |
 | 348|[Design Tic Tac Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/design_tic_tac_toe.py)| | | |
+| 350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/intersection_of_two_arrays_ii.py)| | | |
 | 357|[Count Number of Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/count_number_with_unique_digits.py)| | | |
 | 359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[x](https://github.com/soumasish/leetcodely/blob/logger_rate_limiter.py)| | | |
 | 361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[x](https://github.com/soumasish/leetcodely/blob/bomb_enemy.py)| | | |
 | 364|[Nested List Weighted Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/nested_list_weight_sum_ii.py)| | | |
 | 366|[Find Leaves of a Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_leaves_of_a_binary_tree.py)| | | |
 | 367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/valid_perfect_square.py)| | | |
+| 373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_k_pairs_with_smallest_sum.py)| | | |
 | 380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/insert_delete_get_random.py)| | | |
 | 383|[Ransom Note](https://leetcode.com/problems/ransom-note/)|[x](https://github.com/soumasish/leetcodely/blob/ransom_note.py)| | | |
 | 387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/first_unique_character_in_a_string.py)| | | |

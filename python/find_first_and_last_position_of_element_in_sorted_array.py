@@ -10,27 +10,27 @@ return [3, 4]"""
 
 class Solution(object):
     def searchRange(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        start, end = 0, len(nums) - 1
-        while nums[start] < nums[end]:
-            mid = start + (end - start)//2
-            if target < nums[mid]:
-                end = mid - 1
-            elif target > nums[mid]:
-                start = mid + 1
-            else:
-                if nums[start] == nums[mid]:
-                    end -= 1
-                elif nums[end] == nums[mid]:
-                    start += 1
-
-        if nums[start] == nums[end] == target:
-            return [start, end]
-        return [-1, -1]
+        def binary_search(item):
+            start, end = 0, len(nums) - 1
+            while nums[start] < nums[end]:
+                mid = start + (end - start)//2
+                if item < nums[mid]:
+                    end = mid - 1
+                elif item > nums[mid]:
+                    start = mid + 1
+                elif nums[mid] == target:
+                    return mid
+            return -1
+        index = binary_search(target)
+        if index == -1:
+            return [-1, -1]
+        j, k = index, index
+        while (j - 1 > 0 and nums[j - 1] == target) or (k + 1 < len(nums) and nums[k + 1] == target):
+            if nums[j-1] == target:
+                j -= 1
+            if nums[k + 1] == target:
+                k += 1
+        return [j, k]
 
 
 if __name__ == '__main__':
