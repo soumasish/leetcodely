@@ -5,11 +5,11 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 
 ## Contents
 
-| # | Problem |Python/SQL      | Java       | C++    | Javascript |
-|---|:--------|:-----------|:-----------|:-------|:-----------|
-| 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/TwoSum.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)|
-| 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/AddTwoNumbers.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)|
-| 3 |[Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_without_repeating_characters.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/LongestSubstringWithoutRepeatingCharacters.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestSubstringWithoutRepeatingCharacters.js)|
+| # | Problem |Python/SQL      | Java       | C++    | Javascript | SQL |
+|---|:--------|:-----------|:-----------|:-------|:-----------|:---------|
+| 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/TwoSum.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)| |
+| 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/AddTwoNumbers.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| |
+| 3 |[Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_without_repeating_characters.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/LongestSubstringWithoutRepeatingCharacters.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestSubstringWithoutRepeatingCharacters.js)| |
 | 4 |[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/median_of_two_sorted_arrays.py)| | | |
 | 5 |[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_palindromic_substring.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestPalindromicSubstring.js)|
 | 6 |[Zig Zag Conversion](https://leetcode.com/problems/zigzag-conversion/) |[x](https://github.com/soumasish/leetcodely/blob/master/python/zig_zag_conversion.py)| | | |
@@ -89,7 +89,8 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 182 |[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/duplicate_emails.sql)| | | |
 | 183 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[x](https://github.com/soumasish/leetcodely/blob/master/sqlcustomers_who_never_order.sql)| | | |
 | 187 |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_dna_sequence.py)| | | |
-| 197 |[Rising TEmperature](https://leetcode.com/problems/rising-temperature/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/rising_temperature.sql)| | | |
+| 196 |[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/delete_duplicate_emails.sql)|
+| 197 |[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/rising_temperature.sql)| | | | |
 | 198 |[House Robber](https://leetcode.com/problems/house-robber/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/house_robber.py)| | | |
 | 200 |[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/number_of_islands.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/NumberOfIslands.java)| | |
 | 205 |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/isomorphic_strings.py)| [x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/IsomorphicStrings.java)| | |
