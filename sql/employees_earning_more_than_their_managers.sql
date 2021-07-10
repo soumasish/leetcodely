@@ -1,5 +1,7 @@
-SELECT Employee FROM
-(SELECT e1.Name AS Employee, e1.Salary, e1.ManagerId, e2.Salary AS ManagerSalary
-FROM Employee AS e1, Employee AS e2
-WHERE e1.ManagerId = e2.Id) AS T
-WHERE T.Salary > T.ManagerSalary;
+SELECT Name AS Employee
+FROM
+    (SELECT a.Name, a.Salary, b.Salary AS manager_salary
+    FROM Employee a
+    JOIN Employee b
+    ON a.ManagerId = b.Id) AS temp
+WHERE salary > manager_salary

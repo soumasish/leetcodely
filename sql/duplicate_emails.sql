@@ -1,3 +1,6 @@
-SELECT Email FROM Person
-GROUP BY Email
-HAVING COUNT(Email) > 1;
+SELECT Email
+FROM
+    (SELECT Email, count(Id) AS count
+    FROM Person
+    GROUP BY Email) AS temp
+WHERE count > 1

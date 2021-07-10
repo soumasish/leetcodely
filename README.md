@@ -5,7 +5,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 
 ## Contents
 
-| # | Problem |Python/SQL      | Java       | C++    | Javascript | SQL |
+| # | Problem |Python      | Java       | C++    | Javascript | SQL      |
 |---|:--------|:-----------|:-----------|:-------|:-----------|:---------|
 | 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/TwoSum.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)| |
 | 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/AddTwoNumbers.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| |
@@ -85,9 +85,9 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 170 |[Two Sum III - Data structure design](https://leetcode.com/problems/excel-sheet-column-title/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum_iii_data_structure_design.py)| | | |
 | 171 |[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/excel_sheet_column_number.py)| | | |
 | 173 |[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_search_tree_iterator.py)| | | |
-| 181 |[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/employees_earning_more_than_their_managers.sql)| | | |
-| 182 |[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/duplicate_emails.sql)| | | |
-| 183 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[x](https://github.com/soumasish/leetcodely/blob/master/sqlcustomers_who_never_order.sql)| | | |
+| 181 |[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/employees_earning_more_than_their_managers.sql)|
+| 182 |[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/duplicate_emails.sql)|
+| 183 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sqlcustomers_who_never_order.sql)|
 | 187 |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_dna_sequence.py)| | | |
 | 196 |[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/delete_duplicate_emails.sql)|
 | 197 |[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/rising_temperature.sql)| | | | |
@@ -178,22 +178,25 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 501 |[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_mode_in_binary_search_tree.py)| | | |
 | 508 |[Most Frequent Subtree sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py)| | | |
 | 510 |[In Order Successor II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | | |
-| 511 |[Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_i.sql)| | | |
+| 511 |[Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_i.sql)| | | | |
+| 512 |[Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_ii.sql)|
 | 515 |[Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/largest_value_in_each_tree_row.py)| | | |
 | 516 |[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_palindromic_subsequence.py)| | | |
 | 523 |[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/continuous_subarray_sum.py)| | | |
 | 530 |[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/minimum_absolute_difference_in_bst.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/python/minAbsoluteDifference.js)| | | |
 | 532 |[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/k_diff_pairs_in_an_array.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/python/minAbsoluteDifference.js)|
+| 534 |[Game Play Analysis III](https://leetcode.com/problems/game-play-analysis-iii/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_iii.sql)| 
 | 535 |[Encode and Decod TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/enocde_and_decode_tiny_url.py)| | |
 | 537 |[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/complex_number_multiplication.py)| | |
 | 540 |[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/single_element_in_a_soted_array.py)| | |
+| 550 |[Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_iv.sql)|
 | 574 |[Winning Candidate](https://leetcode.com/problems/winning-candidate/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/winning_candidate.sql)| | |
-| 595 |[Big Countries](https://leetcode.com/problems/big-countries/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/big_countries.sql)| | |
+| 595 |[Big Countries](https://leetcode.com/problems/big-countries/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/big_countries.sql)|
 | 605 |[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/can_place_flowers.py)| | |
 | 606 |[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_string_from_binary_tree.py)| | |
 | 616 |[Add Bold Tags](https://leetcode.com/problems/add-bold-tag-in-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_bold_tag_in_string.py)| | |
 | 617 |[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/merge_two_binary_trees.py)| | |
-| 619 |[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/biggest_single_number.sql)| | |
+| 619 |[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/biggest_single_number.sql)|
 | 633 |[Sum of Square numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_square_numbers.py)| | |
 | 636 |[Exclusive Time Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/exclusive_time_functions.py)| | |
 | 637 |[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/average_of_levels_in_binary_tree.py)| | |
@@ -245,7 +248,7 @@ If you wish to contribute, a big thanks, feel free to send me a PR. If you wish 
 | 1022 |[Sum of Root to Leaf Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_root_to_leaf_binary_numbers.py)| | | |
 | 1026 |[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_difference_between_node_ancestor.py)| | | |
 | 1027 |[Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_arithmetic_sequence.py)| | | | 
-| 1050 |[Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/)| |[x](https://github.com/soumasish/leetcodely/blob/master/sql/actors_and_directors_who_cooperated_atleast_3_times.sql)| | | | 
+| 1050 |[Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/actors_and_directors_who_cooperated_atleast_3_times.sql)|
 | 1075 |[Project Employees I](https://leetcode.com/problems/project-employees-i/)| |[x](https://github.com/soumasish/leetcodely/blob/master/sql/project_employees_i.sql)| | | | 
 | 1112 |[Highest Grade For Each Student](https://leetcode.com/problems/highest-grade-for-each-student/)| |[x](https://github.com/soumasish/leetcodely/blob/master/sql/highest_grade_for_each_student.sql)| | |
 | 1114 |[Print in Order](https://leetcode.com/problems/print-in-order/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/print_in_order.py)| | |

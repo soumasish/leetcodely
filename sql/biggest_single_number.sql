@@ -1,5 +1,6 @@
-# Write your MySQL query statement below
-SELECT max(num) AS num FROM
-(SELECT num from my_numbers
-GROUP BY num
-HAVING count(num) = 1) AS temp;
+SELECT MAX(num) AS num
+FROM
+(SELECT num, count(num) AS occurence
+FROM my_numbers
+GROUP BY num) AS P
+WHERE p.occurence = 1
