@@ -2,6 +2,7 @@
 
 
 If you wish to contribute, a big thanks, feel free to send me a PR. If you wish to contribute in a different language that's great too, just update the index accordingly.
+There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python/outliers/README.md) (non-leetcode) of questions that, I believe, shouldn't ever make it to a coding interview, but I've still solved them since I faced them multiple times.
 
 ## Contents
 
