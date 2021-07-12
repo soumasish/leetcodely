@@ -88,7 +88,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 173 |[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_search_tree_iterator.py)| | | |
 | 181 |[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/employees_earning_more_than_their_managers.sql)|
 | 182 |[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/duplicate_emails.sql)|
-| 183 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sqlcustomers_who_never_order.sql)|
+| 183 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/customers_who_never_order.sql)|
 | 187 |[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_dna_sequence.py)| | | |
 | 196 |[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/delete_duplicate_emails.sql)|
 | 197 |[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/rising_temperature.sql)| | | | |
@@ -258,5 +258,5 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 1165 |[Single Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SingleRowKeyboard.java)| | |
 | 1188 |[Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/)| |[x](https://github.com/soumasish/leetcodely/blob/master/python/bounded_blocking_queue.py)| | |
 | 1241 |[Number of Comments per post](https://leetcode.com/problems/number-of-comments-per-post/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SingleRowKeyboard.java)| | |
-
+| 1322 |[Ads Performance](https://leetcode.com/problems/ads-performance/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/ads_performance.sql) |
 
