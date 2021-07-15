@@ -1,6 +1,10 @@
-SELECT c.name FROM Candidate as c
-INNER JOIN
-(SELECT CandidateId, COUNT(CandidateId) AS ct FROM Vote
-GROUP BY CandidateId
-ORDER BY ct DESC LIMIT 1) AS t
-ON c.id = t.CandidateId;
+WITH temp AS 
+    (SELECT CandidateId, COUNT(*) AS votes
+    FROM Vote
+    GROUP BY CandidateId
+    )
+SELECT Name
+FROM Candidate 
+LEFT JOIN temp
+ON Candidate.Id = temp.CandidateId
+ORDER BY votes DESC LIMIT 1
