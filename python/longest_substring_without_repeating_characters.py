@@ -1,4 +1,6 @@
 """Created by sgoswami on 3/23/17 as part of leetcode"""
+import unittest
+
 """Given a string, find the length of the longest substring without repeating characters.
 Given "abcabcbb", the answer is "abc", which the length is 3.
 Given "bbbbb", the answer is "b", with the length of 1.
@@ -24,7 +26,23 @@ class Solution(object):
         return max_len
 
 
+class TestSolution(unittest.TestCase):
+
+    def test_one(self):
+        self.assertEqual(Solution().lengthOfLongestSubstring("abcabcbb"), 3)
+
+    def test_two(self):
+        self.assertEqual(Solution().lengthOfLongestSubstring("bbbbb"), 1)
+
+    def test_three(self):
+        self.assertEqual(Solution().lengthOfLongestSubstring("pwwkew"), 3)
+
+    def test_four(self):
+        self.assertEqual(Solution().lengthOfLongestSubstring(" "), 1)
+
+    def test_five(self):
+        self.assertEqual(Solution().lengthOfLongestSubstring("dvdf"), 3)
+
+
 if __name__ == '__main__':
-    solution = Solution()
-    # print(solution.lengthOfLongestSubstring("abba"))
-    print(solution.lengthOfLongestSubstring("tmmzuxt"))
+    unittest.main()

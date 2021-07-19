@@ -174,11 +174,12 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 447 |[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/number_of_boomerangs.py)| | | |
 | 449 |[Serialize & Deserialize a BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/serialize_and_deserialize_bst.py)| | | |
 | 450 |[Delete a Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/delete_node_in_binary_search_tree.py)| | |
-| 451 |[Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|[x](https://github.com/soumasish/leetcodely/blob/master/sort_characters_by_frequency.py)| | |
-| 459 |[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/repeated_substring_pattern.py)| | |
+| 451 |[Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sort_characters_by_frequency.py)| | |
+| 459 |[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/repeated_substring_pattern.py)| | |
 | 460 |[LFU Cache](https://leetcode.com/problems/lfu-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/lfu_cache.py)| | |
-| 464 |[Can I Win](https://leetcode.com/problems/)|[x](https://github.com/soumasish/leetcodely/blob/master/can_i_win.py)| | |
-| 482 |[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[x](https://github.com/soumasish/leetcodely/blob/master/license_key_formatting.py)| | |
+| 464 |[Can I Win](https://leetcode.com/problems/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/can_i_win.py)| | |
+| 482 |[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/license_key_formatting.py)| | |
+| 485 |[Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/max_consecutive_ones.py)| | |
 | 501 |[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_mode_in_binary_search_tree.py)| | | |
 | 508 |[Most Frequent Subtree sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/most_frequent_subtree_sum.py)| | | |
 | 510 |[In Order Successor II](https://leetcode.com/problems/inorder-successor-in-bst-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | | |
@@ -196,6 +197,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 550 |[Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_iv.sql)|
 | 574 |[Winning Candidate](https://leetcode.com/problems/winning-candidate/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/winning_candidate.sql)| | |
 | 595 |[Big Countries](https://leetcode.com/problems/big-countries/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/big_countries.sql)|
+| 597 |[Friend Requests I: Overall Acceptance Rate](https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/friend_requests_i.sql)|
 | 605 |[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/can_place_flowers.py)| | |
 | 606 |[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/construct_string_from_binary_tree.py)| | |
 | 616 |[Add Bold Tags](https://leetcode.com/problems/add-bold-tag-in-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_bold_tag_in_string.py)| | |
@@ -265,4 +267,4 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 1303 |[Find the Team Size](https://leetcode.com/problems/find-the-team-size/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/find-the-team-size.sql)|
 | 1322 |[Ads Performance](https://leetcode.com/problems/ads-performance/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/ads_performance.sql) |
 | 1667 |[Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/fix_names_in_a_table.sql)|
-
+| 1757 |[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/consecutive_numbers.sql)|
