@@ -101,7 +101,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 205 |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/isomorphic_strings.py)| [x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/IsomorphicStrings.java)| | |
 | 208 |[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/implement_trie.py)| | | |
 | 210 |[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/course_schedule_ii.py)| | | |
-| 211 |[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_and_search_word.py)| | | |
+| 211 |[Design Add and Search Word Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/design_add_and_search_words_data_structure.py)| | | |
 | 212 |[Word Search II](https://leetcode.com/problems/word-search-ii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_search_ii.py)| | | |
 | 215 |[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/kth_largest_element_in_an_array.py)| | | |
 | 221 |[Maximal Square](https://leetcode.com/problems/maximal-square/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximal_square.py)| | | |

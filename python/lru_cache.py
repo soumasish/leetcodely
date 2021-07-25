@@ -27,11 +27,12 @@ class LRUCache:
         """
         if key in self.table:
             p = self.table[key]
-            p.prev.next = p.next if p.next else None
-            p.next.prev = p.prev if p.prev else None
-            p.next = self.head
-            self.head.prev = p
-            self.head = p
+            self._update(p)
+            # p.prev.next = p.next if p.next else None
+            # p.next.prev = p.prev if p.prev else None
+            # p.next = self.head
+            # self.head.prev = p
+            # self.head = p
             return self.head.value
         else:
             return -1
@@ -51,7 +52,8 @@ class LRUCache:
             if self.capacity == 0:
                 q = self.table[self.tail.key]
                 self.table.pop(q.key)
-                self.tail = self.tail.next
+                self.tail.prev = self.tail
+                self.tail.next = None
                 p.next = self.head
                 self.head.prev = p
                 self.head = p
@@ -64,6 +66,15 @@ class LRUCache:
                     self.head.prev = p
                     self.head = p
                 self.capacity -= 1
+
+    def _update(self, p):
+        if p.next and p.prev:
+            p.next.prev = p.prev
+            p.prev.next = p.prev
+        elif p.next:
+            p.next.prev = None
+        elif p.prev:
+            p.prev.next = None
 
 
 class Node:
