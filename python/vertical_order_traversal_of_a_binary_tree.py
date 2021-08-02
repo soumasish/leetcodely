@@ -22,7 +22,8 @@ class Solution:
             if curr[0].right:
                 queue.append((curr[0].right, curr[1] + 1, curr[2] + 1))
         res = []
-        for i in sorted(dic.keys()):
-            level = sorted([x[1] for x in dic[i]])
+        for k in sorted(dic.keys()):
+            level = sorted(dic[k], key=lambda x: (x[1], x[0]))
+            level = [x[0] for x in level]
             res.append(level)
         return res

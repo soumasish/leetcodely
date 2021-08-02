@@ -25,11 +25,11 @@ class Solution(object):
         :rtype: bool
         """
 
-        def helper(root, floor, ceiling):
+        def _helper(root, floor, ceiling):
             if not root:
                 return True
             if root.val <= floor or root.val >= ceiling:
                 return False
-            return helper(root.left, floor, root.val) and helper(root.right, root.val, ceiling)
+            return _helper(root.left, floor, root.val) and _helper(root.right, root.val, ceiling)
 
-        return helper(root, -sys.maxsize, sys.maxsize)
+        return _helper(root, -sys.maxsize, sys.maxsize)

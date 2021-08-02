@@ -2,37 +2,7 @@
 """Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then 
 right to left for the next level and alternate between)."""
 
-import collections
-
-
-class BST:
-    def __init__(self):
-        self.root = None
-
-    def add(self, item):
-        self.root = self.insert_helper(self.root, item)
-        return self.root
-
-    def insert_helper(self, root, item):
-        if root is None:
-            root = TreeNode(item)
-            return root
-        if item < root.val:
-            root.left = self.insert_helper(root.left, item)
-        else:
-            root.right = self.insert_helper(root.right, item)
-        return root
-
-    def inorder(self):
-        self.inorder_helper(self.root)
-
-    def inorder_helper(self, root):
-        if root is None:
-            return
-        self.inorder_helper(root.left)
-        print(root.val, end=', ')
-        self.inorder_helper(root.right)
-
+from collections import deque, defaultdict
 
 class TreeNode(object):
     def __init__(self, x):
@@ -47,33 +17,56 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        res = []
-        queue = collections.deque()
-        delimiter = '#'
-        trigger = False
-        queue.appendleft(root)
-        queue.appendleft(delimiter)
-        level = collections.deque()
+        # res = []
+        # queue = collections.deque()
+        # delimiter = '#'
+        # trigger = False
+        # queue.appendleft(root)
+        # queue.appendleft(delimiter)
+        # level = collections.deque()
+        # while len(queue) > 0:
+        #     curr = queue.pop()
+        #     if curr == delimiter:
+        #         res.append(list(level))
+        #         level = collections.deque()
+        #         if len(queue) > 0:
+        #             queue.appendleft(delimiter)
+        #         trigger = not trigger
+        #     else:
+        #         level.append(curr.val)
+        #         if trigger:
+        #             if curr.right:
+        #                 queue.appendleft(curr.right)
+        #             if curr.left:
+        #                 queue.appendleft(curr.left)
+        #         else:
+        #             if curr.left:
+        #                 queue.appendleft(curr.left)
+        #             if curr.right:
+        #                 queue.appendleft(curr.right)
+        # return res
+
+        if not root:
+            return []
+        queue = deque()
+        dic = defaultdict(list)
+        queue.appendleft((root, 0))
         while len(queue) > 0:
             curr = queue.pop()
-            if curr == delimiter:
-                res.append(list(level))
-                level = collections.deque()
-                if len(queue) > 0:
-                    queue.appendleft(delimiter)
-                trigger = not trigger
+            node = curr[0]
+            level = curr[1]
+            dic[level].append(node.val)
+            if node.left:
+                queue.appendleft((node.left, level + 1))
+            if node.right:
+                queue.appendleft((node.right, level + 1))
+        res, trigger = [], False
+        for v in dic.values():
+            if trigger:
+                res.append(v[::-1])
             else:
-                level.append(curr.val)
-                if trigger:
-                    if curr.right:
-                        queue.appendleft(curr.right)
-                    if curr.left:
-                        queue.appendleft(curr.left)
-                else:
-                    if curr.left:
-                        queue.appendleft(curr.left)
-                    if curr.right:
-                        queue.appendleft(curr.right)
+                res.append(v)
+            trigger = not trigger
         return res
 
 

@@ -58,6 +58,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 100 |[Same Tree](https://leetcode.com/problems/same-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/same_tree.py)| | | |
 | 101 |[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[x](hthttps://github.com/soumasish/leetcodely/blob/master/python/symmetric_tree.py)| | | |
 | 102 |[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_level_order_traversal.py)| | | |
+| 107 |[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_level_order_traversal_ii.py)| | | |
 | 103 |[Binary Tree Zig Zag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/binary_tree_zigzag_level_order_traversal.py)| | | |
 | 104 |[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[x](https://github.com/soumasish/leetcode/blob/master/leetcode/maximum_depth_of_binary_tree.py)| | | |
 | 114 |[Flatten a Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/flatten_binary_tree_to_linked_list.py)| | | |
@@ -71,6 +72,8 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 133 |[Clone Graph](https://leetcode.com/problems/clone-graph/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/clone_graph.py)| | | |
 | 138 |[Copy List of Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/copy_list_with_random_pointer.py)| | | |
 | 139 |[Word Break](https://leetcode.com/problems/word-break/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/word_break.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/WordBreak.java) | | |
+| 144 |[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_preorder_traversal.py)| | | |
+| 145 |[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/binary_tree_postorder_traversal.py)| | | |
 | 146 |[LRU Cache](https://leetcode.com/problems/lru-cache/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/lru_cache.py)| | | |
 | 150 |[Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/evaluate_reverse_polish_notation.py)| | | |
 | 152 |[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_product_subarray.py)| | | |
@@ -169,6 +172,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|[x](https://github.com/soumasish/leetcodely/blob/partition_equal_subset_sum.py)| | | |
 | 418|[Sentence Screen Fitting](https://leetcode.com/problems/sentence-screen-fitting/)|[x](https://github.com/soumasish/leetcodely/blob/sentence_screen_formatting.py)| | | |
 | 419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[x](https://github.com/soumasish/leetcodely/blob/battleships_in_a_board.py)| | | |
+| 429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/battleships_in_a_board.py)| | | |
 | 433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)|[x](https://github.com/soumasish/leetcodely/blob/minimum_genetic_mutation.py)| | | |
 | 437 |[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/path_sum_iii.py)| | | |
 | 438 |[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/find_all_anagrams_in_a_string.py)| | | |
@@ -207,6 +211,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 633 |[Sum of Square numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sum_of_square_numbers.py)| | |
 | 636 |[Exclusive Time Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/exclusive_time_functions.py)| | |
 | 637 |[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/average_of_levels_in_binary_tree.py)| | |
+| 640 |[Solve the Equation](https://leetcode.com/problems/solve-the-equation/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/solve_the_equation.py)| | |
 | 645 |[Set Mismatch](https://leetcode.com/problems/set-mismatch/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/set_mismatch.py)| | |
 | 646 |[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/maximum_length_of_pair_chain.py)| | |
 | 647 |[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/palindromic_substring.py)| | |

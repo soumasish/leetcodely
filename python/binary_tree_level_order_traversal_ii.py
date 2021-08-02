@@ -33,7 +33,8 @@ class Solution(object):
                 queue.appendleft((node.left, level + 1))
             if node.right:
                 queue.appendleft((node.right, level + 1))
-        return [v for v in dic.values()]
+        return [v for v in dic.values()][::-1]
+
 
 
 if __name__ == '__main__':
