@@ -200,7 +200,9 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 537 |[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/complex_number_multiplication.py)| | |
 | 540 |[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/single_element_in_a_soted_array.py)| | |
 | 550 |[Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/game_play_analysis_iv.sql)|
-| 574 |[Winning Candidate](https://leetcode.com/problems/winning-candidate/)|[x](https://github.com/soumasish/leetcodely/blob/master/sql/winning_candidate.sql)| | |
+| 574 |[Winning Candidate](https://leetcode.com/problems/winning-candidate/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/winning_candidate.sql)|
+| 589 |[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/n_ary_tree_preorder_traversal.py)| | |
+| 590 |[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/n_ary_tree_postorder_traversal.py)| | |
 | 595 |[Big Countries](https://leetcode.com/problems/big-countries/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/big_countries.sql)|
 | 597 |[Friend Requests I: Overall Acceptance Rate](https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/)| | | | |[x](https://github.com/soumasish/leetcodely/blob/master/sql/friend_requests_i.sql)|
 | 605 |[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/can_place_flowers.py)| | |
