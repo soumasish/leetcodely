@@ -1,16 +1,17 @@
-"""Design a data structure that supports the following two operations:
+"""
+Design a data structure that supports the following two operations:
 void addWord(word)
 bool search(word)
 search(word) can search a literal word or a regular expression string containing only letters a-z or .. A . means
- it can represent any one letter."""
-
-"""
+ it can represent any one letter.
+_________________________________________________________________________________________________________________
 Time complexity of add : O(M) where M is length of the word
 Space complexity : O(N * M) where N is no of Keys and M is average length of each key
 
 Time complexity Search : O(M) for defined words
 and O(N*26^M) for undefined words with dots.
 """
+import unittest
 
 
 class Trie:
@@ -20,6 +21,7 @@ class Trie:
 
 
 class WordDictionary(object):
+
     def __init__(self):
         """
         Initialize your data structure here.
@@ -45,6 +47,7 @@ class WordDictionary(object):
         :type word: str
         :rtype: bool
         """
+
         def _search(_word, index, curr):
             if index == len(_word):
                 if not curr.is_end:
@@ -53,17 +56,35 @@ class WordDictionary(object):
                     return True
             if _word[index] == ".":
                 for char in curr.child.keys():
-                    if _search(_word,  index+1, curr.child[char]):
+                    if _search(_word, index + 1, curr.child[char]):
                         return True
             else:
-                if _word[index] in curr.child and _search(_word, index+1, curr.child[_word[index]]):
+                if _word[index] in curr.child and _search(_word, index + 1, curr.child[_word[index]]):
                     return True
             return False
 
         return _search(word, 0, self.trie_node)
 
 
-if __name__ == '__main__':
-    wordDictionary = WordDictionary()
-    wordDictionary.addWord('bad')
-    print(wordDictionary.search('.ad'))
+class TestWordDictionary(unittest.TestCase):
+
+    def setUp(self) -> None:
+        self.wordDictionary = WordDictionary()
+        self.wordDictionary.addWord("bad")
+        self.wordDictionary.addWord("dad")
+        self.wordDictionary.addWord("mad")
+
+    def test_one(self):
+        self.assertEqual(self.wordDictionary.search('pad'), False)
+
+    def test_two(self):
+        self.assertEqual(self.wordDictionary.search('bad'), True)
+
+    def test_three(self):
+        self.assertEqual(self.wordDictionary.search('.ad'), True)
+
+    def test_four(self):
+        self.assertEqual(self.wordDictionary.search('b..'), True)
+
+unittest.main(exit=False)
+
