@@ -7,7 +7,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 ## Contents
 
 | # | Problem |Python      | Java       | C++    | Javascript | SQL      |
-|---|:--------|:-----------|:-----------|:-------|:-----------|:---------|
+|--|:--------|:-----------|:-----------|:-------|:-----------|:---------|
 | 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/TwoSum.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)| |
 | 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/AddTwoNumbers.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| |
 | 3 |[Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/longest_substring_without_repeating_characters.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/LongestSubstringWithoutRepeatingCharacters.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestSubstringWithoutRepeatingCharacters.js)| |
@@ -46,6 +46,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 67 |[Add Binary](https://leetcode.com/problems/add-binary/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_binary.py)| | | |
 | 68 |[Text Justification](https://leetcode.com/problems/text-justification/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/text_justification.py)| | | |
 | 69 |[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sqrt_x.py)| | | |
+| 70 |[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/climbing_stairs.py)| | | |
 | 75 |[Sort Colors](https://leetcode.com/problems/sort-colors/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/sort_colors.py)| | | |
 | 76 |[Min Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/minimum_window_substring.py)| | | |
 | 78 |[Subsets](https://leetcode.com/problems/minimum-window-substring/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/subsets.py)| | | |
