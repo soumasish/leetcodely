@@ -24,7 +24,6 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-
         def _helper(root, floor, ceiling):
             if not root:
                 return True

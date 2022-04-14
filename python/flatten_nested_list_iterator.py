@@ -16,7 +16,9 @@ By calling next repeatedly until hasNext returns false, the order of elements re
 # You should not implement it, or speculate about its implementation
 # """
 
-
+# Your NestedIterator object will be instantiated and called as such:
+# i, v = NestedIterator(nestedList), []
+# while i.hasNext(): v.append(i.next())
 
 class NestedInteger(object):
    def isInteger(self):
@@ -71,6 +73,3 @@ class NestedIterator(object):
 
 
 
-# Your NestedIterator object will be instantiated and called as such:
-# i, v = NestedIterator(nestedList), []
-# while i.hasNext(): v.append(i.next())

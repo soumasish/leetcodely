@@ -6,7 +6,7 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 
 ## Contents
 
-| # | Problem |Python      | Java       | C++    | Javascript | SQL      |
+| #| Problem |Python      | Java       | C++    | Javascript | SQL      |
 |--|:--------|:-----------|:-----------|:-------|:-----------|:---------|
 | 1 |[Two Sum](https://leetcode.com/problems/two-sum/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/two_sum.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/TwoSum.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/twoSum.js)| |
 | 2 |[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/add_two_numbers.py)|[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/AddTwoNumbers.java)| |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/addTwoNumbers.js)| |
@@ -229,11 +229,12 @@ There's also a [list](https://github.com/soumasish/leetcodely/blob/master/python
 | 716 |[Max Stack](https://leetcode.com/problems/max-stack/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/max_stack.py) | ||
 | 720 |[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/longestWordInDictionary.js)|
 | 734 |[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarity.java)| | |
-| 735 |[Asteroid COllision](https://leetcode.com/problems/asteroid-collision/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/asteroid_collision.py)| | |
+| 735 |[Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/asteroid_collision.py)| | |
 | 737 |[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)| |[x](https://github.com/soumasish/leetcodely/blob/master/java/src/io/soumasish/SentenceSimilarityII.java)| | |
+| 746 |[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/min_cost_climbing_stairs.py)| | |
 | 776 |[Split BST](https://leetcode.com/problems/split-bst/)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/splitBST.js)|
 | 783 |[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/inorder_successor_ii.py)| | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/minimumDistanceBetweenBSTNodes.js)|
-| 817 |[Linked List Components](https://leetcode.com/problems/linked-list-components/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/linked_list_components.py)| | | |\
+| 817 |[Linked List Components](https://leetcode.com/problems/linked-list-components/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/linked_list_components.py)| | | |
 | 824 |[Goat Latin](https://leetcode.com/problems/goat-latin/)| | | |[x](https://github.com/soumasish/leetcodely/blob/master/javascript/goatLatin.js)|
 | 830 |[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/positions_of_large_groups.py)| | | |
 | 832 |[Flipping An Image](https://leetcode.com/problems/similar-string-groups/)|[x](https://github.com/soumasish/leetcodely/blob/master/python/flipping_an_image.py)| | ||

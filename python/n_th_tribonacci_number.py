@@ -4,13 +4,16 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        a, b, c = 0, 1, 1
         if n == 0:
-            return a
+            return 0
         if n == 1:
-            return b
+            return 1
         if n == 2:
-            return c
-        for i in range(3, n+1):
-            a, b, c = b, c, a+b+c
-        return c
+            return 1
+        dp = [0 for _ in range(n + 1)]
+        dp[0] = 0
+        dp[1] = 1
+        dp[2] = 1
+        for i in range(3, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
+        return dp[-1]

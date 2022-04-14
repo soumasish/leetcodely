@@ -27,6 +27,9 @@ class Solution(object):
         return longest
 
 
+
+
+
 if __name__ == '__main__':
     solution = Solution()
     print(solution.longestPalindrome('babad'))
