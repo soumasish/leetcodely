@@ -1,11 +1,13 @@
 """Created by sgoswami on 8/9/17."""
+import collections
+
 """Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree."""
 
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
 class Solution(object):
@@ -21,5 +23,8 @@ class Solution(object):
         if not right:
             return left
         return root
+
+
+
 
 
