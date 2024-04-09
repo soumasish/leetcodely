@@ -1,9 +1,12 @@
 """Created by sgoswami on 7/7/17."""
+from typing import List
+
 """Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in 
 the array which gives the sum of zero."""
 
+
 class Solution(object):
-    def threeSum(self, nums):
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         """
         :type nums: List[int]
         :rtype: List[List[int]]

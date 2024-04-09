@@ -1,24 +1,21 @@
-import timeit
+"""
+Intuition:
+This is bottom up dynamic programming, which builds the memo all the way from bottom to up.
+Most of these problems can be solved without using the entire array and just two variables,
+however I find it more intuitive to understand the code using the array.
+"""
 
-def fibonacci(n, cache=None):
+
+def fibonacci(n):
     if n == 0:
         return 1
     if n == 1:
         return 1
-    if cache is None:
-        cache = {}
-    if n in cache:
-        return cache[n]
-    result = fibonacci(n - 1, cache) + fibonacci(n - 2, cache)
-    cache[n] = result
-    return result
+    memo = [0] * n
+    memo[1] = 1
+    for i in range(2, n):
+        memo[i] = memo[i - 1] + memo[i - 2]
+    return memo[n - 1]
 
 
-def fib(n):
-    a = 1
-    b = 1
-    for i in range(2, n + 1):
-        a, b = b, a+b
-    return b
-
-print(fib(5))
+print(fibonacci(23))

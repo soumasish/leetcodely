@@ -26,11 +26,20 @@ class Solution(object):
         :type ty: int
         :rtype: bool
         """
-        if sx == tx and sy == ty:
+        while tx > sx and ty > sy:
+            if tx > ty:
+                tx %= ty
+            else:
+                ty %= tx
+
+        if tx == sx and ty == sy:
             return True
-        if sx > tx and sy > ty:
+        elif tx == sx:
+            return (ty - sy) % sx == 0
+        elif ty == sy:
+            return (tx - sx) % sy == 0
+        else:
             return False
-        return self.reachingPoints(sx + sy, sy, tx, ty) or self.reachingPoints(sx, sx + sy, tx, ty)
 
 
 if __name__ == '__main__':

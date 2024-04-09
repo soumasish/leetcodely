@@ -7,6 +7,7 @@ After the insertion, the cyclic list should remain sorted.
 
 If the list is empty (i.e., given node is null), you should create a new single cyclic list and return the reference to
 that single node. Otherwise, you should return the original given node."""
+from typing import Optional
 
 
 # Definition for a Node.
@@ -17,7 +18,7 @@ class Node(object):
 
 
 class Solution(object):
-    def insert(self, head, insertVal):
+    def insert(self, head: Optional[Node], insertVal:int) -> Node:
         """
         :type head: Node
         :type insertVal: int
@@ -25,18 +26,18 @@ class Solution(object):
         """
         n = Node(insertVal, None)
         if not head:
+            n.next = n
             return n
-        p = curr = head
+        curr = head
         while True:
-            if curr.val < curr.next.val:
-                if curr.val <= insertVal <= curr.next.val:
-                    n.next = curr.next
-                    curr.next = n
-                    break
-            else:
-                if insertVal >= curr.val or insertVal < curr.next.val:
-                    n.next = curr.next
-                    curr.next = n
+            if curr.val <= insertVal <= curr.next.val:
+                break
+            if curr.val > curr.next.val:
+                if insertVal >= curr.val or insertVal <= curr.next.val:
                     break
             curr = curr.next
-        return p
+            if curr == head:
+                break
+        n.next = curr.next
+        curr.next = n
+        return head

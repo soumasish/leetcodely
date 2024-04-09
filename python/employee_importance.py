@@ -10,6 +10,7 @@ this employee and all his subordinates.
 """
 # Employee info
 from collections import deque
+from typing import List
 
 
 class Employee:
@@ -24,7 +25,7 @@ class Employee:
 
 
 class Solution:
-    def getImportance(self, employees, id):
+    def getImportance(self, employees: List[Employee], id: int) -> int:
         """
         :type employees: Employee
         :type id: int

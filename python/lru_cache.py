@@ -7,6 +7,15 @@
     set(key, value) - Set or insert the value if the key is not already present.
     When the cache reached its capacity, it should invalidate the least recently
     used item before inserting a new item."""
+from collections import deque
+
+
+class Node:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+        self.prev = None
+        self.next = None
 
 
 class LRUCache:
@@ -14,11 +23,34 @@ class LRUCache:
         """
         :type capacity: int
         """
-        self.head = None
-        self.tail = None
         self.table = {}
         self.capacity = capacity
-        self.curr_index = 0
+        self.head = None
+        self.tail = None
+
+    def _remove(self, node):
+        if node.prev:
+            node.prev.next = node.next
+        else:
+            self.head = node.next
+
+        if node.next:
+            node.next.prev = node.prev
+        else:
+            self.tail = node.prev
+
+    def _add_to_head(self, node):
+        node.next = self.head
+        node.prev = None
+        if self.head:
+            self.head.prev = node
+        self.head = node
+        if self.tail is None:
+            self.tail = node
+
+    def _update(self, node):
+        self._remove(node)
+        self._add_to_head(node)
 
     def get(self, key):
         """
@@ -26,14 +58,9 @@ class LRUCache:
         :rtype: int
         """
         if key in self.table:
-            p = self.table[key]
-            self._update(p)
-            # p.prev.next = p.next if p.next else None
-            # p.next.prev = p.prev if p.prev else None
-            # p.next = self.head
-            # self.head.prev = p
-            # self.head = p
-            return self.head.value
+            node = self.table[key]
+            self._update(node)
+            return node.value
         else:
             return -1
 
@@ -44,45 +71,17 @@ class LRUCache:
         :rtype: void
         """
         if key in self.table:
-            p = self.table[key]
-            p.value = value
+            node = self.table[key]
+            node.value = value
+            self._update(node)
         else:
-            p = Node(key, value)
-            self.table[key] = p
-            if self.capacity == 0:
-                q = self.table[self.tail.key]
-                self.table.pop(q.key)
-                self.tail.prev = self.tail
-                self.tail.next = None
-                p.next = self.head
-                self.head.prev = p
-                self.head = p
-
-            else:
-                if not self.head:
-                    self.head = self.tail = p
-                else:
-                    p.next = self.head
-                    self.head.prev = p
-                    self.head = p
-                self.capacity -= 1
-
-    def _update(self, p):
-        if p.next and p.prev:
-            p.next.prev = p.prev
-            p.prev.next = p.prev
-        elif p.next:
-            p.next.prev = None
-        elif p.prev:
-            p.prev.next = None
-
-
-class Node:
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
-        self.prev = None
-        self.next = None
+            node = Node(key, value)
+            self.table[key] = node
+            if len(self.table) > self.capacity:
+                # Remove the least recently used item
+                del self.table[self.tail.key]
+                self._remove(self.tail)
+            self._add_to_head(node)
 
 
 if __name__ == '__main__':
