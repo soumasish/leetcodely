@@ -29,7 +29,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-# TODO: Giving a different result on the onlin editor
+# TODO: Giving a different result on the online editor
 class Solution(object):
     def averageOfLevels(self, root):
         """
@@ -60,13 +60,3 @@ class Solution(object):
             if curr.right:
                 queue.appendleft(curr.right)
         return res
-
-if __name__ == '__main__':
-    bst = BST()
-    bst.insert(3)
-    bst.insert(9)
-    bst.insert(20)
-    bst.insert(15)
-    bst.insert(7)
-    solution = Solution()
-    print(solution.averageOfLevels(bst.root))

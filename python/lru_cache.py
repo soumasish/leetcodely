@@ -95,6 +95,4 @@ if __name__ == '__main__':
     print(cache.get(1))  # returns - 1(not found)
     print(cache.get(2))  # returns 3
 
-"""On get update order
-On put -> if key already present update order
-If key new pop the least recently used and update key"""
+

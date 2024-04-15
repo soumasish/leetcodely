@@ -10,7 +10,6 @@ class Solution(object):
         :type dict: List[str]
         :rtype: str
         """
-
         def find(s, dict):
             words = set(dict)
             intervals = []

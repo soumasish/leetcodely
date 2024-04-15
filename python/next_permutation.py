@@ -20,14 +20,24 @@ class Solution:
 
         if not nums:
             return nums
+
         l = len(nums)
-        i, j = l - 1, l - 1
+        i = l - 2  # Start from the second last element
+
+        # Find the first element from the right that is smaller than its next element
         while i >= 0 and nums[i] >= nums[i + 1]:
             i -= 1
-        while j > i and nums[j] <= nums[i]:
-            j -= 1
-        nums[i], nums[j] = nums[j], nums[i]
-        nums[i + 1:] = sorted(nums[i + 1:])
+
+        if i >= 0:
+            j = l - 1
+            # Find the first element from the right that is greater than nums[i]
+            while j > i and nums[j] <= nums[i]:
+                j -= 1
+            # Swap nums[i] and nums[j]
+            nums[i], nums[j] = nums[j], nums[i]
+
+        # Reverse the sublist nums[i + 1:] to get the next permutation
+        nums[i + 1:] = reversed(nums[i + 1:])
 
 
 if __name__ == '__main__':

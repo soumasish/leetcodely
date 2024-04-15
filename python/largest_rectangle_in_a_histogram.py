@@ -2,33 +2,6 @@
 """Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find 
 the area of largest rectangle in the histogram."""
 
-#TODO: Still not completely correct
-import sys
-
-
-class Stack:
-    def __init__(self):
-        self.store = []
-        self.size = 0
-
-    def push(self, item):
-        self.store.append(item)
-        self.size += 1
-
-    def peek(self):
-        if self.size == 0:
-            return KeyError('Peeking an empty stack')
-        return self.store[-1]
-
-    def pop(self):
-        if self.size == 0:
-            return KeyError('Popping an empty stack')
-        self.size -= 1
-        return self.store.pop()
-
-    def is_empty(self):
-        return self.size == 0
-
 
 class Solution(object):
     def largestRectangleArea(self, heights):
@@ -36,26 +9,28 @@ class Solution(object):
         :type heights: List[int]
         :rtype: int
         """
-        if not heights or len(heights) == 0:
+        if not heights:
             return 0
-        stack = Stack()
-        max_area = -sys.maxsize
+
+        # Initialize stack to store indices, not heights
+        stack = [-1]  # Add a sentinel value to avoid empty stack checks
+        max_area = 0
+
         for i in range(len(heights)):
-            if stack.is_empty() or stack.peek() < heights[i]:
-                stack.push(heights[i])
-            else:
-                while stack.peek() > heights[i] or stack.is_empty():
-                    count = 1
-                    curr = stack.pop()
-                    area = count * curr
-                    max_area = max(area, max_area)
-                    count += 1
-        while stack.is_empty():
-            count = 1
-            curr = stack.pop()
-            area = count * curr
-            max_area = max(area, max_area)
-            count += 1
+            # Pop from stack while the current height is less than the height at the top of the stack
+            while stack[-1] != -1 and heights[stack[-1]] > heights[i]:
+                height = heights[stack.pop()]
+                width = i - stack[-1] - 1  # Calculate width using indices
+                max_area = max(max_area, height * width)
+
+            # Push the current index onto the stack
+            stack.append(i)
+
+        # Handle the remaining elements in the stack
+        while stack[-1] != -1:
+            height = heights[stack.pop()]
+            width = len(heights) - stack[-1] - 1  # Calculate width using indices
+            max_area = max(max_area, height * width)
 
         return max_area
 
